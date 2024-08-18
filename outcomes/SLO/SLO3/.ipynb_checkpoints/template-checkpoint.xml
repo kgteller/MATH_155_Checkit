@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+       <intro>
+      <p>
+          A critical component to our understanding of statistics is being able to read and understand graphs. It is also critical that we be able to look at graphs and identify any flaws they might have. Be sure to answer ALL the questions.
+      </p>
+        <p>
+            <image source="/assets/S4-A/215.png" description="Bar graph showing percentage of ranomware attacks by industry type."/>
+        </p>
+        <p>
+            Share of ransomware attacks by industry type.
+        </p>
+      <p>
+          Use the graph above to answer the questions.
+      </p>
+    </intro>
+    <knowl>
+          <content><p>What type of graph is this?</p></content>
+          <outtro><p>bar graph</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Could you use a {{graph_2}} graph to display this data? Why or why not?</p></content>
+        <outtro><p>{{answer_2}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What does the number at the end of the bar in the {{industry_3}} line mean in the context of the information presented by the graph?</p></content>
+        <outtro><p><m>{{answer_3}}</m>% of ransomware attacks from July 2020 to June 2021, were made against companies in the {{industry_3}} industry.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>If we assume that the total number of ransomware attacks that occured between July 2020 and June 2021 was {{attack_4}}, how many attacks were there against companies in the {{industry_4}} sector? Show all your work and explain how you arrived at your answer.</p></content>
+        <outtro><p><m>{{answer_4}}</m></p></outtro></knowl>
+</knowl>
