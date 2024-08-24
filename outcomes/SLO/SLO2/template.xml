@@ -1,7 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+   
     <intro>
-    <p><em>Scenario:</em></p>
+    <p><em>Scenario A:</em></p>
+    <p>
+        {{study}}
+    </p>
+    
+    <p><em>Scenario B:</em></p>
     <p>
         The US Army wants to get an idea of how Americans feel about the current conflict in Ukraine. In order to get the information, the Army partnered with Quinnipiac University to randomly send a survey to 950 Army Officers living at Fort Bragg. Survey respondents completed the survey online using a code provided in the invitation. The survey was available in English.</p>
     <p>
@@ -15,16 +21,17 @@
         <m>{{sample}}</m> Officers responded to the survey. <m>{{result_1}}</m><m>\%</m> of respondents said that they {{agree_1}} that Russia needs to be punished for its evil actions taken to completely destroy the lives of Ukrainian citizens and <m>{{result_2}}</m><m>\%</m> said that they {{agree_2}} that the people responsible for the US military response to the conflict are extremely cowardly not to put the extraordinary US military in the field against the Russians.</p>
         
     </intro>
+
     <knowl>
-        <content><p>Does the above use a sampling frame? If so, what is the sampling frame?</p></content>
-        <outtro><p>Yes, Army Officers at Fort Bragg</p></outtro>
+        <content><p> What type of study is described in Scenario A:</p></content>
+        <outtro><p>{{study_type}}</p></outtro>
     </knowl>
     <knowl>
         <content><p>What is the sampling method used in the above scenario?</p></content>
         <outtro><p>The sampling method was a simple random sample or SRS</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Looking at the sampling frame and the sampling method, would the sample be a valid sample or is it likely to be a biased sample? Explain why.</p></content>
+        <content><p>Looking at the sampling method, would the sample be a valid sample or is it likely to be a biased sample? Explain why.</p></content>
         <outtro><p>The sample frame is likely to produce a biased sample</p></outtro>
     </knowl>
     <knowl>
