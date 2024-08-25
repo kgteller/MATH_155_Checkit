@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+    <p><em>Scenario:</em></p>
+    <p>
+         A recent poll asked American adults about what they thought was the most urgent issue facing the country today.{{sample_phrase}} The pollsters called <m>{{population}}</m> American adults and spoke to <m>{{sample}}</m> of them from December 1st - 4th, 2023. Of the poll participants, <m>{{result}}</m><m>\%</m> {{outcome}}</p>
+    </intro>
+    <knowl>
+        <content> <p> What type of sampling method is being used?</p></content>
+        <outtro><p>{{sample_type}}</p></outtro>
+    </knowl> 
+    <knowl>
+        <content><p>What is the population that this study is trying to get information about?</p></content>
+        <outtro><p>American adults</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What is the sample?</p></content>
+        <outtro><p>The <m>{{sample}}</m> American adults polled.</p></outtro></knowl>
+    <knowl>
+        <content><p>What is the variable used for this study?</p></content>
+        <outtro><p>What an American adult thinks the most urgent issue facing the country today is.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What type of variable is the variable in question 3?</p></content>
+        <outtro><p>Categorical</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What is the sample statistic for this study?</p></content>
+        <outtro><p>The sample statistic is of those polled <m>{{result}}</m><m>\%</m> {{outcome}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What is the parameter of interest for this study? (the population parameter that the pollsters are trying to gather information about)</p></content>
+        <outtro><p>The parameter of interest is what percentage {{outcome}}</p></outtro></knowl>
+</knowl>

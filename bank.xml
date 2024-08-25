@@ -11,6 +11,13 @@
             <description>I understand different sampling methods and the types of data collected.</description>
         </outcome>
 
+        <outcome>
+            <title>Sampling and Data</title>
+             <slug>SLO1-1</slug>
+             <path>outcomes/SLO/SLO1_1</path>
+             <description>I understand different sampling methods and the types of data collected.</description>
+         </outcome>
+
          <outcome>
             <title>Experimental Design and Bias</title>
             <slug>SLO2</slug>
