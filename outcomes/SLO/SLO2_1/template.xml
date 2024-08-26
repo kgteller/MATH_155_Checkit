@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+   
+    <p><em>Scenario A:</em></p>
+    <p>
+        {{study}}
+    </p>
+
+    <p><em>Scenario B:</em></p>
+    <p>
+        The National Association of Independent Schools (NAIS) wants to get an idea of what Americans think about the upcoming Supreme Court decision that might require states to allow the use of funds from a public student-aid program at religious private schools. In order to get the information, NAIS partnered with a large evangelical church in Tennessee to send a survey to all 3274 of the church’s members. Survey respondents completed the survey online using a code provided in the invitation.</p>
+    <p>
+        Survey respondents were asked to decide to what degree they agreed with the following statements. The possible answer were "Strongly Agree", "Agree", "Neither Agree or Disagree", "Disagree", "Strongly Disagree".</p>
+    
+        <list>
+            <item><p>It is religious discrimination of the worst kind to prevent parents from using public funds at the school of their choice.</p></item>
+            <item><p>The government is run by anti-religion bigots and the Supreme Court must protect the rights of parents to educate their students at a religious private school using public funds.</p></item>
+        </list>
+    <p>
+        <m>{{sample}}</m> residents responded to the survey. <m>{{result_1}}</m><m>\%</m> of respondents said that they {{agree_1}} that it is religious discrimination of the worst kind to prevent parents from using public funds at the school of their choice and <m>{{result_2}}</m><m>\%</m> said that they {{agree_2}} that the government is run by anti-religion bigots and the Supreme Court must protect the rights of parents to educate their students at a religious private school using public funds.</p>
+        
+    </intro>
+    <knowl>
+        <content><p> What type of study is described in Scenario A:</p></content>
+        <outtro><p>{{study_type}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What is the sampling method used in the above scenario?</p></content>
+        <outtro><p>The sampling method was a convenience sample, explanation needed</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Looking at the sampling method, would the sample be a valid sample or is it likely to be a biased sample? Explain why.</p></content>
+        <outtro><p>Both the sampling frame and the sampling method are not valid due to bias, justification needed</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Identify potential sources of bias other than the sampling method and sampling frame from the information given and explain why they lead to bias (Only use the information given, do not speculate about information not provided).</p></content>
+        <outtro><p>The wording of the statements. Explanations needed.</p></outtro></knowl>
+    <knowl>
+        <content><p>If NAIS did the survey again, would you expect that exactly <m>{{result_1}}</m><m>\%</m> of respondents would {{agree_1}} that it is religious discrimination of the worst kind to prevent parents from using public funds at the school of their choice? Why or why not?</p></content>
+        <outtro><p>No, the exact same result would not be expected due to sampling variability, explanation needed</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Based on the results of this survey, can the NAIS be sure they have a good idea of how Americans feel about the upcoming Supreme Court decision? Why or why not?</p></content>
+        <outtro><p>No, too much bias, explanation needed. </p></outtro></knowl>
+</knowl>

@@ -25,6 +25,13 @@
             <description>I Understand different types of experimental design and the possible resulting bias.</description>
         </outcome>
 
+        <outcome>
+            <title>Experimental Design and Bias</title>
+            <slug>SLO2-1</slug>
+            <path>outcomes/SLO/SLO2_1</path>
+            <description>I Understand different types of experimental design and the possible resulting bias.</description>
+        </outcome>
+
          <outcome>
             <title>Graphical Illustrations of Data</title>
             <slug>SLO3</slug>
