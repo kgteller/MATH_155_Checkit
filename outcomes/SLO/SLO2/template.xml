@@ -19,7 +19,10 @@
         </list>
     <p>
         <m>{{sample}}</m> Officers responded to the survey. <m>{{result_1}}</m><m>\%</m> of respondents said that they {{agree_1}} that Russia needs to be punished for its evil actions taken to completely destroy the lives of Ukrainian citizens and <m>{{result_2}}</m><m>\%</m> said that they {{agree_2}} that the people responsible for the US military response to the conflict are extremely cowardly not to put the extraordinary US military in the field against the Russians.</p>
-        
+    
+    <p>
+        Question (a) refers to Scenario A the rest of the questions refer to Scenario B.</p>
+    
     </intro>
 
     <knowl>

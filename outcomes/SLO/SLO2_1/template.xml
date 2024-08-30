@@ -19,7 +19,9 @@
         </list>
     <p>
         <m>{{sample}}</m> residents responded to the survey. <m>{{result_1}}</m><m>\%</m> of respondents said that they {{agree_1}} that it is religious discrimination of the worst kind to prevent parents from using public funds at the school of their choice and <m>{{result_2}}</m><m>\%</m> said that they {{agree_2}} that the government is run by anti-religion bigots and the Supreme Court must protect the rights of parents to educate their students at a religious private school using public funds.</p>
-        
+        <p>
+            Question (a) refers to Scenario A the rest of the questions refer to Scenario B.</p>
+            
     </intro>
     <knowl>
         <content><p> What type of study is described in Scenario A:</p></content>
