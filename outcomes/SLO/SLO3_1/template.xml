@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+      <p>
+          A critical component to our understanding of statistics is being able to read and understand graphs. It is also critical that we be able to look at graphs and identify any flaws they might have. Be sure to answer ALL the questions.
+      </p>
+        <p>
+            <image source="assets/S4-A/212.png" description="Bar graph showing numbers of essential working in the pandemic and percent that were women, broken down by type of work."/>
+        </p>
+        <p>
+            Essential Workers
+        </p>
+      <p>
+          Use the graph above to answer the questions. Be sure to show all your work and give your answers in complete sentences.
+      </p>
+    </intro>
+    <knowl>
+        <content><p>What type of graph is this?</p></content>
+        <outtro><p>A bar graph.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What percent of {{job_2}} workers were women? What information in the graph tells you this answer?</p></content>
+        <outtro><p><m>{{answer_2}}</m>%. The number inside the bars.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What does the <m>{{total_3}}</m> in the line that says "{{job_3}}" mean in the context of the information presented by the graph?</p></content>
+        <outtro><p>That means there were a total of <m>{{total_3}}</m> people working as {{job_3}} workers</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>According to the graph, approximately how many women worked as {{job_4}}? Show all your work and give your answers in complete sentences.</p></content>
+        <outtro><p><m>.{{answer_4p}}</m> x <m>{{answer_4t}}</m> = <m>{{answer_4}}</m></p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Some people have argued that women are impacted more than men by requiring essential workers to continue working during the pandemic. Do you agree or disagree with this statement? Why? Use information provided by the graph to support your argument.</p></content>
+        <outtro><p>Answers will vary.</p></outtro>
+    </knowl>
+</knowl>
