@@ -45,6 +45,13 @@
             <path>outcomes/SLO/SLO3_1</path>
             <description>I Understand the meaning, benefits, and drawbacks of graphs for qualitative and quantitative data. </description>
         </outcome>
+
+        <outcome>
+            <title>Graphical Illustrations of Data</title>
+            <slug>SLO3-2</slug>
+            <path>outcomes/SLO/SLO3_2</path>
+            <description>I Understand the meaning, benefits, and drawbacks of graphs for qualitative and quantitative data. </description>
+        </outcome>
 <!--
         <outcome>
             <title>Descriptive Statistics</title>
