@@ -5,17 +5,20 @@
           A critical component to our understanding of statistics is being able to read and understand graphs. It is also critical that we be able to look at graphs and identify any flaws they might have. Be sure to answer ALL the questions.
       </p>
         <p>
-            <image source="assets/S4-A/212.png" description="Bar graph showing numbers of essential working in the pandemic and percent that were women, broken down by type of work."/>
+            <image source="assets/SLO3-A/212.png" description="Bar graph showing numbers of essential working in the pandemic and percent that were women, broken down by type of work."/>
         </p>
         <p>
-            Essential Workers
+           Figure 1: Essential Workers
         </p>
+        <p>Below is a graph showing the distribution of the running lengths of a sample of 112 movies found on Hulu. </p>
+        <p><image source="assets/SLO3-B/212.png" description="Histogram showing the distribution of running length of movies"/></p>
+        <p>Figure 2: Movie Run Times</p>
       <p>
-          Use the graph above to answer the questions. Be sure to show all your work and give your answers in complete sentences.
+          Use the graphs above to answer the questions. Make sure to show all of your work and put all answers into context of the data.
       </p>
     </intro>
     <knowl>
-        <content><p>What type of graph is this?</p></content>
+        <content><p>What type of graph is figure 1?</p></content>
         <outtro><p>A bar graph.</p></outtro>
     </knowl>
     <knowl>
@@ -23,15 +26,27 @@
         <outtro><p><m>{{answer_2}}</m>%. The number inside the bars.</p></outtro>
     </knowl>
     <knowl>
-        <content><p>What does the <m>{{total_3}}</m> in the line that says "{{job_3}}" mean in the context of the information presented by the graph?</p></content>
+        <content><p>What does the <m>{{total_3}}</m> in the line that says "{{job_3}}" mean in the context of the information presented by figure 1?</p></content>
         <outtro><p>That means there were a total of <m>{{total_3}}</m> people working as {{job_3}} workers</p></outtro>
     </knowl>
     <knowl>
-        <content><p>According to the graph, approximately how many women worked as {{job_4}}? Show all your work and give your answers in complete sentences.</p></content>
+        <content><p>According to figure 1, approximately how many women worked as {{job_4}}? Show all your work and give your answers in complete sentences.</p></content>
         <outtro><p><m>.{{answer_4p}}</m> x <m>{{answer_4t}}</m> = <m>{{answer_4}}</m></p></outtro>
     </knowl>
     <knowl>
-        <content><p>Some people have argued that women are impacted more than men by requiring essential workers to continue working during the pandemic. Do you agree or disagree with this statement? Why? Use information provided by the graph to support your argument.</p></content>
-        <outtro><p>Answers will vary.</p></outtro>
+        <content><p>What type of graph is figure 2?</p></content>
+        <outtro><p>A histogram.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Describe the shape of the distribution of running times of the sample of movies from Hulu (figure 2). Explain your answer.</p></content>
+        <outtro><p>The distribution is skewed right. (Can also argue that it is symmetrical with outliers)</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>In Figure 2, what does the bar with the {{number_2}} above it represent? </p></content>
+        <outtro><p>Out of the 110 movies in the data set, {{number_2}} of them had running length between {{answer_2_1}}.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p> Using figure 2, what percentage of movies in the sample had a running length between <m>{{minutes_3a}}</m> and <m>{{minutes_3b}}</m> minutes? Show all your work including anything plugged into a calculator. Provide your final answer in a full sentence with the appropriate context.</p></content>
+        <outtro><p>(<m>{{answer_3a}}</m> + <m>{{answer_3b}}</m> + <m>{{answer_3c}}</m>) / 112 = <m>{{answer_3}}</m><m>\%</m></p></outtro>
     </knowl>
 </knowl>
