@@ -28,7 +28,7 @@
         <outtro><p>variance={{ans2}}, std={{ans2a}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p> looking at the data from {{country_1}} if {{data_info}}, what interval contains {{percent}} <m>%</m> of the data?</p></content>
+        <content><p> looking at the data from {{country_1}} if {{data_info}}, what interval contains {{percent}} <m>\%</m> of the data?</p></content>
         <outtro><p> between {{lower_bound}} and {{upper_bound}} </p></outtro>
     </knowl>
     <knowl>
@@ -36,7 +36,7 @@
         <outtro><p>{{skewness}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Which of these datasets appears to be more skewed? Use evidence from your boxplots above to justify your answer.</p></content>
+        <content><p>Which of these datasets appears to be more skewed? </p></content>
         <outtro><p>Country A is more skewed</p></outtro>
     </knowl> 
 </knowl>

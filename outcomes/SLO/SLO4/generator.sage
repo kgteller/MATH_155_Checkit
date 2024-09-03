@@ -46,7 +46,7 @@ class Generator(BaseGenerator):
         ans1_a=np.median(my_data_2)
         ans2=np.var(my_data_2)
         ans2_a=np.std(my_data_2)
-        countrye_2="Country A"
+        country_2="Country A"
         skew="Roughly Symmetric"
         cheby1=ans1+2*ans2_a
         cheby1_a=ans1-2*ans2_a
@@ -102,6 +102,7 @@ class Generator(BaseGenerator):
 
         return {
             "country_1":country_1,
+            "country_2":country_2,
             "d1":data_1,
             "d2":data_2,
             "d3":data_3,
