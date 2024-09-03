@@ -52,14 +52,14 @@
             <path>outcomes/SLO/SLO3_2</path>
             <description>I Understand the meaning, benefits, and drawbacks of graphs for qualitative and quantitative data. </description>
         </outcome>
-<!--
+
         <outcome>
             <title>Descriptive Statistics</title>
             <slug>SLO4</slug>
             <path>outcomes/SLO/SLO4</path>
             <description>I can compute measures of center and spread for a data set.</description>
         </outcome>
-        
+<!--        
         <outcome>
             <title>Statistical Studies</title>
             <slug>S1-212P</slug>
