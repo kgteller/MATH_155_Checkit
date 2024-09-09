@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Below you will find two tables of numerical summaries of different datasets. Use these tables to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
+        <p>One of the technological innovations of the late 20th century that has completely changed our world has been the cell phone. However, the access to and use of cell phones has not been uniform across the world. Gapminder.org has collected data about the number of cell phones per 100 people for 200 countries. The data for the years 2000 and 2019 are summarized below for 200 countries.
+</p>
+        <p>2000</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \text{ {{n_1}} } &amp; {{min_1}} &amp; {{q1_1}} &amp; {{med_1}} &amp; {{q3_1}} &amp; {{max_1}} &amp; {{mean_1}} &amp; {{stdev_1}} \\
+            \hline
+            \end{array}</me>
+        </p>
+        <p>2019</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \text {{n_2}} &amp; {{min_2}} &amp; {{q1_2}} &amp; {{med_2}} &amp; {{q3_2}} &amp; {{max_2}} &amp; {{mean_2}} &amp; {{stdev_2}} \\
+            \hline
+            \end{array}</me>
+        </p>
+    </intro>
+    <knowl>
+        <content><p>What is the {{min_max}} number of cell phones per 100 people a country could have in {{year_1}} and still be {{dir_1}} than {{percent_1}}<m>\%</m> of the other countries in the dataset?</p></content>
+        <outtro><p>{{answer_1}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>The dataset for {{year_2}} has a quartile {{quar_2}} of {{change_2}}. Explain what this means in terms of the countries in the dataset for {{year_2}}.</p></content>
+        <outtro><p>In {{year_2}}, {{percent_2}}<m>\%</m>  of the countries in the dataset had {{change_2}} cell phones per 100 poeple or less.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What would happen to the {{stand_mean}} of the dataset for 2019 if an additional point was added at or {{dir_3}}? Why?</p></content>
+        <outtro><p>{{answer_3}}, explanation needed</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Create boxplots for each of the numerical summaries given above. You may use the applet above or you may draw the boxplots by hand. Insert screenshots of pictures of both boxplots in your answer. Be sure to fully label your boxplots and choose the settings for your x-axis so that the x-axis is clearly readable.</p></content>
+    </knowl>
+    <knowl>
+        <content><p>Describe the shape of the distribution of the number of cell phones per 100 people in {{year_5}}. Use evidence from your boxplots above to justify your answer.</p></content>
+        <outtro><p>{{answer_5}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>It turns out that in 2019, two countries, Morocco and Hong Kong were outliers in the dataset. Removing those two countries from the statistical summaries, gives you the following new statistical summary:</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \text {{n_3}} &amp; {{min_3}} &amp; {{q1_3}} &amp; {{med_3}} &amp; {{q3_3}} &amp; {{max_3}} &amp; {{mean_3}} &amp; {{stdev_3}} \\
+            \hline
+            \end{array}</me></p>
+        <p>How did removing the outliers affect the skewness of the boxplot? Justify your answer with evidence from the box plot.</p>
+        </content>
+        <outtro><p>The 2019 data set changed from right skewed to almost symmetric.</p></outtro>
+    </knowl>
+</knowl>

@@ -59,6 +59,13 @@
             <path>outcomes/SLO/SLO4</path>
             <description>I can compute measures of center and spread for a data set.</description>
         </outcome>
+
+        <outcome>
+            <title>Measures of Position</title>
+            <slug>SLO5</slug>
+            <path>outcomes/SLO/SLO5</path>
+            <description>I can compute measures of center and spread for a data set.</description>
+        </outcome>
 <!--        
         <outcome>
             <title>Statistical Studies</title>
