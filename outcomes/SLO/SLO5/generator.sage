@@ -52,6 +52,10 @@ class Generator(BaseGenerator):
             answer_3="The mean would go down"
         if stand_mean=="mean" and dir_3=="greater than the maximum value":
             answer_3="The mean would go up"
+        z_vala=round(random()*92.9,1)
+        z_valb=round(random()*(430-19.1)+19.1,1)
+        ans_4a=round((z_vala-21.3)/26.0,2)
+        ans_4b=round((z_valb-108.4)/42.7,2)
         year_5=choice(["2000", "2019"])
         answer_5="Skewed right"
         
@@ -95,6 +99,10 @@ class Generator(BaseGenerator):
             "stand_mean":stand_mean,
             "dir_3":dir_3,
             "answer_3":answer_3,
+            "za":z_vala,
+            "zb":z_valb,
+            "answer4a":ans_4a,
+            "answer4b":ans_4b,
             "year_5":year_5,
             "answer_5":answer_5,
         }

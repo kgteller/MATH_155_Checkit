@@ -36,6 +36,14 @@
         <outtro><p>{{answer_3}}, explanation needed</p></outtro>
     </knowl>
     <knowl>
+        <content><p>Find and interpret the Z-score for {{za}} number of cell phones per 100 people in 2000 (round to 2 decimal places) </p></content>
+        <outtro><p> {{answer4a}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p> Find and interpret the Z-score for {{zb}} number of cell phones per 100 people in 2019 (round to 2 decimal places)</p></content>
+        <outtro><p> {{answer4b}}</p></outtro>
+    </knowl>
+    <knowl>
         <content><p>Create boxplots for each of the numerical summaries given above. You may use the applet above or you may draw the boxplots by hand. Insert screenshots of pictures of both boxplots in your answer. Be sure to fully label your boxplots and choose the settings for your x-axis so that the x-axis is clearly readable.</p></content>
     </knowl>
     <knowl>
