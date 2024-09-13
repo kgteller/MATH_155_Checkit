@@ -44,13 +44,17 @@
         <outtro><p> {{answer4b}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Create boxplots for each of the numerical summaries given above. You may use the applet above or you may draw the boxplots by hand. Insert screenshots of pictures of both boxplots in your answer. Be sure to fully label your boxplots and choose the settings for your x-axis so that the x-axis is clearly readable.</p></content>
+        <content><p>Create boxplots for each of the numerical summaries given above. (use the IQR to determine your wiskers)</p></content>
+    </knowl>
+    <knowl>
+        <content><p> Based on the min and max of the data sets do you think there are any outliers in either of these data sets? Explain your reasoning.</p></content>
+        <outtro><p> Both data sets have outliers 2000 has upper outliers while 2019 has lower and upper</p></outtro>
     </knowl>
     <knowl>
         <content><p>Describe the shape of the distribution of the number of cell phones per 100 people in {{year_5}}. Use evidence from your boxplots above to justify your answer.</p></content>
         <outtro><p>{{answer_5}}</p></outtro>
     </knowl>
-    <knowl>
+   <!--  <knowl>
         <content><p>It turns out that in 2019, two countries, Morocco and Hong Kong were outliers in the dataset. Removing those two countries from the statistical summaries, gives you the following new statistical summary:</p>
         <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
             \hline
@@ -63,4 +67,5 @@
         </content>
         <outtro><p>The 2019 data set changed from right skewed to almost symmetric.</p></outtro>
     </knowl>
+    -->
 </knowl>
