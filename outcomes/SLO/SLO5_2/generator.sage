@@ -2,17 +2,17 @@ class Generator(BaseGenerator):
     def data(self):
         n_1="61"
         min_1=round(1.9,1)
-        q1_1="6.9"
+        q1_1=round(6.9,1)
         med_1="18.0"
-        q3_1="39.3"
+        q3_1=round(39.3,1)
         max_1=round(135.3,1)
         mean_1=round(27.4,1)
         stdev_1=round(27.8,1)
         n_2="61"
         min_2=round(1.6,1)
-        q1_2="5.7"
+        q1_2=round(5.7,1)
         med_2="14.9"
-        q3_2="34.4"
+        q3_2=round(34.4,1)
         max_2=round(108.7,1)
         mean_2=round(20.3,1)
         stdev_2=round(20.6,1)
@@ -50,6 +50,12 @@ class Generator(BaseGenerator):
         ans_4b=round((z_valb-mean_2)/stdev_2,2)
         sex_5=choice(["male", "female"])
         answer_5="Skewed right"
+        IQR_1=q3_1-q1_1
+        IQR_2=q3_2-q1_2
+        ub_1=round(q3_1+1.5*IQR_1,1)
+        ub_2=round(q3_2+1.5*IQR_2,1)
+        lb_1=round(q1_1-1.5*IQR_1,1)
+        lb_2=round(q1_2-1.5*IQR_2,1)
         
         
 
@@ -89,4 +95,8 @@ class Generator(BaseGenerator):
             "answer_3":answer_3,
             "sex_5":sex_5,
             "answer_5":answer_5,
+            "ub_1":ub_1,
+            "ub_2":ub_2,
+            "lb_1":lb_1,
+            "lb_2":lb_2,
         }

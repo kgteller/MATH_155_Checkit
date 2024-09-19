@@ -46,6 +46,10 @@
         <content><p>Create boxplots for each of the numerical summaries given above. You may use the applet above or you may draw the boxplots by hand. Insert screenshots of pictures of both boxplots in your answer. Be sure to fully label your boxplots and choose the settings for your x-axis so that the x-axis is clearly readable.</p></content>
     </knowl>
     <knowl>
+        <content><p> Based on the min and max of the data sets do you think there are any outliers in either of these data sets? Explain your reasoning.</p></content>
+        <outtro><p> The bounds for Males is ({{lb_1}},{{ub_1}}) the bounds for Females is({{lb_2}},{{ub_2}}) </p></outtro>
+    </knowl>
+    <knowl>
         <content><p>Describe the shape of the distribution of the {{sex_5}} child mortality rates. Use evidence from your boxplots from #6 to justify your answer.</p></content>
         <outtro><p>{{answer_5}}, justification needed</p></outtro>
     </knowl>
