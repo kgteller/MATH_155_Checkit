@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Below you will find two tables of numerical summaries of different datasets. Use these tables to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
+        <p>Poverty, disease, hunger, climate change, war, existential risks, and inequality: The world faces many great and terrifying problems. It is these large problems that our work at Our World in Data focuses on. Our World in Data is a non-profit that has as its mission to make the knowledge on the big problems accessible and understandable. The information below are the death rates from cancer for the countries of the world in 1996 and 2011 for which data is available. Death rates are given as number of deaths per 100,000 people per year.
+</p>
+        <p>1996</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \text{ {{n_1}} } &amp; {{min_1}} &amp; {{q1_1}} &amp; {{med_1}} &amp; {{q3_1}} &amp; {{max_1}} &amp; {{mean_1}} &amp; {{stdev_1}} \\
+            \hline
+            \end{array}</me>
+        </p>
+        <p>2011</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \text {{n_2}} &amp; {{min_2}} &amp; {{q1_2}} &amp; {{med_2}} &amp; {{q3_2}} &amp; {{max_2}} &amp; {{mean_2}} &amp; {{stdev_2}} \\
+            \hline
+            \end{array}</me>
+        </p>
+    </intro>
+    <knowl>
+        <content><p>What is the {{min_max}} that a cancer death rate (per 100,000 people per year) could be in {{year_1}} and still be {{dir_1}} than {{percent_1}} of the rates of the other countries in the dataset? Explain your answer.</p></content>
+        <outtro><p>{{answer_1}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>The dataset for {{year_2}} has a quartile {{quar_2}} of {{change_2}}. Explain what this means in terms of the countries in the dataset and their cancer death rates (per 100,000 people per year) in {{year_2}}.</p></content>
+        <outtro><p>In {{year_2}}, {{percent_2}} of the countries in the dataset had a cancer death rate of {{change_2}} (per 100,000 people per year) or less.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What would happen to the {{stand_mean}} of the dataset for 2011 if an additional point was added at or {{dir_3}}? Explain your answer.</p></content>
+        <outtro><p>{{answer_3}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Find and interpret the Z-score for a death rate from cancer of {{za}} per 100,000 people per year in 1996 (round to 2 decimal places) </p></content>
+        <outtro><p> {{answer4a}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p> Find and interpret the Z-score for a death rate from cancer of {{zb}} per 100,000 people per year in 2011 (round to 2 decimal places)</p></content>
+        <outtro><p> {{answer4b}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Create boxplots for each of the numerical summaries given above. You may use the applet above or you may draw the boxplots by hand. Insert screenshots of pictures of both boxplots in your answer. Be sure to fully label your boxplots and choose the settings for your x-axis so that the x-axis is clearly readable.</p></content>
+    </knowl>
+    <knowl>
+        <content><p> Based on the min and max of the data sets do you think there are any outliers in either of these data sets? Explain your reasoning.</p></content>
+        <outtro><p> The bounds for 1996 is ({{lb_1}},{{ub_1}}) the bounds for 2011 is ({{lb_2}},{{ub_2}}) </p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Describe the shape of the distribution of the {{year_5}} cancer death rates. Use evidence from your boxplots from #4 to justify your answer.</p></content>
+        <outtro><p>{{answer_5}}</p></outtro>
+    </knowl>
+<!--    <knowl>
+        <content><p>Which of these datasets appears to be more skewed? Use evidence from your boxplots above to justify your answer.</p></content>
+        <outtro><p>The cancer death rate dataset was more skewed in 2011. Evidence will vary.</p></outtro>
+    </knowl> -->
+</knowl>

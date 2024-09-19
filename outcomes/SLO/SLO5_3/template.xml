@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p> Below you will find two tables of numerical summaries of different datasets. Use these tables to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
+        <p>The scores of 9th grade students on statewide math exams in two different years were collected into datasets. The numerical summaries of both datasets are in the tables below.</p>
+        <p>Year: 2019</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \ {{n_1}} &amp; {{min_1}} &amp; {{q1_1}} &amp; {{med_1}} &amp; {{q3_1}} &amp; {{max_1}} &amp; {{mean_1}} &amp; {{stdev_1}} \\
+            \hline
+            \end{array}</me>
+        </p>
+        <p>Year: 2021</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \ {{n_2}} &amp; {{min_2}} &amp; {{q1_2}} &amp; {{med_2}} &amp; {{q3_2}} &amp; {{max_2}} &amp; {{mean_2}} &amp; {{stdev_2}} \\
+            \hline
+            \end{array}</me>
+        </p>
+    </intro>
+    <knowl>
+        <content><p>What is the {{min_max}} a student could score in {{year_1}} and still be {{dir_1}} than {{percent_1}} of all the student scores that year?</p></content>
+        <outtro><p>{{answer_1}}, context needed</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>The dataset for year {{year_2}} has a quartile {{quar_2}} of {{test_2}}. Explain what this means in terms of the scores of the students in {{year_2}}.</p></content>
+        <outtro><p>Of the {{number_2}} students that took the statewide math test, {{percent_2}} scored {{test_2}} or less.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What would happen to the mean of the dataset for 2019 if an additional point was added at or {{dir_3}}? Why?</p></content>
+        <outtro><p>{{answer_3}}, explanation needed</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Find and interpret the Z-score for a 9th grade exam score of {{za}} 2019 (round to 2 decimal places) </p></content>
+        <outtro><p> {{answer4a}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p> Find and interpret the Z-score for a 9th grade exam score of {{zb}} in 2021 (round to 2 decimal places)</p></content>
+        <outtro><p> {{answer4b}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Create boxpots for each of the numerical summaries given above. You may use the applet above or you may draw the boxplots by hand. Insert screenshots of pictures of both boxplots in your answer. Be sure to fully label your boxplots.</p></content>
+    </knowl>
+    <knowl>
+        <content><p> Based on the min and max of the data sets do you think there are any outliers in either of these data sets? Explain your reasoning.</p></content>
+        <outtro><p> The bounds for 2019 is ({{lb_1}},{{ub_1}}) the bounds for 2021 is ({{lb_2}},{{ub_2}}) </p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Describe the shape of the distribution of scores in {{year_5}}. Use evidence from your boxplots from the previous question above to justify your answer.</p></content>
+        <outtro><p>{{answer_5}}, explanation and evidence needed</p></outtro>
+    </knowl>
+   <!-- <knowl>
+        <content><p>Which of these datasets appears to be more skewed? Use evidence from your boxplots above to justify your answer.</p></content>
+        <outtro><p>2019 is more skewed</p></outtro> 
+    </knowl> -->
+</knowl>

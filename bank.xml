@@ -66,13 +66,25 @@
             <path>outcomes/SLO/SLO5</path>
             <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
         </outcome>
-
+        <outcome>
+            <title>Measures of Position</title>
+            <slug>SLO5-1</slug>
+            <path>outcomes/SLO/SLO5_1</path>
+            <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
+        </outcome>
         <outcome>
             <title>Measures of Position</title>
             <slug>SLO5-2</slug>
             <path>outcomes/SLO/SLO5_2</path>
             <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
         </outcome>
+        <outcome>
+            <title>Measures of Position</title>
+            <slug>SLO5-3</slug>
+            <path>outcomes/SLO/SLO5_3</path>
+            <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
+        </outcome>
+      
 <!--        
         <outcome>
             <title>Statistical Studies</title>
