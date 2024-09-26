@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p> Below you will find two tables of numerical summaries of different datasets. Use these tables to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
+        <p>The scores of 9th grade students on statewide math exams in two different years were collected into datasets. The numerical summaries of both datasets are in the tables below.</p>
+        <p>Distribution 1</p>
+        <p><me>\begin{array}{c|c}
+            \text{x) &amp; \text{P(x)} \\
+            \hline
+            \ {{x1}} &amp;\ {{d1}} \\
+            \ {{x2}} &amp;\ {{d2}} \\
+            \ {{x3}} &amp;\ {{d3}} \\
+            \ {{x4}} &amp;\ {{d4}} \\
+            \ {{x5}} &amp; \ {{d5}} \\
+            \end{array}</me>
+        </p>
+        <p>Dsitribution 2</p>
+        <p><me>\begin{array}{c|c}
+            \text{x) &amp; \text{P(x)} \\
+            \hline
+            \ {{x1}} &amp;\ {{d6}} \\
+            \ {{x2}} &amp;\ {{d7}} \\
+            \ {{x3}} &amp;\ {{d8}} \\
+            \ {{x4}} &amp;\ {{d9}} \\
+            \ {{x5}} &amp; \ {{d10}} \\
+            \end{array}</me>
+        </p>
+        <p>Dsitribution 2</p>
+        <p><me>\begin{array}{c|c}
+            \text{x) &amp; \text{P(x)} \\
+            \hline
+            \ {{x1}} &amp;\ {{d6}} \\
+            \ {{x2}} &amp;\ {{d7}} \\
+            \ {{x3}} &amp;\ {{d8}} \\
+            \ {{x4}} &amp;\ {{d9}} \\
+            \ {{x5}} &amp; \ {{d10}} \\
+            \end{array}</me>
+        </p>
+    </intro>
+    <knowl>
+        <content><p>Which of the distributions above is a discrete probability distribution?</p></content>
+        <outtro><p>{{answer_1}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Find the mean and standard deviation of the correct probability distribution?</p></content>
+        <outtro><p> the mean is {{answer_2a}}, the standard deviation is {{ answer_2b}}.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>{{scenario}}(round to five decimal places and use scienctifc notation if neccesary)</p></content>
+        <outtro><p> the probability is p={{answer_3}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Find the mean and standard deviation of the random variable X described above. (round to two decimal places)</p></content>
+        <outtro><p> the mean is {{answer_4a}}, the standard deviation is {{ answer_4b}}.</p></outtro>
+    </knowl>
+
+</knowl>

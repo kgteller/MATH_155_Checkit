@@ -84,6 +84,12 @@
             <path>outcomes/SLO/SLO5_3</path>
             <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
         </outcome>
+        <outcome>
+            <title>Discrete Probability Distributions</title>
+            <slug>SLO6</slug>
+            <path>outcomes/SLO/SLO6</path>
+            <description>I Understand and can utilize discrete probability distributions, including the binomial distribution</description>
+        </outcome>
       
 <!--        
         <outcome>
