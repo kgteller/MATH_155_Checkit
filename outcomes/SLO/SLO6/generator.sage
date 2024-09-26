@@ -29,7 +29,7 @@ class Generator(BaseGenerator):
         x_rnd_neg=np.copy(x_rnd)
         x_rnd_up=np.copy(x_rnd)
         x_rnd_neg[c2]=-x_rnd_neg[c2]
-        x_rnd_up[c3]=x_rnd_up[c3]+up
+        x_rnd_up[c3]=round(x_rnd_up[c3]+up,2)
         if (c1==0):
             data1_1=x_rnd[0]
             data1_2=x_rnd[1]
