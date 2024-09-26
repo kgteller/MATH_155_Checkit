@@ -7,33 +7,33 @@
         <p><me>\begin{array}{c|c}
             \text{x) &amp; \text{P(x)} \\
             \hline
-            \ {{x1}} &amp;\ {{d1}} \\
-            \ {{x2}} &amp;\ {{d2}} \\
-            \ {{x3}} &amp;\ {{d3}} \\
-            \ {{x4}} &amp;\ {{d4}} \\
-            \ {{x5}} &amp; \ {{d5}} \\
+            \ {{x1}} &amp; {{d1}} \\
+            \ {{x2}} &amp; {{d2}} \\
+            \ {{x3}} &amp; {{d3}} \\
+            \ {{x4}} &amp; {{d4}} \\
+            \ {{x5}} &amp;  {{d5}} \\
             \end{array}</me>
         </p>
         <p>Dsitribution 2</p>
         <p><me>\begin{array}{c|c}
             \text{x) &amp; \text{P(x)} \\
             \hline
-            \ {{x1}} &amp;\ {{d6}} \\
-            \ {{x2}} &amp;\ {{d7}} \\
-            \ {{x3}} &amp;\ {{d8}} \\
-            \ {{x4}} &amp;\ {{d9}} \\
-            \ {{x5}} &amp; \ {{d10}} \\
+            \ {{x1}} &amp; {{d6}} \\
+            \ {{x2}} &amp; {{d7}} \\
+            \ {{x3}} &amp; {{d8}} \\
+            \ {{x4}} &amp; {{d9}} \\
+            \ {{x5}} &amp; {{d10}} \\
             \end{array}</me>
         </p>
         <p>Dsitribution 2</p>
         <p><me>\begin{array}{c|c}
             \text{x) &amp; \text{P(x)} \\
             \hline
-            \ {{x1}} &amp;\ {{d6}} \\
-            \ {{x2}} &amp;\ {{d7}} \\
-            \ {{x3}} &amp;\ {{d8}} \\
-            \ {{x4}} &amp;\ {{d9}} \\
-            \ {{x5}} &amp; \ {{d10}} \\
+            \ {{x1}} &amp; {{d6}} \\
+            \ {{x2}} &amp; {{d7}} \\
+            \ {{x3}} &amp; {{d8}} \\
+            \ {{x4}} &amp; {{d9}} \\
+            \ {{x5}} &amp; {{d10}} \\
             \end{array}</me>
         </p>
     </intro>
