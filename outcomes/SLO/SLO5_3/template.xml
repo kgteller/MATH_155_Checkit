@@ -43,7 +43,7 @@
         <outtro><p> {{answer4b}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Create boxpots for each of the numerical summaries given above. You may use the applet above or you may draw the boxplots by hand. Insert screenshots of pictures of both boxplots in your answer. Be sure to fully label your boxplots.</p></content>
+        <content><p>Create boxpots for each of the numerical summaries given above. (use the IQR to determine your wiskers)</p></content>
     </knowl>
     <knowl>
         <content><p> Based on the min and max of the data sets do you think there are any outliers in either of these data sets? Explain your reasoning.</p></content>
