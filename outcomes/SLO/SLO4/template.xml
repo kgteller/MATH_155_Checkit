@@ -39,6 +39,6 @@
     </knowl>
     <knowl>
         <content><p>Which of these datasets appears to be more skewed? </p></content>
-        <outtro><p>Country A is more skewed</p></outtro>
+        <outtro><p>{{country_skew}} is more skewed</p></outtro>
     </knowl> 
 </knowl>

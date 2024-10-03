@@ -47,7 +47,14 @@ class Generator(BaseGenerator):
         ans2=np.var(my_data_2)
         ans2_a=np.std(my_data_2)
         country_2="Country A"
-        skew="Roughly Symmetric"
+        skewa=np.mean(my_data)-np.median(my_data)
+        skewb=np.mean(my_data_2)-np.median(my_data_2)
+        if skewa>10:
+            skew= skew="Skewed Right"
+        elif skewa<-10:
+             skew="Skewed Left"
+        else:
+            skew="Roughly Symmetric"
         cheby1=ans1+2*ans2_a
         cheby1_a=ans1-2*ans2_a
         cheby2=ans1+3*ans2_a
@@ -57,10 +64,15 @@ class Generator(BaseGenerator):
 
         if country_1=="Country A":
             ans1=np.mean(my_data)
-            ans1_a-np.median(my_data)
+            ans1_a=np.median(my_data)
             ans2=np.var(my_data)
             ans2_a=np.std(my_data)
-            skew="Skewed Right"
+            if skewb>10:
+                skew="Skewed Right"
+            elif skewb<-10:
+                skew="Skewed Left"
+            else:
+                skew="Roughly Symmetric"
             country_2= "Country B"
             cheby1=ans1+2*ans2_a
             cheby1_a=ans1-2*ans2_a
@@ -81,6 +93,11 @@ class Generator(BaseGenerator):
             percent=rule[OC_2][0]
             lb=rule[OC_2][2]
             ub=rule[OC_2][1]
+        absskew=abs(skewa)-abs(skewb)
+        if absskew > 0:
+            country_skew="Country A"
+        else:
+            country_skew="Country B"   
         #    dir_1=score_b[OC_1][1]
         #    percent_1=score_b[OC_1][2]
         #    answer_1=score_b[OC_1][3]
@@ -132,5 +149,6 @@ class Generator(BaseGenerator):
             "percent":percent,
             "lower_bound":lb,
             "upper_bound":ub,
+            "country_skew":country_skew,
             
         }

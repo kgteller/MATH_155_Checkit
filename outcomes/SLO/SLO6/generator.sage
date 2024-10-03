@@ -4,17 +4,30 @@ class Generator(BaseGenerator):
 
     def data(self):
         p=0
-        val=np.sort(sample(range(-10,10),5))
-        x1=val[0]
-        x2=val[1]
-        x3=val[2]
-        x4=val[3]
-        x5=val[4]
+        val1=np.sort(sample(range(-10,10),5))
+        val2=np.sort(sample(range(-10,10),5))
+        val3=np.sort(sample(range(-10,10),5))
+        x1=val1[0]
+        x2=val1[1]
+        x3=val1[2]
+        x4=val1[3]
+        x5=val1[4]
+        x6=val2[0]
+        x7=val2[1]
+        x8=val2[2]
+        x9=val2[3]
+        x10=val2[4]
+        x11=val3[0]
+        x12=val3[1]
+        x13=val3[2]
+        x14=val3[3]
+        x15=val3[4]
+       
         up1=round(randint(-5,-1)/100,2)
         up2=round(randint(1,5)/100,2)
         up=choice([up1,up2])
         while p != 1:
-            test=np.random.exponential(scale=1,size=5)
+            test=np.random.uniform(.01,.9,size=5)
 
 
             x=np.round(test,1)/sum(np.round(test,1))
@@ -22,6 +35,9 @@ class Generator(BaseGenerator):
             x_rnd=np.round(x,2)
 
             p=np.sum(x_rnd)
+
+            if np.all(x_rnd)==0:
+                p=0
 
         c1=randint(0,5)
         c2=randint(0,4)
@@ -50,6 +66,10 @@ class Generator(BaseGenerator):
             data3_5=x_rnd_up[4]
 
             ans1='First distribution'
+            ans2_1= round(np.sum(x_rnd*val1),2)
+            variance=np.sum(((val1-ans2_1)**2)*x_rnd)
+            std=sqrt(variance)
+            ans2_2=round(std,2)
 
         elif (c1==1):
             data1_1=x_rnd[0]
@@ -71,6 +91,10 @@ class Generator(BaseGenerator):
             data2_5=x_rnd_up[4]
 
             ans1='First distribution'
+            ans2_1= round(np.sum(x_rnd*val1),2)
+            variance=np.sum(((val1-ans2_1)**2)*x_rnd)
+            std=sqrt(variance)
+            ans2_2=round(std,2)
 
         elif (c1==2):
             data2_1=x_rnd[0]
@@ -92,6 +116,10 @@ class Generator(BaseGenerator):
             data3_5=x_rnd_up[4]
 
             ans1='Second distribution'
+            ans2_1= round(np.sum(x_rnd*val2),2)
+            variance=np.sum(((val2-ans2_1)**2)*x_rnd)
+            std=sqrt(variance)
+            ans2_2=round(std,2)
 
         elif  (c1==3):
             data2_1=x_rnd[0]
@@ -112,8 +140,11 @@ class Generator(BaseGenerator):
             data1_4=x_rnd_up[3]
             data1_5=x_rnd_up[4]
 
-            ans1='Third distribution'
-
+            ans1='Second distribution'
+            ans2_1= round(np.sum(x_rnd*val3),2)
+            variance=np.sum(((val3-ans2_1)**2)*x_rnd)
+            std=sqrt(variance)
+            ans2_2=round(std,2)
 
 
         elif (c1==4):
@@ -135,8 +166,11 @@ class Generator(BaseGenerator):
             data2_4=x_rnd_up[3]
             data2_5=x_rnd_up[4]
 
-            ans1='Second distribution'
-
+            ans1='Third distribution'
+            ans2_1= round(np.sum(x_rnd*val2),2)
+            variance=np.sum(((val2-ans2_1)**2)*x_rnd)
+            std=sqrt(variance)
+            ans2_2=round(std,2)
 
         else:
             data3_1=x_rnd[0]
@@ -159,11 +193,12 @@ class Generator(BaseGenerator):
 
 
             ans1='Third distribution'
+            ans2_1= round(np.sum(x_rnd*val3),2)
+            variance=np.sum(((val3-ans2_1)**2)*x_rnd)
+            std=sqrt(variance)
+            ans2_2=round(std,2)
         k=0
-        ans2_1= round(np.sum(x_rnd*val),2)
-        variance=np.sum(((val-ans2_1)**2)*x_rnd)
-        std=sqrt(variance)
-        ans2_2=round(std,2)
+        
         ch=randint(0,4)
         n=randint(10,100)
         percent=randint(1,100)
@@ -217,6 +252,16 @@ class Generator(BaseGenerator):
             "x3":x3,
             "x4":x4,
             "x5":x5,
+            "x6":x6,
+            "x7":x7,
+            "x8":x8,
+            "x9":x9,
+            "x10":x10,
+            "x11":x11,
+            "x12":x12,
+            "x13":x13,
+            "x14":x14,
+            "x15":x15,
             "answer_2a":ans2_1,
             "answer_2b":ans2_2,
             "scenario":scn,
