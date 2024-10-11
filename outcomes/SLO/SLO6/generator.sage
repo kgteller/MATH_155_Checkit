@@ -211,23 +211,25 @@ class Generator(BaseGenerator):
             pcent=percent/100
 
         statement=choice(["at most","at least","exactly"])
-        if statement=="exactly":
-            c4=randint(0,n)
+        mu=n*pcent
+        mu_rnd=round(n*pcent,0)
+        sigma=sqrt(mu*(1-pcent))
+        sigma_rnd=round(sigma,0)
+        c4=randint(mu_rnd-2*sigma_rnd,mu_rnd+2*sigma_rnd)
+        if statement=="exactly": 
             prob=stats.binom.pmf(c4,n,pcent)
         elif statement== "at least":
-            c4=randint(1,n-1)
             prob=sum(stats.binom.pmf(range(c4,n+1),n,pcent))
         else:
-            c4=randint(1,n-1)
             prob=sum(stats.binom.pmf(range(0,c4+1),n,pcent))
 
        
-        scenario=[ [ "a coin is flipped {} times. Let X be the number of heads observed. Find the probability of geting {} {} head(s).".format(n,statement,c4)],[ "in a factory, a batch of {} products is inspected. Each product has a {}% chance of being defective. Let X be the number of defective products. Find the probability of geting {} {} defective product(s).".format(n,percent,statement,c4)],[ "A survey is conducted where {} people are asked if they prefer a certain brand over another. Each response has a {}% chance of getting a yes response.Let X be the number of yes responses. Find the probability of geting {} {} yes respons(es).".format(n,percent,statement,c4)],["A multiple-choice exam consists of {} questions, each with {} possible answers (only one of which is correct). Let X be the number of correct answers from a student who guesses on each question. Find the probability of the student geting {} {} questions(s) correct.".format(n,c5,statement,c4)],[ "An email filter is designed to detect spam with a {}% success rate. Out of {} emails, let X be the number of emails identified correctly as spam. Find the probability of geting {} {} email(s) corectly idnetified as spam.".format(percent,n,statement,c4)]]  
+        scenario=[ [ "a coin is flipped {} times. Let X be the number of heads observed. Find the probability of getting {} {} head(s).".format(n,statement,c4)],[ "in a factory, a batch of {} products is inspected. Each product has a {}\% chance of being defective. Let X be the number of defective products. Find the probability of getting {} {} defective product(s).".format(n,percent,statement,c4)],[ "A survey is conducted where {} people are asked if they prefer a certain brand over another. Each response has a {}\% chance of getting a yes response. Let X be the number of yes responses. Find the probability of getting {} {} yes response(s).".format(n,percent,statement,c4)],["A multiple-choice exam consists of {} questions, each with {} possible answers (only one of which is correct). Let X be the number of correct answers from a student who guesses on each question. Find the probability of the student getting {} {} questions(s) correct.".format(n,c5,statement,c4)],[ "An email filter is designed to detect spam with a {}% success rate. Out of {} emails, let X be the number of emails identified correctly as spam. Find the probability of getting {} {} email(s) correctly identified as spam.".format(percent,n,statement,c4)]] 
         scn=scenario[ch][0]
         #scenario=[[ "a coin is flipped {} times. Let X be the number of heads observed. Find the probability of geting {} {} head(s).".format(n,statement,c4), "in a factory, a batch of {} products is inspected. Each product has a {}% chance of being defective. Let X be the number of defective products. Find the probability of geting {} {} defective product(s).".format(n,percent,statement,c4), "A survey is conducted where {} people are asked if they prefer a certain brand over another. Each response has a {}% chance of getting a yes response.Let X be the number of yes responses. Find the probability of geting {} {} yes respons(es).".format(n,percent,statement,c4),"A multiple-choice exam consists of {} questions, each with {} possible answers (only one of which is correct). Let X be the number of correct answers from a student who guesses on each question. Find the probability of the student geting {} {} questions(s) correct.".format(n,c5,statement,c4), "An email filter is designed to detect spam with a {}% success rate. Out of {} emails, let X be the number of emails identified correctly as spam. Find the probability of geting {} {} email(s) corectly idnetified as spam.".format(percent,n,statement,c4)]]  
         ans3=prob
-        ans4_1=round(n*percent/100,2)
-        ans4_2=round(sqrt(ans4_1*(1-percent/100)),2)
+        ans4_1=round(mu,2)
+        ans4_2=round(sigma,2)
     
 
         return {
