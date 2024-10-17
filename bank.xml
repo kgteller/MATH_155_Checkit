@@ -96,6 +96,24 @@
             <path>outcomes/SLO/SLO7</path>
             <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
         </outcome>
+        <outcome>
+            <title>Normal Distributions</title>
+            <slug>SLO7-1</slug>
+            <path>outcomes/SLO/SLO7_1</path>
+            <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
+        </outcome>
+        <outcome>
+            <title>Normal Distributions</title>
+            <slug>SLO7-2</slug>
+            <path>outcomes/SLO/SLO7_2</path>
+            <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
+        </outcome>
+        <outcome>
+            <title>Normal Distributions</title>
+            <slug>SLO7-3</slug>
+            <path>outcomes/SLO/SLO7_3</path>
+            <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
+        </outcome>
 <!--        
         <outcome>
             <title>Statistical Studies</title>
