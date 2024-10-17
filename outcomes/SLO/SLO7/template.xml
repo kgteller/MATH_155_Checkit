@@ -2,7 +2,7 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
     <p>Directions:</p>
-    <p>Show all your calculations, including anything you plug into a calculator. If you use an app, please include a screenshot and explain how the screenshot answers the question. Answers should be given in complete sentences and in the context of the situation.</p>
+    <p>Show all your calculations, including anything you plug into a calculator. Answers should be given in complete sentences and in the context of the situation.</p>
     <p><em>Scenario:</em></p>
     <p>
         A study compared the birth weights of non-Hispanic white babies born in the US in 1994 to birth weights of Mexican-American babies in the US in 1994. Both sets of birth weights were found to be normally distributed. The mean birth weight of non-Hispanic white babies was 3,393 grams with a standard deviation of 562 grams. The mean birth weight of Mexican-American babies was 3,343 grams with a standard deviation of 598 grams. Please use this information to answer the questions below.
@@ -12,15 +12,17 @@
         <content><p>What is the z-score for a baby whose birth weight is <m>{{dep_1}}</m> grams and is {{ind_1}}?</p></content>
         <outtro><p><m>{{answer_1}}</m> </p></outtro></knowl>
     <knowl>
-        <content><p>If you randomly choose a baby who is {{ind_2}}, what is the probability that they have a birth weight of <m>{{dep_2}}</m> grams or less?</p></content>
-        <outtro><p><m>{{answer_2}}</m></p></outtro>
+       <!-- <content><p>If you randomly choose a baby who is {{ind_2}}, what is the probability that they have a birth weight of <m>{{dep_2}}</m> grams or less?</p></content>-->
+            <content><p>{{statement2}}</p></content>
+            <outtro><p><m>{{answer_2}}</m></p></outtro>
     </knowl>
     <knowl>
-        <content><p>If you randomly choose a baby who is {{ind_3}}, what is the {{min_max}} birth weight they can have and still be {{dir_1}} than <m>{{percent_1}}</m>% of all {{ind_3}} babies born in 1994.</p></content>
+        <!--<content><p>If you randomly choose a baby who is {{ind_3}}, what is the {{min_max}} birth weight they can have and still be {{dir_1}} than <m>{{percent_1}}</m>\% of all {{ind_3}} babies born in 1994.</p></content> -->
+        <content><p> {{statement3}} </p></content>
         <outtro><p><m>{{answer_3}}</m> grams </p></outtro>
     </knowl>
     <knowl>
-        <content><p>What proportion of {{ind_4}} babies are born weighing between <m>{{dep_3}}</m> grams and <m>{{dep_4}}</m> grams?</p></content>
+        <content><p>Out of a sample of 100 {{ind_4}} babies what porportion of sample mean weights are between <m>{{dep_3}}</m> grams and <m>{{dep_4}}</m> grams?</p></content>
         <outtro><p><m>{{answer_4}}</m></p></outtro>
     </knowl>
     <knowl>
