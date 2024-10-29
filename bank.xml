@@ -114,6 +114,12 @@
             <path>outcomes/SLO/SLO7_3</path>
             <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
         </outcome>
+        <outcome>
+            <title>Confidence Intervals</title>
+            <slug>SLO8</slug>
+            <path>outcomes/SLO/SLO8</path>
+            <description>I can compute and interpret the confidence interval about the mean for one- and two-samples</description>
+        </outcome>
 <!--        
         <outcome>
             <title>Statistical Studies</title>
