@@ -5,14 +5,14 @@
           A critical component to our understanding of statistics is being able to read and understand graphs. It is also critical that we be able to look at graphs and identify any flaws they might have. Be sure to answer ALL the questions.
       </p>
         <p>
-            <image source="assets/SLO3-A/215.png" description="Bar graph showing percentage of ranomware attacks by industry type."/>
+            <image source="/assets/SLO3-A/generated/215.png" description="Bar graph showing percentage of ranomware attacks by industry type."/>
         </p>
         <p>
             Figure1: Share of ransomware attacks by industry type.
         </p>
 
         <p>Below is a graph showing the distribution of Aggravated Assault rates by state for 2008. (The data includes all 50 states plus the District of Columbia).  </p>
-        <p><image source="assets/S3-B/215.png" description="Histogram showing the distribution of Aggravated Assault rates by state"/></p>
+        <p><image source="/assets/SLO3-B/215.png" description="Histogram showing the distribution of Aggravated Assault rates by state"/></p>
         <p>Figure 2: Number of Aggravated Assaults per 100,000 people in 2008</p>
       <p>
           Use the above graphs to answer the questions. Make sure to show all of your work and put all answers into context of the data.
