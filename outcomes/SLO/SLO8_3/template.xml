@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+    <p>Directions:</p>
+    <p>Show all your calculations, including anything you plug into a calculator. Answers should be given in complete sentences and in the context of the situation.</p>
+    <p><em>Scenario:</em></p>
+    <p>
+        Some of the primary measures of our economy are the stock markets. There are two very large stock markets that are used as the benchmarks for the overall market, the New York Stock Exchange (NYSE) and the National Association of Securities Dealers Automated Quotations (NASDAQ). Often, investors purchase mutual funds and then compare those mutual funds to either the NYSE or the NASDAQ, depending on the type of mutual fund.
+       </p>
+    <p>
+        The daily price fluctuations of the NYSE and the NASDAQ tend to be normally distributed with the mean being the average price over a specific period time and the standard deviation measuring the fluctuations from the mean over that same period time.
+        </p>
+     <p>
+        In a certain year, a sample of {{n1}} days from the NYSE had a mean daily price change of {{mean1}} and a standard deviation of {{STD1}} (notice that stock returns are negative when the price goes down and positive when the price goes up) and a sample of {{n2}} days from the NASDAQ had a mean daily price change of {{mean2}} with a standard deviation of {{STD2}}. Please use this information to answer the questions below.
+        </p>
+        <p> We want to construct a {{CL}} \% Confidence interval about the mean daily price change for the {{ind_1}}. {{zort}} </p>
+
+     </intro>
+    <knowl>
+        <content><p> What is the critical value for the first confidence interval?  </p></content>
+        <outtro><p><m>{{CV}}</m> </p></outtro>
+    </knowl>
+    <knowl>
+            <content><p>What is the standard error for the first confidence interval</p></content>
+            <outtro><p><m>{{SE}}</m></p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Construct and interpret the confidence interval about the mean dialy percent change for the {{ind_1}} using either the above information or Minitab </p></content>
+        <outtro><p><m>({{CI_L}},{{CI_U}})</m>  </p></outtro>
+    </knowl>
+     <knowl>
+        <content><p>If the population standard deviation for {{ind_2}} is known to be {{Pop_SD}} and we want to construct a {{CL3}} \% confidence interval with a margin of error of {{ME}}. What is the minimum sample size needed?</p></content>
+        <outtro><p><m>{{ans_4}}</m> {{ind_2}} </p></outtro>
+    </knowl>
+
+    
+    <knowl>
+        <content><p>Construct and interpret a {{CL2}} \% confidence interval for the difference between the mean daily price changes for the {{ind_1}} and the {{ind_2}}.</p> </content>
+        <outtro><p><m>({{LB}},{{UB}})</m>  </p></outtro>
+
+    </knowl>
+
+
+        
+
+</knowl>
+
+
+
+
