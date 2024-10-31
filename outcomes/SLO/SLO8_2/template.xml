@@ -10,9 +10,15 @@
     <p>
         In 2019, a sample of {{n1}} MCAT exams had a mean score of {{mean1}} and a standard deviation of {{STD1}} and a smaple of {{n2}} LSAT exams had a mean of {{mean2}} with a standard deviation of {{STD2}}. Please use this information to answer the questions below.
         </p>
-        <p> We want to construct a {{CL}} \% Confidence interval about the mean score on the {{ind_1}}. {{zort}} </p>
+        
 
      </intro>
+    <knowl>
+
+    <intro>
+        <p> We want to construct a {{CL}} \% Confidence interval about the mean score on the {{ind_1}}. {{zort}} </p>
+    </intro>
+    
     <knowl>
         <content><p> What is the critical value for the first confidence interval?  </p></content>
         <outtro><p><m>{{CV}}</m> </p></outtro>
@@ -24,6 +30,8 @@
     <knowl>
         <content><p>Construct and interpret the confidence interval about the mean scores for the {{ind_1}} using either the above information or Minitab </p></content>
         <outtro><p><m>({{CI_L}},{{CI_U}})</m>  </p></outtro>
+    </knowl>
+
     </knowl>
      <knowl>
         <content><p>If the population standard deviation for {{ind_2}} is known to be {{Pop_SD}} and we want to construct a {{CL3}} \% confidence interval with a margin of error of {{ME}}. What is the minimum sample size needed?</p></content>

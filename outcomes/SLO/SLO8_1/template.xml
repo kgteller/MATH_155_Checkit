@@ -10,9 +10,14 @@
     <p>
         For example, people aged 25, a sample of {{n1}} White Women has a mean bone density of {{mean1}} with a standard deviation of {{STD1}} and a sample of {{n2}} Black Women has a mean bone density of {{mean2}} with a standard deviation of {{STD2}}.
         </p>
-        <p> We want to construct a {{CL}} \% Confidence interval about the mean bone density for {{ind_1}}. {{zort}} </p>
+        
 
      </intro>
+
+    <knowl>
+    <intro>
+        <p> We want to construct a {{CL}} \% Confidence interval about the mean bone density for {{ind_1}}. {{zort}} </p>
+    </intro>
     <knowl>
         <content><p> What is the critical value for the first confidence interval?  </p></content>
         <outtro><p><m>{{CV}}</m> </p></outtro>
@@ -25,6 +30,9 @@
         <content><p>Construct and interpret the confidence interval about the mean bone density for {{ind_1}} using either the above information or Minitab </p></content>
         <outtro><p><m>({{CI_L}},{{CI_U}})</m>  </p></outtro>
     </knowl>
+
+    </knowl>
+
      <knowl>
         <content><p>If the population standard deviation for {{ind_2}} is known to be {{Pop_SD}} and we want to construct a {{CL3}} \% confidence interval with a margin of error of {{ME}}. What is the minimum sample size needed?</p></content>
         

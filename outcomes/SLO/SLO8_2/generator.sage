@@ -52,7 +52,7 @@ class Generator(BaseGenerator):
             dep_1=round((zscore_1*SD_2+mean_2),0)
             answer_1=round(((dep_1-mean_2)/SD_2),2)
             zort=choice(["","Also, the population standard deviation for the {} is known to be {}.".format(ind_1,SD_2)])
-            Pop_SD=SD_1
+            Pop_SD=round(SD_1,1)
             if zort=="":
                 CV=T2.cum_distribution_function_inv(1-alpha2/2)
                 SE=STD_2/sqrt(n2)
