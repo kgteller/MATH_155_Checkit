@@ -28,15 +28,15 @@
         <outtro><p>{{study_type}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>What is the sampling method used in the above scenario?</p></content>
+        <content><p>What is the sampling method used in Scenario B?</p></content>
         <outtro><p>The sampling method was a convenience sample, explanation needed</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Looking at the sampling method, would the sample be a valid sample or is it likely to be a biased sample? Explain why.</p></content>
-        <outtro><p>Both the sampling frame and the sampling method are not valid due to bias, justification needed</p></outtro>
+        <content><p>Looking at the group sampled and the sampling method, would the sample be a valid sample or is it likely to be a biased sample? Explain why.</p></content>
+        <outtro><p>Both the group sampled and the sampling method are not valid due to bias, justification needed</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Identify potential sources of bias other than the sampling method and sampling frame from the information given and explain why they lead to bias (Only use the information given, do not speculate about information not provided).</p></content>
+        <content><p>Identify potential sources of bias other than the sampling method and group sampled from the information given and explain why they lead to bias (Only use the information given, do not speculate about information not provided).</p></content>
         <outtro><p>The wording of the statements. Explanations needed.</p></outtro></knowl>
     <knowl>
         <content><p>If NAIS did the survey again, would you expect that exactly <m>{{result_1}}</m><m>\%</m> of respondents would {{agree_1}} that it is religious discrimination of the worst kind to prevent parents from using public funds at the school of their choice? Why or why not?</p></content>

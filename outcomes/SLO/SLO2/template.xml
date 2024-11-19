@@ -30,15 +30,15 @@
         <outtro><p>{{study_type}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>What is the sampling method used in the above scenario?</p></content>
+        <content><p>What is the sampling method used in Scenario B?</p></content>
         <outtro><p>The sampling method was a simple random sample or SRS</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Looking at the sampling method, would the sample be a valid sample or is it likely to be a biased sample? Explain why.</p></content>
-        <outtro><p>The sample frame is likely to produce a biased sample</p></outtro>
+        <content><p>Looking at the group sampled and the sampling method, would the sample be a valid sample or is it likely to be a biased sample? Explain why.</p></content>
+        <outtro><p>The group sampled is likely to produce a biased sample</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Identify potential sources of bias other than the sampling method from the information given and explain why they lead to bias (Only use the information given, do not speculate about information not provided).</p></content>
+        <content><p>Identify potential sources of bias other than the sampling method and group sampled from the information given and explain why they lead to bias (Only use the information given, do not speculate about information not provided).</p></content>
         <outtro><p>The wording of the statements (it is ok if a student says only one language although all US Officers must know English).</p></outtro></knowl>
     <knowl>
         <content><p>If the US Army did the survey again, would you expect that exactly <m>{{result_1}}</m><m>\%</m> of respondents would {{agree_1}} that Russia needs to be punished for its evil actions taken to completely destroy the lives of Ukrainian citizens? Why or why not?</p></content>
