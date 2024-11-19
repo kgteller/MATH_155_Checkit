@@ -21,7 +21,7 @@
         <outtro><p>Does a U.S. adult {{outcome}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>What type of variable is the variable in question 3?</p></content>
+        <content><p>What type of variable is the variable in the previous question?</p></content>
         <outtro><p>Categorical</p></outtro>
     </knowl>
     <knowl>
