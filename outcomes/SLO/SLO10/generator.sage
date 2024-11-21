@@ -6,14 +6,14 @@ class Generator(BaseGenerator):
 
 
             scenario=randint(0,9)
-
+            n=randint(8,15)
             if scenario==0:
                 prose="A study is conducted comparing the age of children to their Forced Exhalation Volume (FEV) (in liters), in order to see the impact on age on lung function.  Children of different ages have their FEV tested by physicians."
                 explanatory="Age"
                 response="FEV"
                 Eunit="years"
                 Runit="liters"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(0.24, 0.28)
                 b=uniform(0.011, 0.012)
                 Xlist=[]
@@ -35,7 +35,7 @@ class Generator(BaseGenerator):
                 response="Wingspan"
                 Eunit="grams"
                 Runit="mm"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(0.4, 0.5)
                 b=uniform(1, 1.5)
                 Xlist=[]
@@ -56,7 +56,7 @@ class Generator(BaseGenerator):
                 response="Revenue"
                 Eunit="k dollars/month"
                 Runit="k dollars/month"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(50, 80)
                 b=uniform(10, 15)
                 Xlist=[]
@@ -78,7 +78,7 @@ class Generator(BaseGenerator):
                 response="Windchill"
                 Eunit="mph"
                 Runit="F"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(-1.3, -1.2)
                 b=uniform(15, 20)
                 Xlist=[]
@@ -99,7 +99,7 @@ class Generator(BaseGenerator):
                 response="Sleep"
                 Eunit="cups"
                 Runit="hours"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(-0.6, -0.4)
                 b=uniform(7, 8)
                 Xlist=[]
@@ -120,7 +120,7 @@ class Generator(BaseGenerator):
                 response="Glucose Level"
                 Eunit="years"
                 Runit="mg/dL"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(0.35, 0.4)
                 b=uniform(63, 67)
                 Xlist=[]
@@ -142,7 +142,7 @@ class Generator(BaseGenerator):
                 response="Electric Bill"
                 Eunit="kilowatt hours"
                 Runit="dollars"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(0.14, 0.15)
                 b=uniform(9.6, 10)
                 Xlist=[]
@@ -163,7 +163,7 @@ class Generator(BaseGenerator):
                 response="Maintenance Cost"
                 Eunit="thousand miles"
                 Runit="dollars"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(25, 35)
                 b=uniform(0.045, 0.065)
                 Xlist=[]
@@ -185,7 +185,7 @@ class Generator(BaseGenerator):
                 response="HDL Cholesterol"
                 Eunit="kg/(m squared)"
                 Runit="mg/DL"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(-2.4, -2.3)
                 b=uniform(110, 112)
                 Xlist=[]
@@ -206,7 +206,7 @@ class Generator(BaseGenerator):
                 response="Coffee Sold"
                 Eunit="F"
                 Runit="Cups"
-                n=randint(15,25)
+                #n=randint(15,25)
                 m=uniform(-.4, -.35)
                 b=uniform(40, 50)
                 Xlist=[]
