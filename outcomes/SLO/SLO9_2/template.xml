@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+          {{prose}} <m>{{n}}</m> {{sample1}} <m>\bar{x}_1={{xbar1}}</m> {{units}}, with sample standard deviation <m>s_1={{s1}}</m> {{units}}.  Then out of <m>{{n}}</m> {{sample2}} <m>\bar{x}_2={{xbar2}}</m> {{units}}, with sample standard deviation <m>s_2={{s2}}</m> {{units}}.
+      </p>
+        
+        
+    </intro>
+    
+        
+    
+    <knowl>
+        <intro>
+            <p>
+                Test the hypothesis that {{population}}, <m>(\mu_1-\mu_2)</m>, {{ineq}} <m>  {{mu0}}</m> {{units}} at a <m>\alpha={{alpha}}</m> signifigance level.
+            </p>
+        </intro>
+        <knowl>
+            <content>
+                <p>
+                    State the null hypothesis.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    The null hypothesis is <m>H_0: \mu_1-\mu_2={{mu0}}</m>.
+                </p>
+            </outtro>
+        </knowl>
+
+        <knowl>
+            <content>
+                <p>
+                    State the alternative hypothesis.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    The alternative hypothesis is <m>H_A: \mu_1-\mu_2\{{ineqsymb}}{{mu0}}</m>.
+                </p>
+            </outtro>
+        </knowl>
+
+        <knowl>
+            <content>
+                <p>
+                    What is the <m>p</m>-value?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    The sampling distribution has mean <m>{{mu0}}</m> and standard error <m>SE={{SE}}</m>.
+                </p>
+                <p>
+                    The observed difference of sample means is <m>\bar{x_1}-\bar{x_2}={{diff}}</m> which has <m>t</m>-score <m>t={{tscore}}</m>.
+                </p>
+                <p>
+                    The <m>p</m>-value is <m>{{pvalue}}</m>.
+                </p>
+            </outtro>
+        </knowl>
+<!-- 
+        <knowl>
+            <content>
+                <p>
+                    Using complete sentences, state the meaning of the <m>p</m>-value in the context of this problem.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    Suppose the null hypothesis were true, i.e. {{population}} was <m>{{mu0}}</m> {{units}}.  Then the probability that we sample <m>{{n}}</m> {{subjects}} of each type and achieve a difference of sample means of   <m>{{diff}}</m> {{units}} or  {{ineq2}}  is <m>{{pvalue}}</m>.
+                </p>
+            </outtro>
+
+        </knowl>
+-->
+        <knowl>
+            <content>
+                <p>
+                    What do we say about <m>H_0</m>?  Why?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    {{claim}} since the <m>p</m>-value is <m>{{pvalue}}</m>.
+                </p>
+            </outtro>
+        
+        </knowl>    
+    
+    
+        <knowl>
+            <content>
+                <p>
+                    What do we coclude? 
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    {{conclusion}} {{population}} {{ineq}} <m>  {{mu0}}</m> {{units}}.
+                </p>
+            </outtro>
+        
+        </knowl>  
+    
+        
+    </knowl>
+ <!--    
+    <knowl>
+        <content>
+            <p>
+                Find a <m>{{CL}}</m>% confidence interval for the {{population}}.  Using complete sentences, explain what the confidence interval means in the context of this problem.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                For a <m>{{CL}}\%</m> confidence interval,  <m>t^*={{t}}</m>.
+            </p>
+            <p>
+                The {{population}}  has a <m>{{CL}}\%</m> chance of of falling in <m>[{{LB}}, {{UB}}]</m>  {{units}}.
+            </p>
+        </outtro>
+    </knowl>
+  -->  
+        
+
+            
+    
+        
+
+        
+
+        
+    
+</knowl>

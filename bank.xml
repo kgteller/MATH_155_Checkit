@@ -138,6 +138,25 @@
             <path>outcomes/SLO/SLO8_3</path>
             <description>I can compute and interpret the confidence interval about the mean for one- and two-samples</description>
         </outcome>
+          <outcome>
+            <title>Hypothesis Tests</title>
+            <slug>SLO9</slug>
+            <path>outcomes/SLO/SLO9</path>
+            <description>I can perform the correct hypothesis test, interpret the results, and state the conclusion</description>
+        </outcome>
+          <outcome>
+            <title>Hypothesis Tests</title>
+            <slug>SLO9-1</slug>
+            <path>outcomes/SLO/SLO9_1</path>
+            <description>I can perform the correct hypothesis test, interpret the results, and state the conclusion</description>
+        </outcome>
+          <outcome>
+            <title>Hypothesis Tests</title>
+            <slug>SLO9-2</slug>
+            <path>outcomes/SLO/SLO9_2</path>
+            <description>I can perform the correct hypothesis test, interpret the results, and state the conclusion</description>
+        </outcome>
+
 <!--        
         <outcome>
             <title>Statistical Studies</title>
