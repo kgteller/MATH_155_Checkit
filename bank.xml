@@ -156,6 +156,12 @@
             <path>outcomes/SLO/SLO9_2</path>
             <description>I can perform the correct hypothesis test, interpret the results, and state the conclusion</description>
         </outcome>
+         <outcome>
+            <title>Linear Regression</title>
+            <slug>SLO10</slug>
+            <path>outcomes/SLO/SLO10</path>
+            <description>I understand and can interpret the correlation between two quantitative variables</description>
+        </outcome>
 
 <!--        
         <outcome>
