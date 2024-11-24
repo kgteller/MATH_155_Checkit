@@ -21,17 +21,12 @@
         </p>
     </intro>
     <knowl>
-        <content><p>What is the mean and median of the percent change in energy for {{country_1}} ?</p></content>
-        <outtro><p>mean={{ans1}},median={{ans1a}}</p></outtro>
+        <content><p>What is the mean of the percent change in energy for {{country_1}} ?</p></content>
+        <outtro><p>mean={{ans1}}</p></outtro>
     </knowl>
-    <outtro></outtro>
-    <knowl>
-        <content><p>What is the variance and standard deviation of the annual percentage change  in {{country_1}} ?</p></content>
-        <outtro><p>variance={{ans2}}, std={{ans2a}}</p></outtro>
-    </knowl>
-    <knowl>
-        <content><p> looking at the data from {{country_1}} if {{data_info}}, what interval contains {{percent}} <m>\%</m> of the data?</p></content>
-        <outtro><p> between {{lower_bound}} and {{upper_bound}} </p></outtro>
+     <knowl>
+        <content><p>What is the median of the percent change in energy for {{country_1}} ?</p></content>
+        <outtro><p>median={{ans1a}}</p></outtro>
     </knowl>
     <knowl>
         <content><p>Describe the shape of the distribution of annual percentage change in energy consumption in {{country_2}} (hint: find the mean and median).</p></content>

@@ -54,10 +54,17 @@
         </outcome>
 
         <outcome>
-            <title>Descriptive Statistics</title>
+            <title>Measures of Center</title>
             <slug>SLO4</slug>
             <path>outcomes/SLO/SLO4</path>
-            <description>I can compute measures of center and spread for a data set.</description>
+            <description>I can compute measures of center for a data set.</description>
+        </outcome>
+
+        <outcome>
+            <title>Measures of Spread</title>
+            <slug>SLO4A</slug>
+            <path>outcomes/SLO/SLO4A</path>
+            <description>I can compute measures of spread for a data set.</description>
         </outcome>
 
         <outcome>
