@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
-        <p>Below you will find two tables of numerical summaries of different datasets. Use these tables to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
+        <p>Below you will find two datasets. Use these datasets to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
         <p>Poverty, disease, hunger, climate change, war, existential risks, and inequality: The world faces many great and terrifying problems. It is these large problems that our work at Our World in Data focuses on. Our World in Data is a non-profit that has as its mission to make the knowledge on the big problems accessible and understandable. The information below is the annual percentage change in energy consumption for two countries. The numerical data for the last few years is in the tables below.</p>
        
         <p>Country A</p>
