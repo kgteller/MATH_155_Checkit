@@ -21,12 +21,21 @@
         </p>
     </intro>
     <knowl>
-        <content><p>What is the variance of the percent change in energy for {{country_1}} ?</p></content>
+        <content><p>What is the  sample variance of the percent change in energy for {{country_1}} ?</p></content>
+        <outtro><p>variance={{ans1}},</p></outtro>
+    </knowl>
+    <outtro></outtro>
+    <knowl>
+        <content><p>What is the sample standard deviation of the annual percentage change  in {{country_1}} ?</p></content>
+        <outtro><p> std={{ans1a}}</p></outtro>
+    </knowl>
+     <knowl>
+        <content><p>What is the population variance of the percent change in energy for {{country_2}} ?</p></content>
         <outtro><p>variance={{ans2}},</p></outtro>
     </knowl>
     <outtro></outtro>
     <knowl>
-        <content><p>What is the standard deviation of the annual percentage change  in {{country_1}} ?</p></content>
+        <content><p>What is the population standard deviation of the annual percentage change  in {{country_2}} ?</p></content>
         <outtro><p> std={{ans2a}}</p></outtro>
     </knowl>
     <knowl>

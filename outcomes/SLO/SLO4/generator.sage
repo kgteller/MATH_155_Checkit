@@ -2,10 +2,34 @@ import numpy as np
 class Generator(BaseGenerator):
     def data(self):
         # country a skewed
-        a_1=2
-        b_1=2
-        dist_1=RealDistribution('lognormal', [a_1,b_1])
-        my_data=[round(dist_1.get_random_element(),1) for _ in range(10)]
+        n=8
+        alpha=20
+        mu=uniform( 20, 100)
+        sigma=uniform(2,7)
+
+        T = RealDistribution('gaussian', sigma)
+
+        my_data=[0 for i in range(n+2)]
+        datalist=[]
+
+        for i in range(n):
+            my_data[i]=round((alpha*abs(round(mu+T.get_random_element(),1))+round(mu+T.get_random_element(),1))/round((sqrt(1+alpha^2)),1),1)
+            
+        for i in range(2):
+            my_data[i+n]=round(mu+T.get_random_element()+sigma*7*choice([-1,1]),1)
+
+        for i in range(n+2):
+            entry={
+                'x':my_data[i],
+            }
+            datalist.append(entry)
+    
+
+
+        #a_1=2
+        #b_1=2
+        #dist_1=RealDistribution('lognormal', [a_1,b_1])
+        #my_data=[round(dist_1.get_random_element(),1) for _ in range(10)]
         data_1=my_data[0]
         data_2=my_data[1]
         data_3=my_data[2]
@@ -49,9 +73,9 @@ class Generator(BaseGenerator):
         country_2="Country A"
         skewa=np.mean(my_data)-np.median(my_data)
         skewb=np.mean(my_data_2)-np.median(my_data_2)
-        if skewa>10:
+        if skewa>5:
             skew= skew="Skewed Right"
-        elif skewa<-10:
+        elif skewa<-5:
              skew="Skewed Left"
         else:
             skew="Roughly Symmetric"
@@ -67,9 +91,9 @@ class Generator(BaseGenerator):
             ans1_a=np.median(my_data)
             ans2=np.var(my_data)
             ans2_a=np.std(my_data)
-            if skewb>10:
+            if skewb>5:
                 skew="Skewed Right"
-            elif skewb<-10:
+            elif skewb<-5:
                 skew="Skewed Left"
             else:
                 skew="Roughly Symmetric"

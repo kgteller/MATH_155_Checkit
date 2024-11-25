@@ -42,10 +42,12 @@ class Generator(BaseGenerator):
         #dir_1=score_a[OC_1][1]
         #percent_1=score_a[OC_1][2]
         #answer_1=score_a[OC_1][3]
-        ans1=np.mean(my_data_2)
-        ans1_a=np.median(my_data_2)
-        ans2=np.var(my_data_2)
-        ans2_a=np.std(my_data_2)
+        
+        ans1_a=np.std(my_data_2,ddof=1)
+        ans1=ans1_a^2
+        ans2_a=np.std(my_data)
+        ans2=ans2_a^2
+        
         country_2="Country A"
         skewa=np.mean(my_data)-np.median(my_data)
         skewb=np.mean(my_data_2)-np.median(my_data_2)
@@ -63,10 +65,10 @@ class Generator(BaseGenerator):
         emp1_a=ans1-ans2_a
 
         if country_1=="Country A":
-            ans1=np.mean(my_data)
-            ans1_a=np.median(my_data)
-            ans2=np.var(my_data)
-            ans2_a=np.std(my_data)
+            ans1_a=np.std(my_data,ddof=1)
+            ans1=ans1_a^2
+            ans2_a=np.std(my_data_2)
+            ans2=ans2_a^2
             if skewb>10:
                 skew="Skewed Right"
             elif skewb<-10:
