@@ -4,7 +4,7 @@ class Generator(BaseGenerator):
         # country a skewed
         a_1=2
         b_1=2
-        dist_1=RealDistribution('lognormal', [a_1, b_1])
+        dist_1=RealDistribution('lognormal', [a_1,b_1])
         my_data=[round(dist_1.get_random_element(),1) for _ in range(10)]
         data_1=my_data[0]
         data_2=my_data[1]
@@ -20,7 +20,7 @@ class Generator(BaseGenerator):
         # country b symmetric
         a_2=4
         b_2=.1
-        dist_2=RealDistribution('lognormal', [a_2, b_2])
+        dist_2=RealDistribution('lognormal', [a_2,b_2])
         my_data_2=[round(dist_2.get_random_element(),1) for _ in range(10)]
         data_1_2=my_data_2[0]
         data_2_2=my_data_2[1]
