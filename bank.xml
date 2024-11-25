@@ -97,6 +97,12 @@
             <path>outcomes/SLO/SLO6</path>
             <description>I Understand and can utilize discrete probability distributions, including the binomial distribution</description>
         </outcome>
+         <outcome>
+            <title>Binomial Distributions</title>
+            <slug>SLO6A</slug>
+            <path>outcomes/SLO/SLO6A</path>
+            <description>I Understand and can utilize the binomial distribution to find proabilities, mean, and standard deviation</description>
+        </outcome>
         <outcome>
             <title>Normal Distributions</title>
             <slug>SLO7</slug>

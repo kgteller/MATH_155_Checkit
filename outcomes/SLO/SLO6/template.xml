@@ -42,16 +42,16 @@
         <outtro><p>{{answer_1}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Find the mean and standard deviation of the correct probability distribution?</p></content>
-        <outtro><p> the mean is {{answer_2a}}, the standard deviation is {{ answer_2b}}.</p></outtro>
+        <content><p>Find the mean of the correct probability distribution?</p></content>
+        <outtro><p> the mean is {{answer_2a}}.</p></outtro>
     </knowl>
     <knowl>
-        <content><p>{{scenario}}(round to five decimal places and use scientific notation if neccesary)</p></content>
-        <outtro><p> the probability is p={{answer_3}}</p></outtro>
+        <content><p>Find the variance of the correct probability distribution?</p></content>
+        <outtro><p>the variance is {{answer_2c}} .</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Find the mean and standard deviation of the random variable X described above. (round to two decimal places)</p></content>
-        <outtro><p> the mean is {{answer_4a}}, the standard deviation is {{ answer_4b}}.</p></outtro>
+        <content><p>Find the standard deviation of the correct probability distribution?</p></content>
+        <outtro><p> the standard deviation is {{ answer_2b}}.</p></outtro>
     </knowl>
 
 </knowl>

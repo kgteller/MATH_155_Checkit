@@ -70,6 +70,7 @@ class Generator(BaseGenerator):
             variance=np.sum(((val1-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
+            ans2_3=round(variance,2)
 
         elif (c1==1):
             data1_1=x_rnd[0]
@@ -95,6 +96,7 @@ class Generator(BaseGenerator):
             variance=np.sum(((val1-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
+            ans2_3=round(variance,2)
 
         elif (c1==2):
             data2_1=x_rnd[0]
@@ -120,6 +122,7 @@ class Generator(BaseGenerator):
             variance=np.sum(((val2-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
+            ans2_3=round(variance,2)
 
         elif  (c1==3):
             data2_1=x_rnd[0]
@@ -145,6 +148,7 @@ class Generator(BaseGenerator):
             variance=np.sum(((val3-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
+            ans2_3=round(variance,2)
 
 
         elif (c1==4):
@@ -171,6 +175,7 @@ class Generator(BaseGenerator):
             variance=np.sum(((val2-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
+            ans2_3=round(variance,2)
 
         else:
             data3_1=x_rnd[0]
@@ -197,6 +202,7 @@ class Generator(BaseGenerator):
             variance=np.sum(((val3-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
+            ans2_3=round(variance,2)
         k=0
         
         ch=randint(0,4)
@@ -270,6 +276,7 @@ class Generator(BaseGenerator):
             "answer_3":ans3,
             "answer_4a":ans4_1,
             "answer_4b":ans4_2,
+            "answer_2c":ans2_3,
 
 
 
