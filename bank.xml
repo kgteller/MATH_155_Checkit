@@ -104,6 +104,12 @@
             <description>I Understand and can utilize the binomial distribution to find proabilities, mean, and standard deviation</description>
         </outcome>
         <outcome>
+            <title>Standard Normal Distributions</title>
+            <slug>SLO7A</slug>
+            <path>outcomes/SLO/SLO7A</path>
+            <description>I can interpret and utilize the standard normal curve for proabailities and Z values</description>
+        </outcome>
+        <outcome>
             <title>Normal Distributions</title>
             <slug>SLO7</slug>
             <path>outcomes/SLO/SLO7</path>
