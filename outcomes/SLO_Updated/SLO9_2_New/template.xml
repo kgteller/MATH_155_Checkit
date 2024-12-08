@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+    <p>Directions:</p>
+    <p>Show all your calculations, including anything you plug into a calculator. Answers should be given in complete sentences and in the context of the situation.</p>
+    <p><em>Scenario:</em></p>
+    <p>
+        One of the things that students who want to go to Medical School or Law School have to do is take a standardized test. The MCAT is required for admission to Medical school, the LSAT is required for admission to law school. These tests are called “standardized” because they are given in the same manner to all test takers and are graded in the same manner. Additionally, the scores designed to be normally distributed.
+       </p>
+    <p>
+        In 2019, the MCAT had a mean of 500.9 and a standard deviation of 10.6 and the LSAT had a mean of 150 with a standard deviation of 10. Please use this information to answer the questions below.
+        </p>
+     </intro>
+    <knowl>
+        <content><p>What is the z-score for a student whose score is <m>{{dep_1}}</m> on the {{ind_1}} test?</p></content>
+        <outtro><p><m>{{answer_1}}</m> </p></outtro></knowl>
+    <knowl>
+        <content><p>{{statement2}}</p></content>
+        <outtro><p><m>{{answer_2}}</m></p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>{{statement3}}</p></content>
+        <outtro><p><m>{{answer_3}}</m> </p></outtro>
+    </knowl>
+    <knowl>
+        <content><p> if you sample 100 students, What proportion of sample means have a score between <m>{{dep_3}}</m> and <m>{{dep_4}}</m> on the {{ind_4}} test?
+</p></content>
+        <outtro><p><m>{{answer_4}}</m></p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>If the school you want to get into only admits students that score in the top {{percent_2}}%, what score would you need to get on the MCAT? What score would you need to get on the LSAT?</p></content>
+        <outtro><p>MCAT score = <m>{{answer_5a}}</m> | LSAT score = <m>{{answer_5b}}</m></p></outtro>
+    </knowl>
+</knowl>

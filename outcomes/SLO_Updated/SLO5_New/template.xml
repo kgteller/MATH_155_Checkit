@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Below you will find two datasets. Use these datasets to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
+        <p>Poverty, disease, hunger, climate change, war, existential risks, and inequality: The world faces many great and terrifying problems. It is these large problems that our work at Our World in Data focuses on. Our World in Data is a non-profit that has as its mission to make the knowledge on the big problems accessible and understandable. The information below is the annual percentage change in energy consumption for two countries. The numerical data for the last few years is in the tables below.</p>
+       
+        <p>Country A</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
+            \hline
+            \ {{d1}} &amp; {{d2}} &amp; {{d3}} &amp; {{d4}} &amp; {{d5}} &amp; {{d6}} &amp; {{d7}} &amp; {{d8}}  &amp; {{d9}} &amp; {{d10}} \\
+            \hline
+            \end{array}</me>
+        </p>
+        
+        <p>Country B</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
+            \hline
+            \ {{d1_2}} &amp; {{d2_2}} &amp; {{d3_2}} &amp; {{d4_2}} &amp; {{d5_2}} &amp; {{d6_2}} &amp; {{d7_2}} &amp; {{d8_2}}  &amp; {{d9_2}} &amp; {{d10_2}} \\
+            \hline
+            \end{array}</me>
+        </p>
+    </intro>
+    <knowl>
+        <content><p>What is the  sample variance of the percent change in energy for {{country_1}} ?</p></content>
+        <outtro><p>variance={{ans1}},</p></outtro>
+    </knowl>
+    <outtro></outtro>
+    <knowl>
+        <content><p>What is the sample standard deviation of the annual percentage change  in {{country_1}} ?</p></content>
+        <outtro><p> std={{ans1a}}</p></outtro>
+    </knowl>
+     <knowl>
+        <content><p>What is the population variance of the percent change in energy for {{country_2}} ?</p></content>
+        <outtro><p>variance={{ans2}},</p></outtro>
+    </knowl>
+    <outtro></outtro>
+    <knowl>
+        <content><p>What is the population standard deviation of the annual percentage change  in {{country_2}} ?</p></content>
+        <outtro><p> std={{ans2a}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p> looking at the data from {{country_1}} if {{data_info}}, what interval contains {{percent}} <m>\%</m> of the data?</p></content>
+        <outtro><p> between {{lower_bound}} and {{upper_bound}} </p></outtro>
+    </knowl>
+</knowl>

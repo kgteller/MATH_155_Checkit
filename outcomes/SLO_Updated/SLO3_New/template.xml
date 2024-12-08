@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+       <intro>
+      <p>
+          A critical component to our understanding of statistics is being able to read and understand graphs. It is also critical that we be able to look at graphs and identify any flaws they might have. Be sure to answer ALL the questions.
+      </p>
+        <p>
+            <image source="/assets/SLO3-A/215.png" description="Bar graph showing percentage of ranomware attacks by industry type."/>
+        </p>
+        <p>
+            Figure1: Share of ransomware attacks by industry type.
+        </p>
+
+        <p>Below is a graph showing the distribution of Aggravated Assault rates by state for 2008. (The data includes all 50 states plus the District of Columbia).  </p>
+        <p><image source="/assets/SLO3-B/215.png" description="Histogram showing the distribution of Aggravated Assault rates by state"/></p>
+        <p>Figure 2: Number of Aggravated Assaults per 100,000 people in 2008</p>
+      <p>
+          Use the above graphs to answer the questions. Make sure to show all of your work and put all answers into context of the data.
+      </p>
+    </intro>
+    <knowl>
+          <content><p>What type of graph is figure 1?</p></content>
+          <outtro><p>bar graph</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Could you use a {{graph_2}} graph to display the data in figure 1? Why or why not?</p></content>
+        <outtro><p>{{answer_2}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What does the number at the end of the bar in the {{industry_3}} line mean in the context of the information presented by figure 1?</p></content>
+        <outtro><p><m>{{answer_3}}</m>% of ransomware attacks from July 2020 to June 2021, were made against companies in the {{industry_3}} industry.</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>If we assume that the total number of ransomware attacks that occured between July 2020 and June 2021 was {{attack_4}}, how many attacks were there against companies in the {{industry_4}} sector? Show all your work and explain how you arrived at your answer.</p></content>
+        <outtro><p><m>{{answer_4}}</m></p></outtro></knowl>
+    <knowl>
+            <content><p>What type of graph is figure 2?</p></content>
+            <outtro><p>histogram</p></outtro>
+    </knowl>
+    <knowl>
+            <content><p>Describe the shape of the distribution of Aggravated Assault rates in 2008 (figure 2) . Explain your answer.</p></content>
+            <outtro><p>The distribution is skewed right.</p></outtro>
+    </knowl>
+    <knowl>
+            <content><p> In figure 2 what does the bar with the {{number_2}} above it represent?</p></content>
+            <outtro><p>Out of the 51 states, {{number_2}} of them had between {{answer_2_1}} assaults per 100,000 people in 2008.</p></outtro>
+    </knowl>
+     <knowl>
+            <content><p> Using figure 2, what percentage of states had between <m>{{assault_3a}}</m> and <m>{{assault_3b}}</m> assaults per 100,000 people in 2008? Show all your work including anything plugged into a calculator. Provide your final answer in a full sentence with the appropriate context.</p></content>
+            <outtro><p>(<m>{{answer_3a}}</m> + <m>{{answer_3b}}</m> + <m>{{answer_3c}}</m>) / 51 = <m>{{answer_3_1}}</m><m>\%</m></p></outtro>
+    </knowl>
+
+</knowl>

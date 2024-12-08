@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+              <p>
+                  Let <m>z</m> be the standard normal variable.  Find the following:
+              </p>
+        </intro>
+    
+        
+    
+    
+    
+        
+
+            <knowl>
+                <content>
+                    <p>
+                        <m>P(Z\{{ineq1}} {{z1}})</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>P(Z\{{ineq1}} {{z1}})={{P1}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>P({{z2}}\lt Z\lt {{z3}})</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>P({{z2}}\lt Z\lt {{z3}})={{P2}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>z^*</m> such that <m>P(Z\{{ineq2}} z^*)={{P3}}</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>z^*</m> such that <m>P(Z\{{ineq2}} z^*)={{P3}}, z^*={{z4}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)={{P4}}</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)={{P4}}, z^*={{z5}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+    
+        
+
+        
+
+        
+    
+</knowl>
