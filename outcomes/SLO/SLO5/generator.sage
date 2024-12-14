@@ -1,108 +1,122 @@
+import numpy
 class Generator(BaseGenerator):
     def data(self):
-        n_1="200"
-        min_1="0"
-        q1_1="0.9"
-        med_1="9"
-        q3_1="32.8"
-        max_1="92.9"
-        mean_1="21.3"
-        stdev_1="26.0"
-        n_2="200"
-        min_2="19.1"
-        q1_2="85.7"
-        med_2="109"
-        q3_2="130"
-        max_2="430"
-        mean_2="108.4"
-        stdev_2="42.7"
-        n_3="198"
-        min_3="19.1"
-        q1_3="85.7"
-        med_3="109"
-        q3_3="130"
-        max_3="188"
-        mean_3="105.9"
-        stdev_3="33.8"
+       # n_1="200"
+       # min_1="0"
+       # q1_1="0.9"
+       # med_1="9"
+       # q3_1="32.8"
+       # max_1="92.9"
+       # mean_1="21.3"
+       # stdev_1="26.0"
+       # n_2="200"
+       # min_2="19.1"
+       # q1_2="85.7"
+       # med_2="109"
+       # q3_2="130"
+       # max_2="430"
+       # mean_2="108.4"
+       # stdev_2="42.7"
+       # n_3="198"
+       # min_3="19.1"
+       # q1_3="85.7"
+       # med_3="109"
+       # q3_3="130"
+       # max_3="188"
+       # mean_3="105.9"
+       # stdev_3="33.8"
+        n_1=randint(10,15)
+    
+        mu_1=randint(-10, 100)
+        sigma_1=randint(5,30)
+        
+        T = RealDistribution('gaussian', sigma_1)
+
+        data_1=[0 for i in range(n_1)]
+
+        datalist_1=[]
+
+        for i in range(n_1-1):
+            data_1[i]=round(mu_1+T.get_random_element())
+
+        data_1[n_1-1]=mu_1+4*sigma_1*(-1)^randint(0,1)
+
+        data_1.sort()
+        
+        for i in range(n_1):
+            entry={
+                'x':data_1[i],
+            }
+            datalist_1.append(entry)
+        
+        mn=data_1[0]
+        q1_1=numpy.percentile(data_1,25)
+        med_1=median(data_1)
+        q3_1=numpy.percentile(data_1,75)
+        mx=data_1[n_1-1]
+        
         OC_1=randint(0,3)
-        year_1=choice(["2000", "2019"])
+        #year_1=choice(["2000", "2019"])
         score_a=[["minimum", "more", "25", q1_1], ["minimum", "more", "75", q3_1], ["maximum", "less", "25", q3_1], ["maximum", "less", "75", q1_1]]
-        score_b=[["minimum", "more", "25", q1_2], ["minimum", "more", "75", q3_2], ["maximum", "less", "25", q3_2], ["maximum", "less", "75", q1_2]]
+        #score_b=[["minimum", "more", "25", q1_2], ["minimum", "more", "75", q3_2], ["maximum", "less", "25", q3_2], ["maximum", "less", "75", q1_2]]
         min_max=score_a[OC_1][0]
         dir_1=score_a[OC_1][1]
         percent_1=score_a[OC_1][2]
         answer_1=score_a[OC_1][3]
-        if year_1=="2019":
-            min_max=score_b[OC_1][0]
-            dir_1=score_b[OC_1][1]
-            percent_1=score_b[OC_1][2]
-            answer_1=score_b[OC_1][3]
-        OC_2=randint(0,3)
-        annual=[["2000", "one", q1_1], ["2000", "three", q3_1], ["2019", "one", q1_2], ["2019", "three", q3_2]]
-        answer2=[[n_1, "25"], [n_1, "75"], [n_2, "25"], [n_2, "75"]]
-        year_2=annual[OC_2][0]
-        quar_2=annual[OC_2][1]
-        change_2=annual[OC_2][2]
+        OC_2=randint(0,1)
+        annual=[["first", q1_1], ["third", q3_1]]
+        answer2=[[n_1, "25"], [n_1, "75"]]
+        quar_2=annual[OC_2][0]
+        change_2=annual[OC_2][1]
         number_2=answer2[OC_2][0]
         percent_2=answer2[OC_2][1]
-        stand_mean=choice(["standard deviation", "mean"])
-        dir_3=choice(["less than the minimum value", "greater than the maximum value"])
-        answer_3="The standard deviation would go up"
-        if stand_mean=="mean" and dir_3=="less than the minimum value":
-            answer_3="The mean would go down"
-        if stand_mean=="mean" and dir_3=="greater than the maximum value":
-            answer_3="The mean would go up"
-        z_vala=round(random()*92.9,1)
-        z_valb=round(random()*(430-19.1)+19.1,1)
-        ans_4a=round((z_vala-21.3)/26.0,2)
-        ans_4b=round((z_valb-108.4)/42.7,2)
-        year_5=choice(["2000", "2019"])
-        answer_5="Skewed right"
+        z_vala=round(random()*(mx-mn)+mn,1)
+        ans_4a=round((z_vala-mean(data_1))/std(data_1),2)
         
+        IQR=q3_1-q1_1
+
+        outliers=[]
+        outlierslist=[]
+
+        for i in range(n_1):
+            if data_1[i]<q1_1-1.5*IQR or data_1[i]>q3_1+1.5*IQR:
+                outliers.append(data_1[i])
+
+        for i in range(len(outliers)):
+            entry={
+                'x':outliers[i],
+            }
+            outlierslist.append(entry)
+          
+        if mean(data_1)>median(data_1):
+            answer_5="Skewed Right"
+        elif mean(data_1)<median(data_1):
+            answer_5="Skewed Left"
+        else:
+            answer_5="Approximately Symmetric"
+    
         
 
         return {
+            "data":datalist_1,
             "n_1":n_1,
-            "min_1":min_1,
-            "q1_1":q1_1,
-            "med_1":med_1,
-            "q3_1":q3_1,
-            "max_1":max_1,
-            "mean_1":mean_1,
-            "stdev_1":stdev_1,
-            "n_2":n_2,
-            "min_2":min_2,
-            "q1_2":q1_2,
-            "med_2":med_2,
-            "q3_2":q3_2,
-            "max_2":max_2,
-            "mean_2":mean_2,
-            "stdev_2":stdev_2,
-            "n_3":n_3,
-            "min_3":min_3,
-            "q1_3":q1_3,
-            "med_3":med_3,
-            "q3_3":q3_3,
-            "max_3":max_3,
-            "mean_3":mean_3,
-            "stdev_3":stdev_3,
-            "year_1":year_1,
             "min_max":min_max,
             "dir_1":dir_1,
             "percent_1":percent_1,
             "answer_1":answer_1,
-            "year_2":year_2,
             "quar_2":quar_2,
             "change_2":change_2,
             "number_2":number_2,
             "percent_2":percent_2,
-            "stand_mean":stand_mean,
-            "dir_3":dir_3,
-            "answer_3":answer_3,
             "za":z_vala,
-            "zb":z_valb,
             "answer4a":ans_4a,
-            "answer4b":ans_4b,
-            "year_5":year_5,
+            "mn":mn,
+            "Q1":q1_1,
+            "med":med_1,
+            "Q3":q3_1,
+            "mx":mx,
+            "IQR":IQR,
+            "outliers":outlierslist,
             "answer_5":answer_5,
+            
         }
