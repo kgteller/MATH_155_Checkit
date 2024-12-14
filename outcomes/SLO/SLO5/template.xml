@@ -58,6 +58,7 @@
     </knowl>
     <knowl>
         <content><p> Find the IQR of this data set, and use it to identify any potential outliers.</p></content>
+        <outtro>
         <p>
             The IQR is <m>{{IQR}}</m>.
         </p>
@@ -69,6 +70,7 @@
                     {{/outliers}}
                 </m>
         </p>
+        </outtro>
     </knowl>
     <knowl>
         <content><p>Describe the shape of the distribution of the number of cell phones per 100 people in 2000.</p></content>
