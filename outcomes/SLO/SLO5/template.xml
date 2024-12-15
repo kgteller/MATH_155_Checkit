@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
-        <p>Below you will find two tables of numerical summaries of different datasets. Use these tables to answer the questions below. Answer all questions completely and include contextual information in your answers. Show or explain all of your work. </p>
         <p>One of the technological innovations of the late 20th century that has completely changed our world has been the cell phone. However, the access to and use of cell phones has not been uniform across the world. Gapminder.org has collected data about the number of cell phones per 100 people for {{n_1}} countries. The data for the year 2000 and is dsiplayed below.
 
      <me>
@@ -9,27 +8,6 @@
         {{x}},
             {{/data}}
     </me>
-
-    <!--    <p>2000</p>
-        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
-            \hline
-            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
-            \hline
-            \text{ {{n_1}} } &amp; {{min_1}} &amp; {{q1_1}} &amp; {{med_1}} &amp; {{q3_1}} &amp; {{max_1}} &amp; {{mean_1}} &amp; {{stdev_1}} \\
-            \hline
-            \end{array}</me>
-        </p>
-        <p>2019</p>
-        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
-            \hline
-            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
-            \hline
-            \text {{n_2}} &amp; {{min_2}} &amp; {{q1_2}} &amp; {{med_2}} &amp; {{q3_2}} &amp; {{max_2}} &amp; {{mean_2}} &amp; {{stdev_2}} \\
-            \hline
-            \end{array}</me>
-        </p>
-        
-        -->
     </p> 
     </intro>
     <knowl>
@@ -37,7 +15,7 @@
         <outtro><p>{{answer_1}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Find and exmplain what the {{quar_2}} quartile means in terms of the countries in the dataset.</p></content>
+        <content><p>Find and explain what the {{quar_2}} quartile means in terms of the countries in the dataset.</p></content>
         <outtro><p> {{percent_2}}<m>\%</m>  of the countries in the dataset had {{change_2}} cell phones per 100 poeple or less.</p></outtro>
     </knowl>
     <knowl>

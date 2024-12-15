@@ -25,9 +25,9 @@ class Generator(BaseGenerator):
        # max_3="188"
        # mean_3="105.9"
        # stdev_3="33.8"
-        n_1=randint(10,15)
+        n_1=randint(13,20)
     
-        mu_1=randint(-10, 100)
+        mu_1=randint(50, 100)
         sigma_1=randint(5,30)
         
         T = RealDistribution('gaussian', sigma_1)
@@ -37,9 +37,8 @@ class Generator(BaseGenerator):
         datalist_1=[]
 
         for i in range(n_1-1):
-            data_1[i]=round(mu_1+T.get_random_element())
-
-        data_1[n_1-1]=mu_1+4*sigma_1*(-1)^randint(0,1)
+            data_1[i]=abs(round(mu_1+T.get_random_element()))
+        data_1[n_1-1]=abs(mu_1+4*sigma_1*(-1)^randint(0,1))
 
         data_1.sort()
         
