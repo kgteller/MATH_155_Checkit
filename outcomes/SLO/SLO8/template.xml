@@ -34,14 +34,14 @@
         <outtro><p><m>{{ans_4}}</m> babies </p></outtro>
     </knowl>
 
-
+<!-- 
     <knowl>
         <content><p>Construct and interpret a {{CL2}} \% confidence interval for the difference between the mean weights for {{ind_1}} and {{ind_2}} babies.</p> </content>
         <outtro><p><m>({{LB}},{{UB}})</m> grams </p></outtro>
 
     </knowl>
 
-
+-->
         
 
 </knowl>

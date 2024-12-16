@@ -137,25 +137,37 @@
             <title>Confidence Intervals</title>
             <slug>SLO8</slug>
             <path>outcomes/SLO/SLO8</path>
-            <description>I can compute and interpret the confidence interval about the mean for one- and two-samples</description>
+            <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
         </outcome>
         <outcome>
             <title>Confidence Intervals</title>
             <slug>SLO8-1</slug>
             <path>outcomes/SLO/SLO8_1</path>
-            <description>I can compute and interpret the confidence interval about the mean for one- and two-samples</description>
+            <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
         </outcome>
           <outcome>
             <title>Confidence Intervals</title>
             <slug>SLO8-2</slug>
             <path>outcomes/SLO/SLO8_2</path>
-            <description>I can compute and interpret the confidence interval about the mean for one- and two-samples</description>
+            <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
         </outcome>
          <outcome>
             <title>Confidence Intervals</title>
             <slug>SLO8-3</slug>
             <path>outcomes/SLO/SLO8_3</path>
-            <description>I can compute and interpret the confidence interval about the mean for one- and two-samples</description>
+            <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
+        </outcome>
+         <outcome>
+            <title>Confidence Intervals</title>
+            <slug>SLO8A</slug>
+            <path>outcomes/SLO/SLO8A</path>
+            <description>I can compute and interpret the confidence interval about the mean for two-samples</description>
+        </outcome>
+         <outcome>
+            <title>Confidence Intervals</title>
+            <slug>SLO8B</slug>
+            <path>outcomes/SLO/SLO8B</path>
+            <description>I can compute and interpret the confidence interval about the mean for two-samples</description>
         </outcome>
           <outcome>
             <title>Hypothesis Tests</title>

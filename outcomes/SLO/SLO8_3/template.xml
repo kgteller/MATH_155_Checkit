@@ -43,14 +43,14 @@
         <outtro><p><m>{{ans_4}}</m> {{ind_2}} </p></outtro>
     </knowl>
 
-    
+  <!-- 
     <knowl>
         <content><p>Construct and interpret a {{CL2}} \% confidence interval for the difference between the mean daily price changes for the {{ind_1}} and the {{ind_2}}.</p> </content>
         <outtro><p><m>({{LB}},{{UB}})</m>  </p></outtro>
 
     </knowl>
 
-
+ --> 
         
 
 </knowl>

@@ -38,13 +38,13 @@
         <outtro><p><m>{{ans_4}}</m> {{ind_2}} </p></outtro>
     </knowl>
 
-    
+   <!-- 
     <knowl>
         <content><p>Construct and interpret a {{CL2}} \% confidence interval for the difference between the mean scores for the {{ind_1}} and the {{ind_2}}.</p> </content>
         <outtro><p><m>({{LB}},{{UB}})</m> grams </p></outtro>
 
     </knowl>
-
+--> 
 
         
 
