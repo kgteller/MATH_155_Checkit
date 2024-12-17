@@ -193,6 +193,18 @@
             <path>outcomes/SLO/SLO10</path>
             <description>I understand and can interpret the correlation between two quantitative variables</description>
         </outcome>
+                 <outcome>
+            <title>Linear Correlation</title>
+            <slug>SLO11</slug>
+            <path>outcomes/SLO/SLO11</path>
+            <description>I understand and can interpret the correlation between two quantitative variables</description>
+        </outcome>
+        <outcome>
+            <title>Linear Correlation</title>
+            <slug>SLO12</slug>
+            <path>outcomes/SLO/SLO12</path>
+            <description>I understand and can interpret the regression equation between two quanititative variables</description>
+        </outcome>
 
 <!--        
         <outcome>

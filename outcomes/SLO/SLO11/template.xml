@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+      <p>
+          {{prose}}
+      </p>
+        
+      <p>
+          Consider this table of data collected comparing {{explanatory}} measured in {{Eunit}}, and {{response}} measured in {{Runit}}:
+      </p>  
+      
+      <p>
+          
+          <me>
+               \begin{array}{|c|c|}
+              \hline
+              \text{ {{explanatory}} in {{Eunit}} }
+              &amp;
+              \text{ {{response}} in {{Runit}} }
+              \\
+              \hline
+                  {{#Datalist}}
+               {{x}}
+              &amp; {{y}}
+                  \\
+                  {{/Datalist}}
+              
+              \hline
+              \end{array}
+          </me>
+      </p>
+        
+    </intro>
+    
+    
+    
+    
+    
+    <knowl>
+        <content>
+            <p>
+                Which variable is the explanatory variable, and which is the response variable?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                The exaplanatory variable is {{explanatory}} in {{Eunit}} and the response variable is {{response}} in {{Runit}}.
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                Compute the correlation coefficient <m>R</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>R={{R}}.</m>
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                What does <m>R</m> tell you about the relationship between {{explanatory}} and {{response}}?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                There is a {{ans3}} between {{explanatory}} and {{response}}
+            </p>
+
+        </outtro>
+        
+    </knowl>
+    
+    
+        
+
+            
+    
+        
+
+        
+
+        
+    
+</knowl>
