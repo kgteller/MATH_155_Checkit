@@ -130,11 +130,11 @@ class Generator(BaseGenerator):
 
                 tscore=(xbar-mu0)/SE
                 if htt==0:
-                    pvalue=(1-(T.cum_distribution_function(abs(tscore))))*2
+                    pvalue=(1-(ND.cum_distribution_function(abs(tscore))))*2
                 if htt==1:
-                    pvalue=1-T.cum_distribution_function(tscore)
+                    pvalue=1-ND.cum_distribution_function(tscore)
                 if htt==2:
-                    pvalue=T.cum_distribution_function(tscore)
+                    pvalue=ND.cum_distribution_function(tscore)
                 zt='<m>z</m>-score <m>z={}</m>'.format(tscore)
 
 
