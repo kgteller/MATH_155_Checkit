@@ -2,7 +2,7 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-            {{prose}} <m>{{n}}</m> {{sample}} <m>\bar{x}={{xbar}}</m> {{units}}, {{zort_phrase}}  <!-- with sample standard deviation <m>s={{s}}</m> {{units}}. -->
+            {{prose}} <m>{{n}}</m> {{sample}} <m>\bar{x}={{xbar}}</m> {{units}}, {{zort_phrase1}} <m> {{zort_phrase2}} </m> {{zort_phrase3}} <!-- with sample standard deviation <m>s={{s}}</m> {{units}}. -->
         </p>
         
         
@@ -53,7 +53,7 @@
                     The sampling distribution has mean <m>{{mu0}}</m> and standard error <m>SE={{SE}}</m>.
                 </p>
                 <p>
-                    The sample mean is <m>\bar{x}={{xbar}}</m> which has {{zt}} <!-- <m>t</m>-score <m>t={{tscore}}</m> -->.
+                    The sample mean is <m>\bar{x}={{xbar}}</m> which has <m>{{zt}}</m>-score <m>t={{tscore}}</m> <!-- <m>t</m>-score <m>t={{tscore}}</m> -->.
                 </p>
                 <p>
                     The <m>p</m>-value is <m>{{pvalue}}</m>.

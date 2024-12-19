@@ -102,7 +102,9 @@ class Generator(BaseGenerator):
             tempT=abs(T.cum_distribution_function_inv(tempP))
             tempZ=abs(ND.cum_distribution_function_inv(tempP))
             if zort==1:
-                zort_phrase='with sample satandard deviation s={} {}.'.format(s,units)
+                zort_phrase1='with a sample standard deviation'
+                zort_phrase2='s={}'.format(s)
+                zort_phrase3='{}.'.format(units)
                 if htt==0:
                     xbar=round(mu0+tempT*SE*(-1)^randint(0,1),3)
                 if htt==1:
@@ -117,9 +119,11 @@ class Generator(BaseGenerator):
                     pvalue=1-T.cum_distribution_function(tscore)
                 if htt==2:
                     pvalue=T.cum_distribution_function(tscore)
-                zt='<m>t</m>-score <m>t={}</m>'.format(tscore)
+                zt='t'
             else:
-                zort_phrase='with a population standard deviation <m> \sigma={} </m> {}.'.format(s,units)
+                zort_phrase1='with a population standard deviation'
+                zort_phrase2='\sigma={}'.format(s)
+                zort_phrase3='{}.'.format(units)
                 
                 if htt==0:
                     xbar=round(mu0+tempZ*SE*(-1)^randint(0,1),3)
@@ -135,7 +139,7 @@ class Generator(BaseGenerator):
                     pvalue=1-ND.cum_distribution_function(tscore)
                 if htt==2:
                     pvalue=ND.cum_distribution_function(tscore)
-                zt='<m>z</m>-score <m>z={}</m>'.format(tscore)
+                zt='z'
 
 
 
@@ -155,7 +159,9 @@ class Generator(BaseGenerator):
                 "n":n,
                 "xbar":xbar,
                 "s":s,
-                "zort_phrase":zort_phrase,
+                "zort_phrase1":zort_phrase1,
+                "zort_phrase2":zort_phrase2,
+                "zort_phrase3":zort_phrase3,
                 "mu0":mu0,
                 "ineq":ineq,
                 "ineq2":ineq2,
