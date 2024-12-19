@@ -6,10 +6,10 @@ class Generator(BaseGenerator):
     
             n=randint(20,50)
             df=n-1
-
+            zort=randint(1,2)
             htt=randint(0,2)
             T = RealDistribution('t', df)
-
+            ND= RealDistribution('gaussian',1)
             scenario=randint(0,4)
 
             if scenario==0:
@@ -100,23 +100,42 @@ class Generator(BaseGenerator):
                 tempP=tempP/2
 
             tempT=abs(T.cum_distribution_function_inv(tempP))
-            
+            tempZ=abs(ND.cum_distribution_function_inv(tempP))
+            if zort==1:
+                zort_phrase='with sample satandard deviation s={} {}.'.format(s,units)
+                if htt==0:
+                    xbar=round(mu0+tempT*SE*(-1)^randint(0,1),3)
+                if htt==1:
+                    xbar=round(mu0+tempT*SE,3)
+                if htt==2:
+                    xbar=round(mu0-tempT*SE,3)    
 
-            if htt==0:
-                xbar=round(mu0+tempT*SE*(-1)^randint(0,1),3)
-            if htt==1:
-                xbar=round(mu0+tempT*SE,3)
-            if htt==2:
-                xbar=round(mu0-tempT*SE,3)    
+                tscore=(xbar-mu0)/SE
+                if htt==0:
+                    pvalue=(1-(T.cum_distribution_function(abs(tscore))))*2
+                if htt==1:
+                    pvalue=1-T.cum_distribution_function(tscore)
+                if htt==2:
+                    pvalue=T.cum_distribution_function(tscore)
+                zt='<m>t</m>-score <m>t={}</m>'.format(tscore)
+            else:
+                zort_phrase='with a population standard deviation <m> \sigma={} </m> {}.'.format(s,units)
+                
+                if htt==0:
+                    xbar=round(mu0+tempZ*SE*(-1)^randint(0,1),3)
+                if htt==1:
+                    xbar=round(mu0+tempZ*SE,3)
+                if htt==2:
+                    xbar=round(mu0-tempZ*SE,3)    
 
-            tscore=(xbar-mu0)/SE
-            if htt==0:
-                pvalue=(1-(T.cum_distribution_function(abs(tscore))))*2
-            if htt==1:
-                pvalue=1-T.cum_distribution_function(tscore)
-            if htt==2:
-                pvalue=T.cum_distribution_function(tscore)
-
+                tscore=(xbar-mu0)/SE
+                if htt==0:
+                    pvalue=(1-(T.cum_distribution_function(abs(tscore))))*2
+                if htt==1:
+                    pvalue=1-T.cum_distribution_function(tscore)
+                if htt==2:
+                    pvalue=T.cum_distribution_function(tscore)
+                zt='<m>z</m>-score <m>z={}</m>'.format(tscore)
 
 
 
@@ -136,6 +155,7 @@ class Generator(BaseGenerator):
                 "n":n,
                 "xbar":xbar,
                 "s":s,
+                "zort_phrase":zort_phrase,
                 "mu0":mu0,
                 "ineq":ineq,
                 "ineq2":ineq2,
@@ -156,6 +176,7 @@ class Generator(BaseGenerator):
                 "subjects":subjects,
                 "claim":claim,
                 "conclusion":conclusion,
-                 "alpha":alpha,
+                "alpha":alpha,
+                "zt":zt,
 
             }
