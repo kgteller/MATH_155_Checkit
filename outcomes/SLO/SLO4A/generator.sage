@@ -42,12 +42,12 @@ class Generator(BaseGenerator):
         #dir_1=score_a[OC_1][1]
         #percent_1=score_a[OC_1][2]
         #answer_1=score_a[OC_1][3]
-        
+        avg=np.mean(my_data_2)
         ans1_a=np.std(my_data_2,ddof=1)
         ans1=ans1_a^2
         ans2_a=np.std(my_data)
         ans2=ans2_a^2
-        
+        c1_std=np.std(my_data_2)
         country_2="Country A"
         skewa=np.mean(my_data)-np.median(my_data)
         skewb=np.mean(my_data_2)-np.median(my_data_2)
@@ -57,14 +57,15 @@ class Generator(BaseGenerator):
              skew="Skewed Left"
         else:
             skew="Roughly Symmetric"
-        cheby1=ans1+2*ans2_a
-        cheby1_a=ans1-2*ans2_a
-        cheby2=ans1+3*ans2_a
-        cheby2_a=ans1-3*ans2_a
-        emp1=ans1+ans2_a
-        emp1_a=ans1-ans2_a
+        cheby1=avg+2*ans1_a
+        cheby1_a=avg-2*ans1_a
+        cheby2=avg+3*ans1_a
+        cheby2_a=avg-3*ans1_a
+        emp1=avg+ans1_a
+        emp1_a=avg-ans1_a
 
         if country_1=="Country A":
+            avg=np.mean(my_data)
             ans1_a=np.std(my_data,ddof=1)
             ans1=ans1_a^2
             ans2_a=np.std(my_data_2)
@@ -76,12 +77,12 @@ class Generator(BaseGenerator):
             else:
                 skew="Roughly Symmetric"
             country_2= "Country B"
-            cheby1=ans1+2*ans2_a
-            cheby1_a=ans1-2*ans2_a
-            cheby2=ans1+3*ans2_a
-            cheby2_a=ans1-3*ans2_a
-            emp1=ans1+ans2_a
-            emp1_a=ans1-ans2_a
+            cheby1=avg+2*ans1_a
+            cheby1_a=avg-2*ans1_a
+            cheby2=avg+3*ans1_a
+            cheby2_a=avg-3*ans1_a
+            emp1=avg+ans1_a
+            emp1_a=avg-ans1_a
         normality=[["nothing is known about the population distribution"],["we now that the polulation has a normal distibution"]]
         OC_1=randint(0,1)
         data_info=normality[OC_1][0]
