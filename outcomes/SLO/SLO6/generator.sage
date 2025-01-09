@@ -145,7 +145,7 @@ class Generator(BaseGenerator):
 
             ans1='Second distribution'
             ans2_1= round(np.sum(x_rnd*val2),2)
-            variance=np.sum(((val3-ans2_1)**2)*x_rnd)
+            variance=np.sum(((val2-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
             ans2_3=round(variance,2)
@@ -172,7 +172,7 @@ class Generator(BaseGenerator):
 
             ans1='Third distribution'
             ans2_1= round(np.sum(x_rnd*val3),2)
-            variance=np.sum(((val2-ans2_1)**2)*x_rnd)
+            variance=np.sum(((val3-ans2_1)**2)*x_rnd)
             std=sqrt(variance)
             ans2_2=round(std,2)
             ans2_3=round(variance,2)
