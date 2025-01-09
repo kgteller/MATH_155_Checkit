@@ -25,9 +25,9 @@ class Generator(BaseGenerator):
             datalist_1.append(entry)
         
         mn=data_1[0]
-        q1_1=numpy.percentile(data_1,25)
+        q1_1=numpy.percentile(data_1,25,method='weibull')
         med_1=median(data_1)
-        q3_1=numpy.percentile(data_1,75)
+        q3_1=numpy.percentile(data_1,75,method='weibull')
         mx=data_1[n_1-1]
 
         OC_1=randint(0,3)
