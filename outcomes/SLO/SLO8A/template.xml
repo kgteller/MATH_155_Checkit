@@ -48,7 +48,7 @@
                 For a <m>{{CL}}\%</m> confidence interval,  <m>t^*={{t}}</m>.
             </p>
             <p>
-                The {{population}}  has a <m>{{CL}}\%</m> chance of of falling in <m>[{{LB}}, {{UB}}]</m>  {{units}}.
+                We are <m>{{CL}}\%</m> confident that {{population}}  is betweeen <m>[{{LB}}, {{UB}}]</m>  {{units}}.
             </p>
         </outtro>
     </knowl>
