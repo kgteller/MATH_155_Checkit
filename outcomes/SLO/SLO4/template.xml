@@ -30,10 +30,10 @@
     </knowl>
     <knowl>
         <content><p>Describe the shape of the distribution of annual percentage change in energy consumption in {{country_2}} (hint: find the mean and median).</p></content>
-        <outtro><p>{{skewness}}</p></outtro>
+        <outtro><p> mean= {{ans3a}}, median={{ans3b}}, Skew={{skewness}}</p></outtro>
     </knowl>
     <knowl>
         <content><p>Which of these datasets appears to be more skewed? </p></content>
-        <outtro><p>{{country_skew}} is more skewed</p></outtro>
+        <outtro><p> Skew of Country A= {{skewa}} Skew of Country B= {{skewb}} Therfore {{country_skew}} is more skewed</p></outtro>
     </knowl> 
 </knowl>

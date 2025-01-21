@@ -146,7 +146,7 @@ class Generator(BaseGenerator):
             alpha=round(choice([.1,.05,.01]),2)
             claim = "We fail to reject the null hypothesis,"
             conclusion="There is not enough evidence to support the claim that"
-            if pvalue<0.05:
+            if pvalue<alpha:
                 claim="We reject the null hypothesis and accept the alternative hypothesis,"
                 conclusion=" We accept the claim that"
 

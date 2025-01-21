@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+       <intro>
+      <p>
+          A critical component to our understanding of statistics is being able to read and understand graphs. It is also critical that we be able to look at graphs and identify any flaws they might have. Be sure to answer ALL the questions.
+      </p>
+      <p><em>Scenario:</em></p>
+      <p>One of the jobs of governmental policy makers is to look at the impact of economic change on the people that the government represents. To do so, they often look at the relative change of costs to change in income. The graph below was developed to help policy makers see current trends.</p>
+        <p>
+            <image source="/assets/SLO3-A/223.png" description="Line graph showing rising cost since 1995."/>
+        </p>
+        <p> Figure 1: Rising Costs</p>
+        <p>The graph below summarizes the results of a recent study in New York City that was commissioned to look at the composition of 99,460 taxi trips of 25 miles or less within the city. </p>
+        <p><image source="/assets/SLO3-B/223.png" description="Histogram showing the distribution of taxi cap rides in New York City"/></p>
+        <p>Figure 2: New York City taxi trips in miles</p>
+        <p>
+           Use the graphs above to answer the questions. Make sure to show all of your work and put all answers into context of the data.
+        </p>
+      </intro>
+      <knowl>
+          <content><p>What type of graph is figure 1?</p></content>
+          <outtro><p>A line graph or a time series graph</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Could you use a {{graph_2}} graph to display this data? Why or why not?</p></content>
+        <outtro><p>{{answer_2}}</p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>What information is represented on the y-axis? Be sure to give a full description of the data including any relevant units.</p></content>
+        <outtro><p>The y-axis is showing the percent change using 1995 as an index of 100<m>\%</m></p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>According to the graph, how much did the cost of {{cost_4}} change from 1995 to 2017? Explain your answer and what information in the graph helps you figure this out.</p></content>
+        <outtro><p>The cost of {{cost_4}} roughly increased {{answer_4}}<m>\%</m> from 1995 to 2017</p></outtro></knowl>
+    <knowl>
+            <content><p>What type of graph is figure 2?</p></content>
+            <outtro><p>A line graph or a time series graph</p></outtro>
+    </knowl>
+    <knowl>
+            <content><p>Describe the shape of the distribution of taxi trips of 25 miles or less (figure 2). Explain your answer.</p></content>
+            <outtro><p>The distribution is skewed right or bimodal .</p></outtro>
+    </knowl>
+    <knowl>
+            <content><p>In figure 2, what does the bar with the {{number_2}} above it represent?</p></content>
+            <outtro><p>There were {{number_2}} taxi cab trips that were between {{answer_2_1}} miles long.</p></outtro>
+    </knowl>
+    <knowl>
+            <content><p>Using figure 2, what percentage of taxi cab rides were between <m>{{assault_3a}}</m> and <m>{{assault_3b}}</m> miles long? Be sure to show all work including anything plugged into a calculator. Round your percentage to 2 decimal places.</p></content>
+            <outtro><p>(<m>{{answer_3a}}</m> + <m>{{answer_3b}}</m> + <m>{{answer_3c}}</m>) / 99460 = <m>{{answer_3}}</m><m>\%</m></p></outtro>
+        </knowl>
+</knowl>

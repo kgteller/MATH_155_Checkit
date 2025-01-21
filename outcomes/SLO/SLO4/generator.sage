@@ -71,10 +71,14 @@ class Generator(BaseGenerator):
         ans2=np.var(my_data_2)
         ans2_a=np.std(my_data_2)
         country_2="Country A"
+        ans3a=np.mean(my_data)
+        ans3b=np.median(my_data)
         skewa=np.mean(my_data)-np.median(my_data)
+        skewa1=round(abs(skewa),4)
         skewb=np.mean(my_data_2)-np.median(my_data_2)
+        skewb1=round(skewb,4)
         if skewa>5:
-            skew= skew="Skewed Right"
+            skew="Skewed Right"
         elif skewa<-5:
              skew="Skewed Left"
         else:
@@ -98,6 +102,8 @@ class Generator(BaseGenerator):
             else:
                 skew="Roughly Symmetric"
             country_2= "Country B"
+            ans3a=np.mean(my_data_2)
+            ans3b=np.median(my_data_2)
             cheby1=ans1+2*ans2_a
             cheby1_a=ans1-2*ans2_a
             cheby2=ans1+3*ans2_a
@@ -168,11 +174,15 @@ class Generator(BaseGenerator):
             "ans1a":ans1_a,
             "ans2":ans2,
             "ans2a":ans2_a,
+            "ans3a":ans3a,
+            "ans3b":ans3b,
             "skewness":skew,
             "data_info":data_info,
             "percent":percent,
             "lower_bound":lb,
             "upper_bound":ub,
             "country_skew":country_skew,
+            "skewa":skewa1,
+            "skewb":skewb1,
             
         }
