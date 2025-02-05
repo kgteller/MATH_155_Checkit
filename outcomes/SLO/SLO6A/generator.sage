@@ -201,7 +201,7 @@ class Generator(BaseGenerator):
         
         ch=randint(0,4)
         n=randint(10,100)
-        percent=randint(1,100)
+        percent=randint(5,85)
         c5=randint(3,6)
         if ch==0:
             pcent=.50
