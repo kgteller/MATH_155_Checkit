@@ -62,7 +62,7 @@ class Generator(BaseGenerator):
         
         statements1=[["If a sample of 100 {} is taken what is the probability that the sample has a mean bone density of {}  or less?".format(ind_2,dep_2)],["If you randomly choose someone who is {}, what is the probability that they have a bone density of {} or less?".format(ind_2,dep_2)]]
         stmt1=statements1[ch_1][0]
-        statements2=[["If you randomly choose someone who is {}, what is the {} bone density they can have and still be {} than {} \% of all other {}.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 {}, what is the {} sample mean bone density that is {} than {}\% of sample mean bone densities.".format(ind_3,min_max,dir_1,percent_1)]]
+        statements2=[["If you randomly choose someone who is {}, what is the {} bone density they can have and still be {} than {}% of all other {}.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 {}, what is the {} sample mean bone density that is {} than {}% of sample mean bone densities.".format(ind_3,min_max,dir_1,percent_1)]]
         stmt2=statements2[ch_1][0]
         #if ind_2=="Black woman":
             

@@ -62,7 +62,7 @@ class Generator(BaseGenerator):
         
         statements1=[["If a sample 100 days are taken from the {} market what is the probability that the sample has a mean daily price change of {} or less".format(ind_2,dep_2)],["If you randomly choose a day and looked at the {}, what is the probability that the market hade a daily price cahnge of {} or less?".format(ind_2,dep_2)]]
         stmt1=statements1[ch_1][0]
-        statements2=[["If you randomly choose a day and looked at the {} market, what is the {} daily price change that day can have and still have a {} daily change than {} \% of the other days in the {} market.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 day from the {} market, what is the {} sample mean pice cahange that the sample can have and still have a {} daily change than {}\% of sample mean daily changes.".format(ind_3,min_max,dir_1,percent_1)]]
+        statements2=[["If you randomly choose a day and looked at the {} market, what is the {} daily price change that day can have and still have a {} daily change than {}% of the other days in the {} market.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 day from the {} market, what is the {} sample mean pice cahange that the sample can have and still have a {} daily change than {}% of sample mean daily changes.".format(ind_3,min_max,dir_1,percent_1)]]
         stmt2=statements2[ch_1][0]
         #if ind_2=="NASDAQ":
             

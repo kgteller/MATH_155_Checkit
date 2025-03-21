@@ -62,7 +62,8 @@ class Generator(BaseGenerator):
         
         statements1=[["If a sample of 100 student who took the {} test is taken what is the probability that the sample has a mean score of {} or less".format(ind_2,dep_2)],["If you randomly choose a student who took the {} test, what is the probability that they have a score of {} or less?".format(ind_2,dep_2)]]
         stmt1=statements1[ch_1][0]
-        statements2=[["If you randomly choose a student who took the {} test, what is the {} score they can have and still be higher than {} \% of all {} scores.".format(ind_3,min_max,percent_1,ind_3)],["If you have a sample of 100 students who took the {} test, what is the {} sample mean score that is higher than {}\% of sample mean scores.".format(ind_3,min_max,percent_1)]]
+        statements2=[["If you randomly choose a student who took the {} test, what is the {} score they can have and still be higher than {}% of all {} scores.".format(ind_3,min_max,percent_1,ind_3)],["If you have a sample of 100 students who took the {} test, what is the {} sample mean score that is higher than {}% of sample mean scores.".format(ind_3,min_max,percent_1)]]
+
         stmt2=statements2[ch_1][0]
         #if ind_2=="LSAT":
             

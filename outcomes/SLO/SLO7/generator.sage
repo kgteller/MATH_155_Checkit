@@ -62,7 +62,7 @@ class Generator(BaseGenerator):
         
         statements1=[["If a sample of 100 {} babies is taken what is the probability that the sample has a mean of {} grams or less".format(ind_2,dep_2)],["If you randomly choose a baby who is {}, what is the probability that they have a birth weight of {} or less?".format(ind_2,dep_2)]]
         stmt1=statements1[ch_1][0]
-        statements2=[["If you randomly choose a baby who is {}, what is the {} birthweight they can have and still be {} than {} \% of all {} babies born in 1994.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 {} babies, what is the {} sample mean birth weight that is {} than {}\% of sample mean birth weights.".format(ind_3,min_max,dir_1,percent_1)]]
+        statements2=[["If you randomly choose a baby who is {}, what is the {} birthweight they can have and still be {} than {}% of all {} babies born in 1994.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 {} babies, what is the {} sample mean birth weight that is {} than {}% of sample mean birth weights.".format(ind_3,min_max,dir_1,percent_1)]]
         stmt2=statements2[ch_1][0]
         #if ind_2=="Mexican-American":
             
