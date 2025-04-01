@@ -27,18 +27,21 @@ class Generator(BaseGenerator):
         ch1=randint(0,1)
         zort=choice(["","Also, the population standard deviation for the {} is known to be {}.".format(ind_1,round(SD_1,1))])
         Pop_SD=SD_2
+        Z3=ND.cum_distribution_function_inv((1+CL_3/100)/2)
         if zort=="":
             CV=T1.cum_distribution_function_inv(1-alpha/2)
             SE=STD_1/sqrt(n1)
             SE_rnd=round(SE,4)
             CI_upper=round(mean_1+(CV)*(SE),4)
             CI_lower=round(mean_1-(CV)*(SE),4)
+            answer_4=ceil((Z3*STD_1/ME)^2)
         else:
             CV=ND.cum_distribution_function_inv(1-alpha/2)
             SE=SD_1/sqrt(n1)
             SE_rnd=round(SE,4)
             CI_upper=round(mean_1+(CV)*(SE),4)
             CI_lower=round(mean_1-(CV)*(SE),4)
+            answer_4=ceil((Z3*SD_1/ME)^2)
         dep_1=round((zscore_1*SD_1+mean_1),0)
         answer_1=round(((dep_1-mean_1)/SD_1),2)
         ind_2="LSAT"
@@ -59,18 +62,20 @@ class Generator(BaseGenerator):
                 SE_rnd=round(SE,4)
                 CI_upper=round(mean_2+(CV)*(SE),4)
                 CI_lower=round(mean_2-(CV)*(SE),4)
+                answer_4=ceil((Z3*STD_2/ME)^2)
             else:
                 CV=ND.cum_distribution_function_inv(1-alpha2/2)
                 SE=SD_2/sqrt(n2)
                 SE_rnd=round(SE,4)
                 CI_upper=round(mean_2+(CV)*(SE),4)
                 CI_lower=round(mean_2-(CV)*(SE),4)
+                answer_4=ceil((Z3*SD_2/ME)^2)
             ind_2="MCAT"
             mean_diff = mean_2-mean_1
             lower_bound = round(mean_diff - margin_of_error,4)
             upper_bound = round(mean_diff + margin_of_error,4)
-        Z3=ND.cum_distribution_function_inv((1+CL_3/100)/2)
-        answer_4=ceil((Z3*Pop_SD/ME)^2)
+        
+        
         
         return {
             "ind_1":ind_1,

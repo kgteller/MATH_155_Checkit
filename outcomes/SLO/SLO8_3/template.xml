@@ -39,7 +39,7 @@
     </knowl>
     
      <knowl>
-        <content><p>If the population standard deviation for {{ind_2}} is known to be {{Pop_SD}} and we want to construct a {{CL3}} \% confidence interval with a margin of error of {{ME}}. What is the minimum sample size needed?</p></content>
+        <content><p>If we want to construct a {{CL3}} \% confidence interval about the mean daily price change for the {{ind_1}} with a margin of error of {{ME}}, what is the minimum sample size needed?</p></content>
         <outtro><p><m>{{ans_4}}</m> {{ind_2}} </p></outtro>
     </knowl>
 
