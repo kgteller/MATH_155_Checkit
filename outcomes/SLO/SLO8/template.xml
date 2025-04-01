@@ -15,26 +15,31 @@
         <p>We want to construct a {{CL}} \% Confidence interval about the mean weight for {{ind_1}} babies. {{zort}} </p>
     </intro>
     <knowl>
-        <content><p> What is the critical value for the first confidence interval?  </p></content>
+        <content><p> What is the critical value for this confidence interval?  </p></content>
         <outtro><p><m>{{CV}}</m> </p></outtro>
     </knowl>
     <knowl>
-            <content><p>What is the standard error for the first confidence interval</p></content>
+            <content><p>What is the standard error for this confidence interval</p></content>
             <outtro><p><m>{{SE}}</m></p></outtro>
     </knowl>
     <knowl>
         <content><p>Construct and interpret the confidence interval about the mean weight of {{ind_1}} babies using either the above information or Minitab </p></content>
-        <outtro><p><m>({{CI_L}},{{CI_U}})</m> grams </p></outtro>
+        <outtro><p>We are {{CL}} % confident tht the mean birth weight for {{ind_1}} babies is between <m>({{CI_L}},{{CI_U}})</m> grams </p></outtro>
     </knowl>
 
     </knowl>
 
      <knowl>
-        <content><p>If the population standard deviation for {{ind_2}} babies is known to be {{Pop_SD}} and we want to construct a {{CL3}} \% confidence interval with a margin of error of {{ME}} grams. What is the minimum sample size needed?</p></content>
+        <content><p>If we want to construct a {{CL3}} \% confidence interval for {{ind_1}} babies with a margin of error of {{ME}} grams. What is the minimum sample size needed?</p></content>
         <outtro><p><m>{{ans_4}}</m> babies </p></outtro>
     </knowl>
 
 <!-- 
+
+<knowl>
+        <content><p>If the population standard deviation for {{ind_2}} babies is known to be {{Pop_SD}} and we want to construct a {{CL3}} \% confidence interval with a margin of error of {{ME}} grams. What is the minimum sample size needed?</p></content>
+        <outtro><p><m>{{ans_4}}</m> babies </p></outtro>
+    </knowl>
     <knowl>
         <content><p>Construct and interpret a {{CL2}} \% confidence interval for the difference between the mean weights for {{ind_1}} and {{ind_2}} babies.</p> </content>
         <outtro><p><m>({{LB}},{{UB}})</m> grams </p></outtro>
