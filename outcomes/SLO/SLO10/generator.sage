@@ -1,292 +1,114 @@
 class Generator(BaseGenerator):
     def data(self):
-            import numpy
-            import scipy
-            from scipy import stats
-
-
-            scenario=randint(0,9)
-            n=randint(8,15)
-            if scenario==0:
-                prose="A study is conducted comparing the age of children to their Forced Exhalation Volume (FEV) (in liters), in order to see the impact on age on lung function.  Children of different ages have their FEV tested by physicians."
-                explanatory="Age"
-                response="FEV"
-                Eunit="years"
-                Runit="liters"
-                #n=randint(15,25)
-                m=uniform(0.24, 0.28)
-                b=uniform(0.011, 0.012)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 0.25)
-                for i in range(n):
-                    x=randint(6,10)
-                    y=round(m*x+T.get_random_element()+b,2)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=randint(6,10)
-                y2=round(randint(6,10)*m+b,1)
-                sample="a bird"
-
-
-            if scenario==1:
-                prose="A study is conducted comparing the weight of a species of bird (in grams) to it's (in mm).  Birds of this species are captured, their dimensions recorded and released."
-                explanatory="Weight"
-                response="Wingspan"
-                Eunit="grams"
-                Runit="mm"
-                #n=randint(15,25)
-                m=uniform(0.4, 0.5)
-                b=uniform(1, 1.5)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 0.8)
-                for i in range(n):
-                    x=round(uniform(8,18),2)
-                    y=round(m*x+T.get_random_element()+b,2)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=round(uniform(8,18),2)
-                y2=round(uniform(8,18)*m+b,2)
-                sample="a bird"
-
-            if scenario==2:
-                prose="A business compares the amount it spends on advertising (thousands of dollars per month) to it's revenues (thousands of dollars per month) over it's last few months."
-                explanatory="Advertising Expense"
-                response="Revenue"
-                Eunit="k dollars/month"
-                Runit="k dollars/month"
-                #n=randint(15,25)
-                m=uniform(50, 80)
-                b=uniform(10, 15)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 60)
-                for i in range(n):
-                    x=round(uniform(2,5),1)
-                    y=round(m*x+T.get_random_element()+b,1)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=round(uniform(2,5),1)
-                y2=round(uniform(2,5)*m+b,1)
-                sample="a business"
-
-
-            if scenario==3:
-                prose="A study is done comparing windchill in a city (in F), compared to windspeed (in mph) on different days."
-                explanatory="Windspeed"
-                response="Windchill"
-                Eunit="mph"
-                Runit="F"
-                #n=randint(15,25)
-                m=uniform(-1.3, -1.2)
-                b=uniform(15, 20)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 3)
-                for i in range(n):
-                    x=round(uniform(5,20),1)
-                    y=round(m*x+T.get_random_element()+b,1)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=round(uniform(5, 20),1)
-                y2=round(randint(5, 20)*m+b,1)
-                sample="a city"        
-
-            if scenario==4:
-                prose="A professor observes how many cups of coffee they drink in a day, compared to how many hours of sleep they get that night."
-                explanatory="Coffee Consumption"
-                response="Sleep"
-                Eunit="cups"
-                Runit="hours"
-                #n=randint(15,25)
-                m=uniform(-0.6, -0.4)
-                b=uniform(7, 8)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 1)
-                for i in range(n):
-                    x=randint(0,4)
-                    y=round(m*x+T.get_random_element()+b,1)
-                    Xlist.append(x)
-                    Ylist.append(y) 
-                x1=randint(0, 4)
-                y2=round(randint(0, 4)*m+b,1)
-                sample="a professor"
+        ND=RealDistribution('gaussian', 1)
+        zscore_1=round(uniform(-2.85, 2.85),2)
+        zscore_2=round(uniform(-1.88, 2.03),2)
+        zscore_3=round(uniform(-1.75, -.05),2)
+        zscore_4=round(uniform(.03, 1.79),2)
         
-            if scenario==5:
-                prose="A study is conducted comparing the age of adults to their glucose level (in mg/dL)."
-                explanatory="Age"
-                response="Glucose Level"
-                Eunit="years"
-                Runit="mg/dL"
-                #n=randint(15,25)
-                m=uniform(0.35, 0.4)
-                b=uniform(63, 67)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 3)
-                for i in range(n):
-                    x=randint(20, 65)
-                    y=round(m*x+T.get_random_element()+b,1)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=randint(20, 65)
-                y2=round(randint(20, 65)*m+b,1)
-                sample="an adult"
+        mean_1=3393
+        SD_1=562
+        mean_2=3343
+        SD_2=598
+        ind_1=choice(["non-Hispanic white", "Mexican-American"])
+        dep_1=round((zscore_1*SD_1+mean_1),0)
+        answer_1=round(((dep_1-mean_1)/SD_1),2)
+        if ind_1=="Mexican-American":
+            dep_1=round((zscore_1*SD_2+mean_2),0)
+            answer_1=round(((dep_1-mean_2)/SD_2),2)
+        
+        
+       
+        ind_2=choice(["non-Hispanic white", "Mexican-American"])
+        ind_3="Mexican-American"
+        ch_1=randint(0,1)
+        dir_1=choice(["heavier", "lighter"])
+        #dir_2=choice(["larger", "smaller"]
+        min_max="minimum"
 
 
-            if scenario==6:
-                prose="A survey is conducted comparing different homes electricity usage (in kilowatt hours), and their electric bills (dollars) within a city."
-                explanatory="Electricity Usage"
-                response="Electric Bill"
-                Eunit="kilowatt hours"
-                Runit="dollars"
-                #n=randint(15,25)
-                m=uniform(0.14, 0.15)
-                b=uniform(9.6, 10)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 2)
-                for i in range(n):
-                    x=round(uniform(150,300),2)
-                    y=round(m*x+T.get_random_element()+b,2)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=round(uniform(150, 300),2)
-                y2=round(uniform(150, 300)*m+b,2)
-                sample="a household"    
+        if ch_1==1:
+            dep_2=round((zscore_2*SD_1+mean_1),0)
+            answer_2=round(ND.cum_distribution_function((dep_2 - mean_1)/SD_1),4)
+            if ind_2=="Mexican-American":
+                dep_2=round((zscore_2*SD_2+mean_2),0)
+                answer_2=round(ND.cum_distribution_function((dep_2 - mean_2)/SD_2),4)
+                ind_3="non-Hispanic white"
+            percent_1=randint(33, 71)
+            percent_1a=percent_1
+            if dir_1=="lighter":
+                min_max="maximum"
+                percent_1a=100-percent_1
+            answer_3z=ND.cum_distribution_function_inv(percent_1a/100)
+            answer_3=round((answer_3z*(SD_2/10) + mean_2),0)
+            if ind_2=="Mexican-American":
+                answer_3=round((answer_3z*(SD_1/10) + mean_1),0)
+        else:
+            dep_2=round((zscore_2*(SD_1/10)+mean_1),0)
+            answer_2=round(ND.cum_distribution_function((dep_2 - mean_1)/(SD_1/10)),4)
+            if ind_2=="Mexican-American":
+                dep_2=round((zscore_2*(SD_2/10)+mean_2),0)
+                answer_2=round(ND.cum_distribution_function((dep_2 - mean_2)/(SD_2/10)),4)
+                ind_3="non-Hispanic white"
+            percent_1=randint(33, 71)
+            percent_1a=percent_1
+            if dir_1=="lighter":
+                min_max="maximum"
+                percent_1a=100-percent_1
+            answer_3z=ND.cum_distribution_function_inv(percent_1a/100)
+            answer_3=round((answer_3z*SD_2 + mean_2),0)
+            if ind_2=="Mexican-American":
+                answer_3=round((answer_3z*SD_1 + mean_1),0)
+        
+        statements1=[["If a sample of 100 {} babies is taken what is the probability that the sample has a mean of {} grams or less".format(ind_2,dep_2)],["If you randomly choose a baby who is {}, what is the probability that they have a birth weight of {} or less?".format(ind_2,dep_2)]]
+        stmt1=statements1[ch_1][0]
+        statements2=[["If you randomly choose a baby who is {}, what is the {} birthweight they can have and still be {} than {}% of all {} babies born in 1994.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 {} babies, what is the {} sample mean birth weight that is {} than {}% of sample mean birth weights.".format(ind_3,min_max,dir_1,percent_1)]]
+        stmt2=statements2[ch_1][0]
+        #if ind_2=="Mexican-American":
+            
 
-            if scenario==7:
-                prose="A study is conducted examining how far a car has driven (in thousands of miles) compared to how expensive the annual maintenance costs are."
-                explanatory="Distance Driven"
-                response="Maintenance Cost"
-                Eunit="thousand miles"
-                Runit="dollars"
-                #n=randint(15,25)
-                m=uniform(25, 35)
-                b=uniform(0.045, 0.065)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 100)
-                for i in range(n):
-                    x=round(uniform(15,30),2)
-                    y=round(m*x+T.get_random_element()+b,2)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=round(uniform(15, 30),2)
-                y2=round(uniform(15, 30)*m+b,2)
-                sample="a car" 
+       
+       
 
+        
+        
+        
+        ind_4="Mexican-American"
+        dep_3=round((zscore_3*(SD_2/10)+mean_2),0)
+        dep_4=round((zscore_4*(SD_2/10)+mean_2),0)
+        answer_4=round(ND.cum_distribution_function((dep_4 - mean_2)/(SD_2/10)),4) - round(ND.cum_distribution_function((dep_3 - mean_2)/(SD_2/10)),4)
+        if ind_1=="Mexican-American":
+            ind_4="non-Hispanic white"
+            dep_3=round((zscore_3*(SD_1/10)+mean_1),0)
+            dep_4=round((zscore_4*(SD_1/10)+mean_1),0)
+            answer_4=round(ND.cum_distribution_function((dep_4 - mean_1)/(SD_1/10)),4) - round(ND.cum_distribution_function((dep_3 - mean_1)/(SD_1/10)),4)
+        
+        
+        percent_2=randint(87, 96)
+        dep_5=ND.cum_distribution_function_inv(percent_2/100)
+        answer_5a=round((dep_5*SD_1+mean_1),0)
+        answer_5b=round((dep_5*SD_2+mean_2),0)
+        
+        return {
+            "ind_1":ind_1,
+            "dep_1":dep_1,
+            "answer_1":"{:.2f}".format(answer_1),
+            "ind_2":ind_2,
+            "dep_2":dep_2,
+            "answer_2":"{:.4f}".format(answer_2),
+            "ind_3":ind_3,
+            "dir_1":dir_1,
+            "min_max":min_max,
+            "percent_1":percent_1,
+            "answer_3":answer_3,
+            "ind_4":ind_4,
+            "dep_3":dep_3,
+            "dep_4":dep_4,
+            "answer_4":"{:.4f}".format(answer_4),
+            "percent_2":percent_2,
+            "answer_5a":answer_5a,
+            "answer_5b":answer_5b,
+            "statement2":stmt1,
+            "statement3":stmt2,
 
-            if scenario==8:
-                prose="A study is conducted examining adult BMI (in kg/m^2) compared to HDL Cholesterol (in mg/DL)."
-                explanatory="BMI"
-                response="HDL Cholesterol"
-                Eunit="kg/(m squared)"
-                Runit="mg/DL"
-                #n=randint(15,25)
-                m=uniform(-2.4, -2.3)
-                b=uniform(110, 112)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 3)
-                for i in range(n):
-                    x=round(uniform(20,35),2)
-                    y=round(m*x+T.get_random_element()+b,2)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=round(uniform(20, 35),2)
-                y2=round(uniform(20, 35)*m+b,2)
-                sample="an adult"     
-
-            if scenario==9:
-                prose="A cafe compares the temperature during the day (in F) to the number of cups of coffee they sale."
-                explanatory="Temperature"
-                response="Coffee Sold"
-                Eunit="F"
-                Runit="Cups"
-                #n=randint(15,25)
-                m=uniform(-.4, -.35)
-                b=uniform(40, 50)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 6)
-                for i in range(n):
-                    x=round(uniform(20,90))
-                    y=round(m*x+T.get_random_element()+b)
-                    Xlist.append(x)
-                    Ylist.append(y)
-                x1=round(uniform(20, 90))
-                y2=round(uniform(20, 90)*m+b)
-                sample="a day"
-
-
-
-
-
-            Datalist=[]
-
-            for i in range(n):
-                entry={
-                    'x':Xlist[i],
-                    'y':Ylist[i],
-                }
-                Datalist.append(entry)
-
-            mx=numpy.mean(Xlist)
-            my=numpy.mean(Ylist)
-
-
-            SSx=0
-            SSy=0
-
-            for i in range(n):
-                SSx=SSx+(Xlist[i]-mx)^2
-                SSy=SSy+(Ylist[i]-my)^2
-
-            SSx=SSx*1.0
-            SSy=SSy*1.0
-
-            sx=(SSx/(n-1)*1.0)^(1/2)
-            sy=(SSy/(n-1)*1.0)^(1/2)
-
-            R=0
-
-            for i in range(n):
-                R=R+(Xlist[i]-mx)*(Ylist[i]-my)/(sx*sy)
-
-            R=round(R/(n-1),10)
-
-            B1=round((sy/sx)*R,15)
-            B0=round(my-B1*mx,15)
-
-            y1=B1*x1+B0
-            x2=(y2-B0)/B1
-
-
-
-
-
-            return{
-                "Datalist":Datalist,
-                "explanatory":explanatory,
-                "response":response,
-                "Eunit":Eunit,
-                "Runit":Runit,
-                "prose":prose,
-                "x1":x1,
-                "x2":x2,
-                "y1":y1,
-                "y2":y2,
-                "B0":B0,
-                "B1":B1,
-                "R":R,
-                "sample":sample,
-
-
-
-
-
-
-            }
+        }

@@ -1,167 +1,106 @@
+from scipy.stats import t
 class Generator(BaseGenerator):
     def data(self):
-            import numpy
-            import scipy
-            from scipy import stats
+        ND=RealDistribution('gaussian', 1)
+        zscore_1=round(uniform(-2.85, 2.85),2)
+        zscore_2=round(uniform(-1.88, 2.03),2)
+        zscore_3=round(uniform(-1.75, -.05),2)
+        zscore_4=round(uniform(.03, 1.79),2)
 
-
-            scenario=randint(0,4)
-
-            if scenario==0:
-                prose="A study is conducted comparing the age of children to their Forced Exhalation Volume (FEV) (in liters), in order to see the impact on age on lung function.  Children of different ages have their FEV tested by physicians."
-                explanatory="Age"
-                response="FEV"
-                Eunit="years"
-                Runit="liters"
-                n=randint(15,25)
-                m=uniform(0.24, 0.28)
-                b=uniform(0.011, 0.012)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 0.25)
-                for i in range(n):
-                    x=randint(6,10)
-                    y=round(m*x+T.get_random_element()+b,2)
-                    Xlist.append(x)
-                    Ylist.append(y)
-
-
-            if scenario==1:
-                prose="A study is conducted comparing the weight of a species of bird (in grams) to it's (in mm).  Birds of this species are captured, their dimensions recorded and released."
-                explanatory="Weight"
-                response="Wingspan"
-                Eunit="grams"
-                Runit="mm"
-                n=randint(15,25)
-                m=uniform(0.4, 0.5)
-                b=uniform(1, 1.5)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 0.8)
-                for i in range(n):
-                    x=round(uniform(8,18),2)
-                    y=round(m*x+T.get_random_element()+b,2)
-                    Xlist.append(x)
-                    Ylist.append(y)
-
-            if scenario==2:
-                prose="A business compares the amount it spends on advertising (thousands of dollars per month) to it's revenues (thousands of dollars per month) over it's last few months."
-                explanatory="Advertising Expense"
-                response="Revenue"
-                Eunit="k dollars/month"
-                Runit="k dollars/month"
-                n=randint(15,25)
-                m=uniform(50, 80)
-                b=uniform(10, 15)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 60)
-                for i in range(n):
-                    x=round(uniform(2,5),1)
-                    y=round(m*x+T.get_random_element()+b,1)
-                    Xlist.append(x)
-                    Ylist.append(y)
-
-
-            if scenario==3:
-                prose="A study is done comparing windchill in a city (in F), compared to windspeed (in mph) on different days."
-                explanatory="Windspeed"
-                response="Windchill"
-                Eunit="mph"
-                Runit="F"
-                n=randint(15,25)
-                m=uniform(-1.3, -1.2)
-                b=uniform(15, 20)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 3)
-                for i in range(n):
-                    x=round(uniform(5,20),1)
-                    y=round(m*x+T.get_random_element()+b,1)
-                    Xlist.append(x)
-                    Ylist.append(y)        
-
-            if scenario==4:
-                prose="A professor observes how many cups of coffee they drink in a day, compared to how many hours of sleep they get that night."
-                explanatory="Coffee Consumption"
-                response="Sleep"
-                Eunit="cups"
-                Runit="hours"
-                n=randint(15,25)
-                m=uniform(-0.6, -0.4)
-                b=uniform(7, 8)
-                Xlist=[]
-                Ylist=[]
-                T = RealDistribution('gaussian', 1)
-                for i in range(n):
-                    x=randint(0,4)
-                    y=round(m*x+T.get_random_element()+b,1)
-                    Xlist.append(x)
-                    Ylist.append(y) 
-
-
-
-
-
-            Datalist=[]
-
-            for i in range(n):
-                entry={
-                    'x':Xlist[i],
-                    'y':Ylist[i],
-                }
-                Datalist.append(entry)
-
-            mx=numpy.mean(Xlist)
-            my=numpy.mean(Ylist)
-
-            SSx=0
-            SSy=0
-
-            for i in range(n):
-                SSx=SSx+(Xlist[i]-mx)^2
-                SSy=SSy+(Ylist[i]-my)^2
-
-            SSx=SSx*1.0
-            SSy=SSy*1.0
-
-            sx=(SSx/(n-1)*1.0)^(1/2)
-            sy=(SSy/(n-1)*1.0)^(1/2)
-
-            R=0
-
-            for i in range(n):
-                R=R+(Xlist[i]-mx)*(Ylist[i]-my)/(sx*sy)
-
-            R=round(R/(n-1),10)
-            Rsquare=R^2
-            perc=Rsquare*100
-
-            if R<0:
-                ans3="Negative Linear Relationship"
+        n1=randint(15,100)
+        mean_1=3393+randint(-7,7)
+        SD_1=562
+        STD_1=SD_1+randint(-7,7)
+        CL=randint(88,99)
+        alpha=1-CL/100
+        T1=RealDistribution('t', n1-1)
+        n2=randint(15,100)
+        mean_2=3343+randint(-7,7)
+        SD_2=598
+        STD_2=SD_2+randint(-7,7)
+        CL2=randint(88,99)
+        CL_3=randint(85,99)
+        ME=round(uniform(10,30),2)
+        alpha2=1-CL/100
+        T2=RealDistribution('t', n2-1)
+        ind_1=choice(["non-Hispanic white", "Mexican-American"])
+        ch1=randint(0,1)
+        zort=choice(["","Also, the population standard deviation for {} babies is known to be {}.".format(ind_1,SD_1)])
+        Pop_SD=SD_2
+        Z3=ND.cum_distribution_function_inv((1+CL_3/100)/2)
+        if zort=="":
+            CV=T1.cum_distribution_function_inv(1-alpha/2)
+            SE=STD_1/sqrt(n1)
+            SE_rnd=round(SE,4)
+            CI_upper=round(mean_1+(CV)*(SE),4)
+            CI_lower=round(mean_1-(CV)*(SE),4)
+            answer_4=ceil((Z3*STD_1/ME)^2)
+        else:
+            CV=ND.cum_distribution_function_inv(1-alpha/2)
+            SE=SD_1/sqrt(n1)
+            SE_rnd=round(SE,4)
+            CI_upper=round(mean_1+(CV)*(SE),4)
+            CI_lower=round(mean_1-(CV)*(SE),4)
+            answer_4=ceil((Z3*SD_1/ME)^2)
+        dep_1=round((zscore_1*SD_1+mean_1),0)
+        answer_1=round(((dep_1-mean_1)/SD_1),2)
+        ind_2="Mexican-American"
+        mean_diff = mean_1-mean_2
+        std_err = sqrt((STD_1^2)/n1+(STD_2^2)/n2)
+        degrees_of_freedom = int((std_err^4/((STD_1^2/n1)^2/(n1-1)+(STD_2^2/n2)^2/(n2-1))))
+        margin_of_error = t.ppf((1 + CL2/100) / 2, degrees_of_freedom) * std_err
+        lower_bound = round(mean_diff - margin_of_error,4)
+        upper_bound = round(mean_diff + margin_of_error,4)
+        
+        
+        if ind_1=="Mexican-American":
+            dep_1=round((zscore_1*SD_2+mean_2),0)
+            answer_1=round(((dep_1-mean_2)/SD_2),2)
+            zort=choice(["","Also, the population standard deviation for {} babies is known to be {}.".format(ind_1,SD_2)])
+            Pop_SD=SD_1
+            if zort=="":
+                CV=T2.cum_distribution_function_inv(1-alpha2/2)
+                SE=STD_2/sqrt(n2)
+                SE_rnd=round(SE,4)
+                CI_upper=round(mean_2+(CV)*(SE),4)
+                CI_lower=round(mean_2-(CV)*(SE),4)
+                answer_4=ceil((Z3*STD_2/ME)^2)
             else:
-                ans3="Positive Linear Relationship"
+                CV=ND.cum_distribution_function_inv(1-alpha2/2)
+                SE=SD_2/sqrt(n2)
+                SE_rnd=round(SE,4)
+                CI_upper=round(mean_2+(CV)*(SE),4)
+                CI_lower=round(mean_2-(CV)*(SE),4)
+                answer_4=ceil((Z3*SD_2/ME)^2)
+            ind_2="non-Hispanic white"
+            mean_diff = mean_2-mean_1
+            lower_bound = round(mean_diff - margin_of_error,4)
+            upper_bound = round(mean_diff + margin_of_error,4)
+        
+        
+        
+        return {
+            "ind_1":ind_1,
+            "ind_2":ind_2,
+            "zort":zort,
+            "CL":CL,
+            "CL2":CL2,
+            "CL3":CL_3,
+            "n1":n1,
+            "n2":n2,
+            "mean1":mean_1,
+            "STD1":STD_1,
+            "Pop_SD":Pop_SD,
+            "mean2":mean_2,
+            "STD2":STD_2,
+            "CV":CV,
+            "SE":SE_rnd,
+            "CI_U":CI_upper,
+            "CI_L":CI_lower,
+            "LB":lower_bound,
+            "UB":upper_bound,
+            "ME":ME,
+            "ans_4":answer_4,
+           
 
-
-
-
-
-
-            return{
-                "Datalist":Datalist,
-                "explanatory":explanatory,
-                "response":response,
-                "Eunit":Eunit,
-                "Runit":Runit,
-                "prose":prose,
-                "R":R,
-                "Rsquare":Rsquare,
-                "perc":perc,
-                "ans3":ans3
-
-
-
-
-
-
-            }
+        }

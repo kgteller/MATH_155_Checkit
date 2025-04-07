@@ -63,128 +63,128 @@
         <outcome>
             <title>Measures of Spread</title>
             <slug>SLO5</slug>
-            <path>outcomes/SLO/SLO4A</path>
+            <path>outcomes/SLO/SLO5</path>
             <description>I can compute measures of spread for a data set.</description>
         </outcome>
 
         <outcome>
             <title>Measures of Position</title>
             <slug>SLO6</slug>
-            <path>outcomes/SLO/SLO5</path>
+            <path>outcomes/SLO/SLO6</path>
             <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
         </outcome>
         <outcome>
             <title>Measures of Position</title>
             <slug>SLO6-1</slug>
-            <path>outcomes/SLO/SLO5_1</path>
+            <path>outcomes/SLO/SLO6_1</path>
             <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
         </outcome>
         <outcome>
             <title>Measures of Position</title>
             <slug>SLO6-2</slug>
-            <path>outcomes/SLO/SLO5_2</path>
+            <path>outcomes/SLO/SLO6_2</path>
             <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
         </outcome>
         <outcome>
             <title>Measures of Position</title>
             <slug>SLO6-3</slug>
-            <path>outcomes/SLO/SLO5_3</path>
+            <path>outcomes/SLO/SLO6_3</path>
             <description>I Understand where a data point exists within the data set, and how extreme its value is.</description>
         </outcome>
         <outcome>
             <title>Discrete Probability Distributions</title>
             <slug>SLO7</slug>
-            <path>outcomes/SLO/SLO6</path>
+            <path>outcomes/SLO/SLO7</path>
             <description>I Understand and can utilize discrete probability distributions, including the binomial distribution</description>
         </outcome>
          <outcome>
             <title>Binomial Distributions</title>
             <slug>SLO8</slug>
-            <path>outcomes/SLO/SLO6A</path>
+            <path>outcomes/SLO/SLO8</path>
             <description>I Understand and can utilize the binomial distribution to find proabilities, mean, and standard deviation</description>
         </outcome>
         <outcome>
             <title>Standard Normal Distributions</title>
             <slug>SLO9</slug>
-            <path>outcomes/SLO/SLO7A</path>
+            <path>outcomes/SLO/SLO9</path>
             <description>I can interpret and utilize the standard normal curve for proabailities and Z values</description>
         </outcome>
         <outcome>
             <title>Normal Distributions</title>
             <slug>SLO10</slug>
-            <path>outcomes/SLO/SLO7</path>
+            <path>outcomes/SLO/SLO10</path>
             <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
         </outcome>
         <outcome>
             <title>Normal Distributions</title>
             <slug>SLO10-1</slug>
-            <path>outcomes/SLO/SLO7_1</path>
+            <path>outcomes/SLO/SLO10_1</path>
             <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
         </outcome>
         <outcome>
             <title>Normal Distributions</title>
             <slug>SLO10-2</slug>
-            <path>outcomes/SLO/SLO7_2</path>
+            <path>outcomes/SLO/SLO10_2</path>
             <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
         </outcome>
         <outcome>
             <title>Normal Distributions</title>
             <slug>SLO10-3</slug>
-            <path>outcomes/SLO/SLO7_3</path>
+            <path>outcomes/SLO/SLO10_3</path>
             <description>I can interpret and utilize the normal curve for z-scores and sampling distributions</description>
         </outcome>
         <outcome>
             <title>1-Sample Confidence Intervals</title>
             <slug>SLO11</slug>
-            <path>outcomes/SLO/SLO8</path>
+            <path>outcomes/SLO/SLO11</path>
             <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
         </outcome>
         <outcome>
             <title>1-Sample Confidence Intervals</title>
             <slug>SLO11-1</slug>
-            <path>outcomes/SLO/SLO8_1</path>
+            <path>outcomes/SLO/SLO11_1</path>
             <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
         </outcome>
           <outcome>
             <title>1-Sample Confidence Intervals</title>
             <slug>SLO11-2</slug>
-            <path>outcomes/SLO/SLO8_2</path>
+            <path>outcomes/SLO/SLO11_2</path>
             <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
         </outcome>
          <outcome>
             <title>1-Sample Confidence Intervals</title>
             <slug>SLO11-3</slug>
-            <path>outcomes/SLO/SLO8_3</path>
+            <path>outcomes/SLO/SLO11_3</path>
             <description>I can compute and interpret the confidence interval about the mean for one-samples</description>
         </outcome>
          <outcome>
             <title>2-Sample Confidence Intervals</title>
             <slug>SLO12</slug>
-            <path>outcomes/SLO/SLO8A</path>
+            <path>outcomes/SLO/SLO12</path>
             <description>I can compute and interpret the confidence interval about the mean for two-samples</description>
         </outcome>
          <outcome>
             <title>2-Sample Confidence Intervals</title>
             <slug>SLO12-1</slug>
-            <path>outcomes/SLO/SLO8B</path>
+            <path>outcomes/SLO/SLO12</path>
             <description>I can compute and interpret the confidence interval about the mean for two-samples</description>
         </outcome>
           <outcome>
             <title>1-Sample Hypothesis Tests</title>
             <slug>SLO13</slug>
-            <path>outcomes/SLO/SLO9</path>
+            <path>outcomes/SLO/SLO13</path>
             <description>I can perform the correct hypothesis test, interpret the results, and state the conclusion</description>
         </outcome>
           <outcome>
             <title>2-Sample Hypothesis Tests</title>
             <slug>SLO14</slug>
-            <path>outcomes/SLO/SLO9_1</path>
+            <path>outcomes/SLO/SLO14_1</path>
             <description>I can perform the correct hypothesis test, interpret the results, and state the conclusion</description>
         </outcome>
           <outcome>
             <title>2-Sample Hypothesis Tests</title>
             <slug>SLO14-1</slug>
-            <path>outcomes/SLO/SLO9_2</path>
+            <path>outcomes/SLO/SLO14_2</path>
             <description>I can perform the correct hypothesis test, interpret the results, and state the conclusion</description>
         </outcome>
         <!-- 
@@ -198,13 +198,13 @@
         <outcome>
             <title>Linear Correlation</title>
             <slug>SLO15</slug>
-            <path>outcomes/SLO/SLO11</path>
+            <path>outcomes/SLO/SLO15</path>
             <description>I understand and can interpret the correlation between two quantitative variables</description>
         </outcome>
         <outcome>
             <title>Linear Regression</title>
             <slug>SLO16</slug>
-            <path>outcomes/SLO/SLO12</path>
+            <path>outcomes/SLO/SLO16</path>
             <description>I understand and can interpret the regression equation between two quanititative variables</description>
         </outcome>
 

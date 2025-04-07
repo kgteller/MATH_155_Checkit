@@ -1,57 +1,71 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
-        <p> Below you will find three probability distributions. Answer the first two questions based on these distributions. </p>
-    
-        <p>Distribution 1</p>
-        <p><me>\begin{array}{c|c}
-            \text{x} &amp; \text{P(x)} \\
-            \hline
-             {{x1}} &amp; {{d1}} \\
-             {{x2}} &amp; {{d2}} \\
-             {{x3}} &amp; {{d3}} \\
-             {{x4}} &amp; {{d4}} \\
-             {{x5}} &amp;  {{d5}} \\
-            \end{array}</me>
-        </p>
-        <p>Distribution 2</p>
-        <p><me>\begin{array}{c|c}
-            \text{x} &amp; \text{P(x)} \\
-            \hline
-             {{x6}} &amp; {{d6}} \\
-             {{x7}} &amp; {{d7}} \\
-             {{x8}} &amp; {{d8}} \\
-             {{x9}} &amp; {{d9}} \\
-             {{x10}} &amp; {{d10}} \\
-            \end{array}</me>
-        </p>
-        <p>Distribution 3</p>
-        <p><me>\begin{array}{c|c}
-            \text{x} &amp; \text{P(x)} \\
-            \hline
-             {{x11}} &amp; {{d11}} \\
-             {{x12}} &amp; {{d12}} \\
-             {{x13}} &amp; {{d13}} \\
-             {{x14}} &amp; {{d14}} \\
-            {{x15}} &amp; {{d15}} \\
-            \end{array}</me>
-        </p>
+        <p>One of the technological innovations of the late 20th century that has completely changed our world has been the cell phone. However, the access to and use of cell phones has not been uniform across the world. Gapminder.org has collected data about the number of cell phones per 100 people for {{n_1}} countries. The data for the year 2000 and is dsiplayed below.
+
+     <me>
+            {{#data}}
+        {{x}},
+            {{/data}}
+    </me>
+    </p> 
     </intro>
     <knowl>
-        <content><p>Which of the distributions above is a discrete probability distribution?</p></content>
+        <content><p>What is the {{min_max}} number of cell phones per 100 people a country could have in  and still be {{dir_1}} than {{percent_1}}<m>\%</m> of the other countries in the dataset?</p></content>
         <outtro><p>{{answer_1}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Find the mean of the correct probability distribution?</p></content>
-        <outtro><p> the mean is {{answer_2a}}.</p></outtro>
+        <content><p>Find and explain what the {{quar_2}} quartile means in terms of the countries in the dataset.</p></content>
+        <outtro><p> {{percent_2}}<m>\%</m>  of the countries in the dataset had {{change_2}} cell phones per 100 poeple or less.</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Find the variance of the correct probability distribution?</p></content>
-        <outtro><p>the variance is {{answer_2c}} .</p></outtro>
+        <content><p>Find and interpret the Z-score for {{za}} number of cell phones per 100 people in 2000 (round to 2 decimal places) </p></content>
+        <outtro><p> {{answer4a}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Find the standard deviation of the correct probability distribution?</p></content>
-        <outtro><p> the standard deviation is {{ answer_2b}}.</p></outtro>
+        <content><p>Find the 5 number summary of this data set.</p></content>
+        <outtro>
+                <list>
+                    <item><p>Min: <m>{{mn}}</m></p></item>
+                    <item><p>Q1: <m>{{Q1}}</m></p></item>
+                    <item><p>Median: <m>{{med}}</m></p></item>
+                    <item><p>Q3: <m>{{Q3}}</m></p></item>
+                    <item><p>Max: <m>{{mx}}</m></p></item>
+                </list>
+            </outtro>
     </knowl>
-
+    <knowl>
+        <content><p> Find the IQR of this data set, and use it to identify any potential outliers.</p></content>
+        <outtro>
+        <p>
+            The IQR is <m>{{IQR}}</m>.
+        </p>
+        <p>
+            Outliers:
+                <m>
+                    {{#outliers}}
+                {{x}},
+                    {{/outliers}}
+                </m>
+        </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content><p>Describe the shape of the distribution of the number of cell phones per 100 people in 2000.</p></content>
+        <outtro><p>{{answer_5}}</p></outtro>
+    </knowl>
+   <!--  <knowl>
+        <content><p>It turns out that in 2019, two countries, Morocco and Hong Kong were outliers in the dataset. Removing those two countries from the statistical summaries, gives you the following new statistical summary:</p>
+        <p><me>\begin{array}{|c|c|c|c|c|c|c|c|}
+            \hline
+            \text{ N } &amp;\text{ Min } &amp;\text{ Q1 } &amp;\text{ Median } &amp;\text{ Q3 } &amp;\text{ Max } &amp;\text{ Mean } &amp;\text{ St Dev } \\
+            \hline
+            \text {{n_3}} &amp; {{min_3}} &amp; {{q1_3}} &amp; {{med_3}} &amp; {{q3_3}} &amp; {{max_3}} &amp; {{mean_3}} &amp; {{stdev_3}} \\
+            \hline
+            \end{array}</me></p>
+        <p>How did removing the outliers affect the skewness of the boxplot? Justify your answer with evidence from the box plot.</p>
+        </content>
+        <outtro><p>The 2019 data set changed from right skewed to almost symmetric.</p></outtro>
+    </knowl>
+    -->
 </knowl>

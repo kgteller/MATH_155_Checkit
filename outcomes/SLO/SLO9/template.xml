@@ -1,131 +1,65 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
-        <p>
-            {{prose}} <m>{{n}}</m> {{sample}} <m>\bar{x}={{xbar}}</m> {{units}}, {{zort_phrase1}} <m> {{zort_phrase2}} </m> {{zort_phrase3}} <!-- with sample standard deviation <m>s={{s}}</m> {{units}}. -->
-        </p>
-        
-        
-    </intro>
-    
-        
-    
-    <knowl>
-        <intro>
-            <p>
-                Test the hypothesis that {{population}} {{ineq}} <m>  {{mu0}}</m> {{units}} at a <m>\alpha={{alpha}}</m> signifigance level.
-            </p>
+              <p>
+                  Let <m>z</m> be the standard normal variable.  Find the following:
+              </p>
         </intro>
-        <knowl>
-            <content>
-                <p>
-                    State the null hypothesis.
-                </p>
-            </content>
-            <outtro>
-                <p>
-                    The null hypothesis is <m>H_0: \mu={{mu0}}</m>.
-                </p>
-            </outtro>
-        </knowl>
-
-        <knowl>
-            <content>
-                <p>
-                    State the alternative hypothesis.
-                </p>
-            </content>
-            <outtro>
-                <p>
-                    The alternative hypothesis is <m>H_A: \mu\{{ineqsymb}}{{mu0}}</m>.
-                </p>
-            </outtro>
-        </knowl>
-
-        <knowl>
-            <content>
-                <p>
-                    What is the <m>p</m>-value?
-                </p>
-            </content>
-            <outtro>
-                <p>
-                    The sampling distribution has mean <m>{{mu0}}</m> and standard error <m>SE={{SE}}</m>.
-                </p>
-                <p>
-                    The sample mean is <m>\bar{x}={{xbar}}</m> which has <m>{{zt}}</m>-score <m>t={{tscore}}</m> <!-- <m>t</m>-score <m>t={{tscore}}</m> -->.
-                </p>
-                <p>
-                    The <m>p</m>-value is <m>{{pvalue}}</m>.
-                </p>
-            </outtro>
-        </knowl>
-<!-- 
-        <knowl>
-            <content>
-                <p>
-                    Using complete sentences, state the meaning of the <m>p</m>-value in the context of this problem.
-                </p>
-            </content>
-            <outtro>
-                <p>
-                    Suppose the null hypothesis were true, i.e. {{population}} was <m>{{mu0}}</m> {{units}}.  Then the probability that we sample <m>{{n}}</m> {{subjects}} and achieve a sample mean of   <m>{{xbar}}</m> {{units}} or  {{ineq2}}  is <m>{{pvalue}}</m>.
-                </p>
-            </outtro>
-
-        </knowl>
--->
-        <knowl>
-            <content>
-                <p>
-                    What do we say about <m>H_0</m>?  Why?
-                </p>
-            </content>
-            <outtro>
-                <p>
-                    {{claim}} since the <m>p</m>-value is <m>{{pvalue}}</m>.
-                </p>
-            </outtro>
+    
         
-        </knowl>    
-
-        <knowl>
-            <content>
-                <p>
-                    What do we coclude? 
-                </p>
-            </content>
-            <outtro>
-                <p>
-                    {{conclusion}} {{population}} {{ineq}} <m>  {{mu0}}</m> {{units}}.
-                </p>
-            </outtro>
-        
-        </knowl>  
+    
     
     
         
-    </knowl>
-    
-    <!--<knowl>
-        <content>
-            <p>
-                Find a <m>{{CL}}</m>% confidence interval for the {{population}}.  Using complete sentences, explain what the confidence interval means in the context of this problem.
-            </p>
-        </content>
-        <outtro>
-            <p>
-                For a <m>{{CL}}\%</m> confidence interval,  <m>t^*={{t}}</m>.
-            </p>
-            <p>
-                The {{population}}  has a <m>{{CL}}\%</m> chance of of falling in <m>[{{LB}}, {{UB}}]</m>  {{units}}.
-            </p>
-        </outtro>
-    </knowl>
-    -->
-        
 
-            
+            <knowl>
+                <content>
+                    <p>
+                        <m>P(Z\{{ineq1}} {{z1}})</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>P(Z\{{ineq1}} {{z1}})={{P1}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>P({{z2}}\lt Z\lt {{z3}})</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>P({{z2}}\lt Z\lt {{z3}})={{P2}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>z^*</m> such that <m>P(Z\{{ineq2}} z^*)={{P3}}</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>z^*</m> such that <m>P(Z\{{ineq2}} z^*)={{P3}}, z^*={{z4}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
+            <knowl>
+                <content>
+                    <p>
+                        <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)={{P4}}</m>.
+                    </p>
+                </content>
+                <outtro>
+                    <p>
+                        <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)={{P4}}, z^*={{z5}}</m>.
+                    </p>
+                </outtro>
+            </knowl>
     
         
 

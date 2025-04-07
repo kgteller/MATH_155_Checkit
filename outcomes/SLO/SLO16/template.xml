@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+      <p>
+          {{prose}}
+      </p>
+        
+      <p>
+          Consider this table of data collected comparing {{explanatory}} measured in {{Eunit}}, and {{response}} measured in {{Runit}}:
+      </p>  
+      
+      <p>
+          
+          <me>
+               \begin{array}{|c|c|}
+              \hline
+              \text{ {{explanatory}} in {{Eunit}} }
+              &amp;
+              \text{ {{response}} in {{Runit}} }
+              \\
+              \hline
+                  {{#Datalist}}
+               {{x}}
+              &amp; {{y}}
+                  \\
+                  {{/Datalist}}
+              
+              \hline
+              \end{array}
+          </me>
+      </p>
+        
+    </intro>
+    
+    
+    
+    
+    
+    <knowl>
+        <content>
+            <p>
+                Find the intercept <m>\beta_0</m> and it's units.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\beta_0={{B0}}</m> {{Runit}}.
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                Find the slope <m>\beta_1</m> and it's units.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\beta_1={{B1}}</m> {{Runit}}<m>/</m>{{Eunit}}.
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                What does <m>\beta_1</m> tell you about the relationship between {{explanatory}} and {{response}}?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                Whenever {{explanatory}} increases by 1 {{Eunit}}, {{response}} changes, on average, by <m>{{B1}}</m> {{Runit}}.
+            </p>
+        </outtro>
+        
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                For {{sample}} with {{explanatory}} <m>{{x1}}</m> {{Eunit}}, what is the estimated {{response}}?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                For {{sample}} with {{explanatory}} <m>{{x1}}</m> {{Eunit}}, the estimated {{response}} is <m>{{y1}}</m> {{Runit}}.
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p>
+                For {{sample}} with {{response}} <m>{{y2}}</m> {{Runit}}, what is the estimated {{explanatory}}?
+            </p>
+        </content>
+        <outtro>
+            <p>
+                For {{sample}} with {{response}} <m>{{y2}}</m> {{Runit}}, the estimated {{explanatory}} is <m>{{x2}}</m> {{Eunit}}.
+            </p>
+        </outtro>
+    </knowl>
+    
+        
+
+            
+    
+        
+
+        
+
+        
+    
+</knowl>

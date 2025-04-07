@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+          {{prose}} A total of <m>{{n}}</m> {{sample}} were sampled.  The following is a summary of {{sample1}} and {{sample2}}.
+      </p>
+      
+      <p>
+          <me>
+               \begin{array}{|c|c|c|}
+              \hline
+              \text{ {{title1}} in {{units}} }
+              &amp;
+              \text{ {{title2}} in {{units}} }
+              &amp;
+              \text{Difference in {{units}} }
+              \\
+              \hline
+                  {{#Datalist}}
+               {{x1}}
+              &amp; {{x2}}
+              &amp; {{d}}
+                  \\
+                  {{/Datalist}}
+              
+              \hline
+              \end{array}
+          </me>
+      </p>
+      <!--<p>
+          The sample average of these differences is <m>{{dbar}}</m> {{units}} and the sample standard deviation is <m>{{s}}</m> {{units}}.
+      </p>-->
+        
+        
+    </intro>
+    
+        
+    
+    <knowl>
+        <intro>
+            <p>
+                Test the hypothesis that {{population}} {{ineq}} <m>  {{mu0}}</m> {{units}} at a <m>\alpha={{alpha}}</m> signifigance level.
+            </p>
+        </intro>
+        <knowl>
+            <content>
+                <p>
+                    State the null hypothesis.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    The null hypothesis is <m>H_0: \mu={{mu0}}</m>.
+                </p>
+            </outtro>
+        </knowl>
+
+        <knowl>
+            <content>
+                <p>
+                    State the alternative hypothesis.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    The alternative hypothesis is <m>H_A: \mu\{{ineqsymb}}{{mu0}}</m>.
+                </p>
+            </outtro>
+        </knowl>
+
+        <knowl>
+            <content>
+                <p>
+                    What is the <m>p</m>-value?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    The sampling distribution has mean <m>{{mu0}}</m> and standard error <m>SE={{SE}}</m>.
+                </p>
+                <p>
+                    The sample mean is <m>\bar{d}={{dbar}}</m> which has <m>t</m>-score <m>t={{tscore}}</m>.
+                </p>
+                <p>
+                    The <m>p</m>-value is <m>{{pvalue}}</m>.
+                </p>
+            </outtro>
+        </knowl>
+<!-- 
+        <knowl>
+            <content>
+                <p>
+                    Using complete sentences, state the meaning of the <m>p</m>-value in the context of this problem.
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    Suppose the null hypothesis were true, i.e. {{population}} was <m>{{mu0}}</m> {{units}}.  Then given a sample size of  <m>{{n}}</m>, the probability that we achieve a sample mean of differences equal to   <m>{{dbar}}</m> {{units}} or  {{ineq2}}  is <m>{{pvalue}}</m>.
+                </p>
+            </outtro>
+
+        </knowl>
+-->
+        <knowl>
+            <content>
+                <p>
+                    What do we say about <m>H_0</m>?  Why?
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    {{claim}} since the <m>p</m>-value is <m>{{pvalue}}</m>.
+                </p>
+            </outtro>
+        
+        </knowl>    
+    
+    
+        <knowl>
+            <content>
+                <p>
+                    What do we coclude? 
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    {{conclusion}} {{population}} {{ineq}} <m>  {{mu0}}</m> {{units}}.
+                </p>
+            </outtro>
+        
+        </knowl>  
+        
+    </knowl>
+
+ <!--  
+    <knowl>
+        <content>
+            <p>
+                Find a <m>{{CL}}</m>% confidence interval for the {{population}}.  Using complete sentences, explain what the confidence interval means in the context of this problem.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                For a <m>{{CL}}\%</m> confidence interval,  <m>t^*={{t}}</m>.
+            </p>
+            <p>
+                The {{population}}  has a <m>{{CL}}\%</m> chance of of falling in <m>[{{LB}}, {{UB}}]</m>  {{units}}.
+            </p>
+        </outtro>
+    </knowl>
+    --> 
+        
+
+            
+    
+        
+
+        
+
+        
+    
+</knowl>

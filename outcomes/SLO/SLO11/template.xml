@@ -1,91 +1,56 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
-      <p>
-          {{prose}}
-      </p>
-        
-      <p>
-          Consider this table of data collected comparing {{explanatory}} measured in {{Eunit}}, and {{response}} measured in {{Runit}}:
-      </p>  
-      
-      <p>
-          
-          <me>
-               \begin{array}{|c|c|}
-              \hline
-              \text{ {{explanatory}} in {{Eunit}} }
-              &amp;
-              \text{ {{response}} in {{Runit}} }
-              \\
-              \hline
-                  {{#Datalist}}
-               {{x}}
-              &amp; {{y}}
-                  \\
-                  {{/Datalist}}
-              
-              \hline
-              \end{array}
-          </me>
-      </p>
-        
+    <p>Directions:</p>
+    <p>Show all your calculations, including anything you plug into a calculator. Answers should be given in complete sentences and in the context of the situation.</p>
+    <p><em>Scenario:</em></p>
+    <p>
+        A study compared the birth weights of non-Hispanic white babies born in the US in 1994 to birth weights of Mexican-American babies in the US in 1994. Both sets of birth weights were found to be normally distributed. The mean birth weights from as sample of {{n1}} non-Hispanic white babies was {{mean1}} grams with a standard deviation of {{STD1}} grams. The mean birth weight from a sample of {{n2}} Mexican-American babies was {{mean2}} grams with a standard deviation of {{STD2}} grams. Please use this information to answer the questions below.
+       </p>
+       <!--  <p> We want to construct a {{CL}} \% Confidence interval about the mean weight for {{ind_1}} babies. {{zort}} </p> -->
+
+     </intro>
+    <knowl>
+    <intro>
+        <p>We want to construct a {{CL}} \% Confidence interval about the mean weight for {{ind_1}} babies. {{zort}} </p>
     </intro>
-    
-    
-    
-    
-    
     <knowl>
-        <content>
-            <p>
-                Which variable is the explanatory variable, and which is the response variable?
-            </p>
-        </content>
-        <outtro>
-            <p>
-                The exaplanatory variable is {{explanatory}} in {{Eunit}} and the response variable is {{response}} in {{Runit}}.
-            </p>
-        </outtro>
+        <content><p> What is the critical value for this confidence interval?  </p></content>
+        <outtro><p><m>{{CV}}</m> </p></outtro>
     </knowl>
-    
     <knowl>
-        <content>
-            <p>
-                Compute the correlation coefficient <m>R</m>.
-            </p>
-        </content>
-        <outtro>
-            <p>
-                <m>R={{R}}.</m>
-            </p>
-        </outtro>
+            <content><p>What is the standard error for this confidence interval</p></content>
+            <outtro><p><m>{{SE}}</m></p></outtro>
     </knowl>
-    
     <knowl>
-        <content>
-            <p>
-                What does <m>R</m> tell you about the relationship between {{explanatory}} and {{response}}?
-            </p>
-        </content>
-        <outtro>
-            <p>
-                There is a {{ans3}} between {{explanatory}} and {{response}}
-            </p>
-
-        </outtro>
-        
+        <content><p>Construct and interpret the confidence interval about the mean weight of {{ind_1}} babies using either the above information or Minitab </p></content>
+        <outtro><p>We are {{CL}} % confident tht the mean birth weight for {{ind_1}} babies is between <m>({{CI_L}},{{CI_U}})</m> grams </p></outtro>
     </knowl>
-    
-    
+
+    </knowl>
+
+     <knowl>
+        <content><p>If we want to construct a {{CL3}} \% confidence interval for {{ind_1}} babies with a margin of error of {{ME}} grams. What is the minimum sample size needed?</p></content>
+        <outtro><p><m>{{ans_4}}</m> babies </p></outtro>
+    </knowl>
+
+<!-- 
+
+<knowl>
+        <content><p>If the population standard deviation for {{ind_2}} babies is known to be {{Pop_SD}} and we want to construct a {{CL3}} \% confidence interval with a margin of error of {{ME}} grams. What is the minimum sample size needed?</p></content>
+        <outtro><p><m>{{ans_4}}</m> babies </p></outtro>
+    </knowl>
+    <knowl>
+        <content><p>Construct and interpret a {{CL2}} \% confidence interval for the difference between the mean weights for {{ind_1}} and {{ind_2}} babies.</p> </content>
+        <outtro><p><m>({{LB}},{{UB}})</m> grams </p></outtro>
+
+    </knowl>
+
+-->
         
 
-            
-    
-        
-
-        
-
-        
-    
 </knowl>
+
+
+
+

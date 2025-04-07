@@ -1,294 +1,121 @@
-import numpy as np
-from scipy import stats
+import numpy
 class Generator(BaseGenerator):
-
     def data(self):
-        p=0
-        val1=np.sort(sample(range(-10,10),5))
-        val2=np.sort(sample(range(-10,10),5))
-        val3=np.sort(sample(range(-10,10),5))
-        x1=val1[0]
-        x2=val1[1]
-        x3=val1[2]
-        x4=val1[3]
-        x5=val1[4]
-        x6=val2[0]
-        x7=val2[1]
-        x8=val2[2]
-        x9=val2[3]
-        x10=val2[4]
-        x11=val3[0]
-        x12=val3[1]
-        x13=val3[2]
-        x14=val3[3]
-        x15=val3[4]
-       
-        up1=round(randint(-5,-1)/100,2)
-        up2=round(randint(1,5)/100,2)
-        up=choice([up1,up2])
-        while p != 1:
-            test=np.random.uniform(.01,.9,size=5)
-
-
-            x=np.round(test,1)/sum(np.round(test,1))
-
-            x_rnd=np.round(x,2)
-
-            p=np.sum(x_rnd)
-
-            if np.all(x_rnd)==0:
-                p=0
-
-        c1=randint(0,5)
-        c2=randint(0,4)
-        c3=randint(0,4)
-        x_rnd_neg=np.copy(x_rnd)
-        x_rnd_up=np.copy(x_rnd)
-        x_rnd_neg[c2]=-x_rnd_neg[c2]
-        x_rnd_up[c3]=round(x_rnd_up[c3]+up,2)
-        if (c1==0):
-            data1_1=x_rnd[0]
-            data1_2=x_rnd[1]
-            data1_3=x_rnd[2]
-            data1_4=x_rnd[3]
-            data1_5=x_rnd[4]
-        
-            data2_1=x_rnd_neg[0]
-            data2_2=x_rnd_neg[1]
-            data2_3=x_rnd_neg[2]
-            data2_4=x_rnd_neg[3]
-            data2_5=x_rnd_neg[4]
-
-            data3_1=x_rnd_up[0]
-            data3_2=x_rnd_up[1]
-            data3_3=x_rnd_up[2]
-            data3_4=x_rnd_up[3]
-            data3_5=x_rnd_up[4]
-
-            ans1='First distribution'
-            mean=np.sum(x_rnd*val1)
-            ans2_1= round(mean,2)
-            variance=np.sum(((val1-mean)**2)*x_rnd)
-            std=sqrt(variance)
-            ans2_2=round(std,2)
-            ans2_3=round(variance,2)
-
-        elif (c1==1):
-            data1_1=x_rnd[0]
-            data1_2=x_rnd[1]
-            data1_3=x_rnd[2]
-            data1_4=x_rnd[3]
-            data1_5=x_rnd[4]
-        
-            data3_1=x_rnd_neg[0]
-            data3_2=x_rnd_neg[1]
-            data3_3=x_rnd_neg[2]
-            data3_4=x_rnd_neg[3]
-            data3_5=x_rnd_neg[4]
-
-            data2_1=x_rnd_up[0]
-            data2_2=x_rnd_up[1]
-            data2_3=x_rnd_up[2]
-            data2_4=x_rnd_up[3]
-            data2_5=x_rnd_up[4]
-
-            ans1='First distribution'
-            mean=np.sum(x_rnd*val1)
-            ans2_1= round(mean,2)
-            variance=np.sum(((val1-mean)**2)*x_rnd)
-            std=sqrt(variance)
-            ans2_2=round(std,2)
-            ans2_3=round(variance,2)
-
-        elif (c1==2):
-            data2_1=x_rnd[0]
-            data2_2=x_rnd[1]
-            data2_3=x_rnd[2]
-            data2_4=x_rnd[3]
-            data2_5=x_rnd[4]
-        
-            data1_1=x_rnd_neg[0]
-            data1_2=x_rnd_neg[1]
-            data1_3=x_rnd_neg[2]
-            data1_4=x_rnd_neg[3]
-            data1_5=x_rnd_neg[4]
-
-            data3_1=x_rnd_up[0]
-            data3_2=x_rnd_up[1]
-            data3_3=x_rnd_up[2]
-            data3_4=x_rnd_up[3]
-            data3_5=x_rnd_up[4]
-
-            ans1='Second distribution'
-            mean=np.sum(x_rnd*val2)
-            ans2_1= round(mean,2)
-            variance=np.sum(((val2-mean)**2)*x_rnd)
-            std=sqrt(variance)
-            ans2_2=round(std,2)
-            ans2_3=round(variance,2)
-
-        elif  (c1==3):
-            data2_1=x_rnd[0]
-            data2_2=x_rnd[1]
-            data2_3=x_rnd[2]
-            data2_4=x_rnd[3]
-            data2_5=x_rnd[4]
-        
-            data3_1=x_rnd_neg[0]
-            data3_2=x_rnd_neg[1]
-            data3_3=x_rnd_neg[2]
-            data3_4=x_rnd_neg[3]
-            data3_5=x_rnd_neg[4]
-
-            data1_1=x_rnd_up[0]
-            data1_2=x_rnd_up[1]
-            data1_3=x_rnd_up[2]
-            data1_4=x_rnd_up[3]
-            data1_5=x_rnd_up[4]
-
-            ans1='Second distribution'
-            mean=np.sum(x_rnd*val2)
-            ans2_1= round(mean,2)
-            variance=np.sum(((val2-mean)**2)*x_rnd)
-            std=sqrt(variance)
-            ans2_2=round(std,2)
-            ans2_3=round(variance,2)
-
-
-        elif (c1==4):
-            data3_1=x_rnd[0]
-            data3_2=x_rnd[1]
-            data3_3=x_rnd[2]
-            data3_4=x_rnd[3]
-            data3_5=x_rnd[4]
-        
-            data1_1=x_rnd_neg[0]
-            data1_2=x_rnd_neg[1]
-            data1_3=x_rnd_neg[2]
-            data1_4=x_rnd_neg[3]
-            data1_5=x_rnd_neg[4]
-
-            data2_1=x_rnd_up[0]
-            data2_2=x_rnd_up[1]
-            data2_3=x_rnd_up[2]
-            data2_4=x_rnd_up[3]
-            data2_5=x_rnd_up[4]
-
-            ans1='Third distribution'
-            mean=np.sum(x_rnd*val3)
-            ans2_1= round(mean,2)
-            variance=np.sum(((val3-mean)**2)*x_rnd)
-            std=sqrt(variance)
-            ans2_2=round(std,2)
-            ans2_3=round(variance,2)
-
-        else:
-            data3_1=x_rnd[0]
-            data3_2=x_rnd[1]
-            data3_3=x_rnd[2]
-            data3_4=x_rnd[3]
-            data3_5=x_rnd[4]
-        
-            data2_1=x_rnd_neg[0]
-            data2_2=x_rnd_neg[1]
-            data2_3=x_rnd_neg[2]
-            data2_4=x_rnd_neg[3]
-            data2_5=x_rnd_neg[4]
-
-            data1_1=x_rnd_up[0]
-            data1_2=x_rnd_up[1]
-            data1_3=x_rnd_up[2]
-            data1_4=x_rnd_up[3]
-            data1_5=x_rnd_up[4]
-
-
-            ans1='Third distribution'
-            mean=np.sum(x_rnd*val3)
-            ans2_1= round(mean,2)
-            variance=np.sum(((val3-mean)**2)*x_rnd)
-            std=sqrt(variance)
-            ans2_2=round(std,2)
-            ans2_3=round(variance,2)
-        #k=0
-        
-        #ch=randint(0,4)
-        #n=randint(10,100)
-        #percent=randint(1,100)
-        #c5=randint(3,6)
-        #if ch==0:
-        #    pcent=.50
-        #elif ch==3:
-         #   pcent=1/c5
-        #else: 
-        #    pcent=percent/100
-
-        ##statement=choice(["at most","at least","exactly"])
-        #mu=n*pcent
-        #mu_rnd=round(n*pcent,0)
-        #sigma=sqrt(mu*(1-pcent))
-        #sigma_rnd=round(sigma,0)
-        #c4=randint(mu_rnd-2*sigma_rnd,mu_rnd+2*sigma_rnd)
-        #if statement=="exactly": 
-        #    prob=stats.binom.pmf(c4,n,pcent)
-        #elif statement== "at least":
-        #    prob=sum(stats.binom.pmf(range(c4,n+1),n,pcent))
-        #else:
-        #    prob=sum(stats.binom.pmf(range(0,c4+1),n,pcent))
-
-       
-        #scenario=[ [ "a coin is flipped {} times. Let X be the number of heads observed. Find the probability of getting {} {} head(s).".format(n,statement,c4)],[ "in a factory, a batch of {} products is inspected. Each product has a {}\% chance of being defective. Let X be the number of defective products. Find the probability of getting {} {} defective product(s).".format(n,percent,statement,c4)],[ "A survey is conducted where {} people are asked if they prefer a certain brand over another. Each response has a {}\% chance of getting a yes response. Let X be the number of yes responses. Find the probability of getting {} {} yes response(s).".format(n,percent,statement,c4)],["A multiple-choice exam consists of {} questions, each with {} possible answers (only one of which is correct). Let X be the number of correct answers from a student who guesses on each question. Find the probability of the student getting {} {} questions(s) correct.".format(n,c5,statement,c4)],[ "An email filter is designed to detect spam with a {}% success rate. Out of {} emails, let X be the number of emails identified correctly as spam. Find the probability of getting {} {} email(s) correctly identified as spam.".format(percent,n,statement,c4)]] 
-        #scn=scenario[ch][0]
-        #scenario=[[ "a coin is flipped {} times. Let X be the number of heads observed. Find the probability of geting {} {} head(s).".format(n,statement,c4), "in a factory, a batch of {} products is inspected. Each product has a {}% chance of being defective. Let X be the number of defective products. Find the probability of geting {} {} defective product(s).".format(n,percent,statement,c4), "A survey is conducted where {} people are asked if they prefer a certain brand over another. Each response has a {}% chance of getting a yes response.Let X be the number of yes responses. Find the probability of geting {} {} yes respons(es).".format(n,percent,statement,c4),"A multiple-choice exam consists of {} questions, each with {} possible answers (only one of which is correct). Let X be the number of correct answers from a student who guesses on each question. Find the probability of the student geting {} {} questions(s) correct.".format(n,c5,statement,c4), "An email filter is designed to detect spam with a {}% success rate. Out of {} emails, let X be the number of emails identified correctly as spam. Find the probability of geting {} {} email(s) corectly idnetified as spam.".format(percent,n,statement,c4)]]  
-        #ans3=prob
-        #ans4_1=round(mu,2)
-        #ans4_2=round(sigma,2)
+       # n_1="200"
+       # min_1="0"
+       # q1_1="0.9"
+       # med_1="9"
+       # q3_1="32.8"
+       # max_1="92.9"
+       # mean_1="21.3"
+       # stdev_1="26.0"
+       # n_2="200"
+       # min_2="19.1"
+       # q1_2="85.7"
+       # med_2="109"
+       # q3_2="130"
+       # max_2="430"
+       # mean_2="108.4"
+       # stdev_2="42.7"
+       # n_3="198"
+       # min_3="19.1"
+       # q1_3="85.7"
+       # med_3="109"
+       # q3_3="130"
+       # max_3="188"
+       # mean_3="105.9"
+       # stdev_3="33.8"
+        n_1=randint(13,20)
     
+        mu_1=randint(50, 100)
+        sigma_1=randint(5,30)
+        
+        T = RealDistribution('gaussian', sigma_1)
+
+        data_1=[0 for i in range(n_1)]
+
+        datalist_1=[]
+
+        for i in range(n_1-1):
+            data_1[i]=abs(round(mu_1+T.get_random_element()))
+        data_1[n_1-1]=abs(mu_1+4*sigma_1*(-1)^randint(0,1))
+
+        data_1.sort()
+        
+        for i in range(n_1):
+            entry={
+                'x':data_1[i],
+            }
+            datalist_1.append(entry)
+        
+        mn=data_1[0]
+        q1_1=numpy.percentile(data_1,25,method='weibull')
+        med_1=median(data_1)
+        q3_1=numpy.percentile(data_1,75,method='weibull')
+        mx=data_1[n_1-1]
+        
+        OC_1=randint(0,3)
+        #year_1=choice(["2000", "2019"])
+        score_a=[["minimum", "more", "25", q1_1], ["minimum", "more", "75", q3_1], ["maximum", "less", "25", q3_1], ["maximum", "less", "75", q1_1]]
+        #score_b=[["minimum", "more", "25", q1_2], ["minimum", "more", "75", q3_2], ["maximum", "less", "25", q3_2], ["maximum", "less", "75", q1_2]]
+        min_max=score_a[OC_1][0]
+        dir_1=score_a[OC_1][1]
+        percent_1=score_a[OC_1][2]
+        answer_1=score_a[OC_1][3]
+        OC_2=randint(0,1)
+        annual=[["first", q1_1], ["third", q3_1]]
+        answer2=[[n_1, "25"], [n_1, "75"]]
+        quar_2=annual[OC_2][0]
+        change_2=annual[OC_2][1]
+        number_2=answer2[OC_2][0]
+        percent_2=answer2[OC_2][1]
+        z_vala=round(random()*(mx-mn)+mn,1)
+        ans_4a=round((z_vala-mean(data_1))/std(data_1),2)
+        
+        IQR=q3_1-q1_1
+
+        outliers=[]
+        outlierslist=[]
+
+        for i in range(n_1):
+            if data_1[i]<q1_1-1.5*IQR or data_1[i]>q3_1+1.5*IQR:
+                outliers.append(data_1[i])
+
+        for i in range(len(outliers)):
+            entry={
+                'x':outliers[i],
+            }
+            outlierslist.append(entry)
+          
+        if mean(data_1)>median(data_1):
+            answer_5="Skewed Right"
+        elif mean(data_1)<median(data_1):
+            answer_5="Skewed Left"
+        else:
+            answer_5="Approximately Symmetric"
+    
+        
 
         return {
-            "d1":data1_1,
-            "d2":data1_2,
-            "d3":data1_3,
-            "d4":data1_4,
-            "d5":data1_5,
-            "d6":data2_1,
-            "d7":data2_2,
-            "d8":data2_3,
-            "d9":data2_4,
-            "d10":data2_5,
-            "d11":data3_1,
-            "d12":data3_2,
-            "d13":data3_3,
-            "d14":data3_4,
-            "d15":data3_5,
-            "answer_1":ans1,
-            "x1":x1,
-            "x2":x2,
-            "x3":x3,
-            "x4":x4,
-            "x5":x5,
-            "x6":x6,
-            "x7":x7,
-            "x8":x8,
-            "x9":x9,
-            "x10":x10,
-            "x11":x11,
-            "x12":x12,
-            "x13":x13,
-            "x14":x14,
-            "x15":x15,
-            "answer_2a":ans2_1,
-            "answer_2b":ans2_2,
-            "answer_2c":ans2_3,
+            "data":datalist_1,
+            "n_1":n_1,
+            "min_max":min_max,
+            "dir_1":dir_1,
+            "percent_1":percent_1,
+            "answer_1":answer_1,
+            "quar_2":quar_2,
+            "change_2":change_2,
+            "number_2":number_2,
+            "percent_2":percent_2,
+            "za":z_vala,
+            "answer4a":ans_4a,
+            "mn":mn,
+            "Q1":q1_1,
+            "med":med_1,
+            "Q3":q3_1,
+            "mx":mx,
+            "IQR":IQR,
+            "outliers":outlierslist,
+            "answer_5":answer_5,
+            
         }
-
-
-
-
-
-
-
-
-
-
-
-    

@@ -1,32 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
-    <p>Directions:</p>
-    <p>Show all your calculations, including anything you plug into a calculator. Answers should be given in complete sentences and in the context of the situation.</p>
-    <p><em>Scenario:</em></p>
-    <p>
-        A study compared the birth weights of non-Hispanic white babies born in the US in 1994 to birth weights of Mexican-American babies in the US in 1994. Both sets of birth weights were found to be normally distributed. The mean birth weight of non-Hispanic white babies was 3,393 grams with a standard deviation of 562 grams. The mean birth weight of Mexican-American babies was 3,343 grams with a standard deviation of 598 grams. Please use this information to answer the questions below.
-       </p>
-     </intro>
+        <p> Below you will find three probability distributions. Answer the first two questions based on these distributions. </p>
+    
+        <p>Distribution 1</p>
+        <p><me>\begin{array}{c|c}
+            \text{x} &amp; \text{P(x)} \\
+            \hline
+             {{x1}} &amp; {{d1}} \\
+             {{x2}} &amp; {{d2}} \\
+             {{x3}} &amp; {{d3}} \\
+             {{x4}} &amp; {{d4}} \\
+             {{x5}} &amp;  {{d5}} \\
+            \end{array}</me>
+        </p>
+        <p>Distribution 2</p>
+        <p><me>\begin{array}{c|c}
+            \text{x} &amp; \text{P(x)} \\
+            \hline
+             {{x6}} &amp; {{d6}} \\
+             {{x7}} &amp; {{d7}} \\
+             {{x8}} &amp; {{d8}} \\
+             {{x9}} &amp; {{d9}} \\
+             {{x10}} &amp; {{d10}} \\
+            \end{array}</me>
+        </p>
+        <p>Distribution 3</p>
+        <p><me>\begin{array}{c|c}
+            \text{x} &amp; \text{P(x)} \\
+            \hline
+             {{x11}} &amp; {{d11}} \\
+             {{x12}} &amp; {{d12}} \\
+             {{x13}} &amp; {{d13}} \\
+             {{x14}} &amp; {{d14}} \\
+            {{x15}} &amp; {{d15}} \\
+            \end{array}</me>
+        </p>
+    </intro>
     <knowl>
-        <content><p>What is the z-score for a baby whose birth weight is <m>{{dep_1}}</m> grams and is {{ind_1}}?</p></content>
-        <outtro><p><m>{{answer_1}}</m> </p></outtro></knowl>
-    <knowl>
-       <!-- <content><p>If you randomly choose a baby who is {{ind_2}}, what is the probability that they have a birth weight of <m>{{dep_2}}</m> grams or less?</p></content>-->
-            <content><p>{{statement2}}</p></content>
-            <outtro><p><m>{{answer_2}}</m></p></outtro>
+        <content><p>Which of the distributions above is a discrete probability distribution?</p></content>
+        <outtro><p>{{answer_1}}</p></outtro>
     </knowl>
     <knowl>
-        <!--<content><p>If you randomly choose a baby who is {{ind_3}}, what is the {{min_max}} birth weight they can have and still be {{dir_1}} than <m>{{percent_1}}</m>\% of all {{ind_3}} babies born in 1994.</p></content> -->
-        <content><p> {{statement3}} </p></content>
-        <outtro><p><m>{{answer_3}}</m> grams </p></outtro>
+        <content><p>Find the mean of the correct probability distribution?</p></content>
+        <outtro><p> the mean is {{answer_2a}}.</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Out of a sample of 100 {{ind_4}} babies what porportion of sample mean weights are between <m>{{dep_3}}</m> grams and <m>{{dep_4}}</m> grams?</p></content>
-        <outtro><p><m>{{answer_4}}</m></p></outtro>
+        <content><p>Find the variance of the correct probability distribution?</p></content>
+        <outtro><p>the variance is {{answer_2c}} .</p></outtro>
     </knowl>
     <knowl>
-        <content><p>A woman gives birth to a baby whose weight is heavier than <m>{{percent_2}}</m>% of all babies of their race. For which race would the baby weigh more? Justify your answer using a statistical analysis.</p></content>
-        <outtro><p>Non-Hispanic white baby's birth weight = <m>{{answer_5a}}</m> | Mexican-American baby's birth weight = <m>{{answer_5b}}</m></p></outtro>
+        <content><p>Find the standard deviation of the correct probability distribution?</p></content>
+        <outtro><p> the standard deviation is {{ answer_2b}}.</p></outtro>
     </knowl>
+
 </knowl>
