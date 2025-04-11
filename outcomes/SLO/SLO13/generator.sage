@@ -83,15 +83,15 @@ class Generator(BaseGenerator):
             if htt==0:
                 ineq="is not equal to"
                 ineq2="more extreme"
-                ineqsymb="neq"
+                ineqsymb="\\neq"
             if htt==1:
                 ineq="is greater than"
                 ineq2="greater"
-                ineqsymb="gneq"
+                ineqsymb=">"
             if htt==2:
                 ineq="is less than"
                 ineq2="less than"
-                ineqsymb="lneq"
+                ineqsymb="<"
 
             s=round(uniform(smin, smax),3)
             SE=numerical_approx(s/sqrt(n))
