@@ -22,7 +22,7 @@ class Generator(BaseGenerator):
         ind_2=choice(["MCAT", "LSAT"])
         ind_3="LSAT"
         ch_1=randint(0,1)
-        dir_1=choice(["heavier", "lighter"])
+        dir_1=choice(["higher", "lower"])
         #dir_2=choice(["larger", "smaller"]
         min_max="minimum"
 
@@ -36,13 +36,13 @@ class Generator(BaseGenerator):
                 ind_3="MCAT"
             percent_1=randint(33, 71)
             percent_1a=percent_1
-            if dir_1=="lighter":
+            if dir_1=="lower":
                 min_max="maximum"
                 percent_1a=100-percent_1
             answer_3z=ND.cum_distribution_function_inv(percent_1a/100)
-            answer_3=round((answer_3z*(SD_2/10) + mean_2),0)
+            answer_3=round((answer_3z*(SD_2/10) + mean_2),2)
             if ind_2=="LSAT":
-                answer_3=round((answer_3z*(SD_1/10) + mean_1),0)
+                answer_3=round((answer_3z*(SD_1/10) + mean_1),2)
         else:
             dep_2=round((zscore_2*(SD_1/10)+mean_1),0)
             answer_2=round(ND.cum_distribution_function((dep_2 - mean_1)/(SD_1/10)),4)
@@ -52,17 +52,17 @@ class Generator(BaseGenerator):
                 ind_3="MCAT"
             percent_1=randint(33, 71)
             percent_1a=percent_1
-            if dir_1=="lighter":
+            if dir_1=="lower":
                 min_max="maximum"
                 percent_1a=100-percent_1
             answer_3z=ND.cum_distribution_function_inv(percent_1a/100)
-            answer_3=round((answer_3z*SD_2 + mean_2),0)
+            answer_3=round((answer_3z*SD_2 + mean_2),2)
             if ind_2=="LSAT":
-                answer_3=round((answer_3z*SD_1 + mean_1),0)
+                answer_3=round((answer_3z*SD_1 + mean_1),2)
         
         statements1=[["If a sample of 100 student who took the {} test is taken what is the probability that the sample has a mean score of {} or less".format(ind_2,dep_2)],["If you randomly choose a student who took the {} test, what is the probability that they have a score of {} or less?".format(ind_2,dep_2)]]
         stmt1=statements1[ch_1][0]
-        statements2=[["If you randomly choose a student who took the {} test, what is the {} score they can have and still be higher than {}% of all {} scores.".format(ind_3,min_max,percent_1,ind_3)],["If you have a sample of 100 students who took the {} test, what is the {} sample mean score that is higher than {}% of sample mean scores.".format(ind_3,min_max,percent_1)]]
+        statements2=[["If you randomly choose a student who took the {} test, what is the {} score they can have and still be {} than {}% of all {} scores.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 students who took the {} test, what is the {} sample mean score that is {} than {}% of sample mean scores.".format(ind_3,min_max,dir_1,percent_1)]]
 
         stmt2=statements2[ch_1][0]
         #if ind_2=="LSAT":
