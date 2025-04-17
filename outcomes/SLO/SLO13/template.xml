@@ -53,7 +53,7 @@
                     The sampling distribution has mean <m>{{mu0}}</m> and standard error <m>SE={{SE}}</m>.
                 </p>
                 <p>
-                    The sample mean is <m>\bar{x}={{xbar}}</m> which has <m>{{zt}}</m>-score <m>t={{tscore}}</m> <!-- <m>t</m>-score <m>t={{tscore}}</m> -->.
+                    The sample mean is <m>\bar{x}={{xbar}}</m> which has <m>{{zt}}</m>-score <m>{{zt}}={{tscore}}</m> <!-- <m>t</m>-score <m>t={{tscore}}</m> -->.
                 </p>
                 <p>
                     The <m>p</m>-value is <m>{{pvalue}}</m>.
