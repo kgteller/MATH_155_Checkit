@@ -4,7 +4,7 @@ class Generator(BaseGenerator):
             
             pvalue=0
     
-            n=randint(20,50)
+            n=randint(30,65)
             df=n-1
 
             htt=randint(0,2)
@@ -106,6 +106,7 @@ class Generator(BaseGenerator):
             SE=numerical_approx(sqrt(s1^2/n+s2^2/n))
             xbar1=round(uniform(xmin,xmax),3)
 
+
             tempP=uniform(0.01, 0.09)
             if htt==0:
                 tempP=tempP/2
@@ -119,7 +120,7 @@ class Generator(BaseGenerator):
             if htt==2:
                 diff=round(mu0-tempT*SE,3)    
 
-            xbar2=xbar1-diff
+            xbar2=round(xbar1-diff,3)
 
 
 

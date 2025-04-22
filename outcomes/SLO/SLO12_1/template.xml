@@ -18,7 +18,7 @@
         </content>
         <outtro>
             <p>
-                For a <m>{{CL}}\%</m> confidence interval,  <m>t^*={{t}}</m>.
+                For a <m>{{CL}}\%</m> confidence interval,  <m>t_{\alpha/2}={{t}}</m>.
             </p>
             <p>
                 We are <m>{{CL}}\%</m>  confident that  {{population}} is between <m>[{{LB}}, {{UB}}]</m>  {{units}}.

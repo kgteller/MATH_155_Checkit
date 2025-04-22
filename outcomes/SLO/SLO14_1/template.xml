@@ -63,7 +63,7 @@
             </content>
             <outtro>
                 <p>
-                    The alternative hypothesis is <m>H_A: \mu\{{ineqsymb}}{{mu0}}</m>.
+                    The alternative hypothesis is <m>H_A: \mu{{ineqsymb}}{{mu0}}</m>.
                 </p>
             </outtro>
         </knowl>

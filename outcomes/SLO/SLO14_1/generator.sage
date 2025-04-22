@@ -114,15 +114,15 @@ class Generator(BaseGenerator):
             if htt==0:
                 ineq="is not equal to"
                 ineq2="more extreme"
-                ineqsymb="neq"
+                ineqsymb="\\neq"
             if htt==1:
                 ineq="is greater than"
                 ineq2="greater"
-                ineqsymb="gneq"
+                ineqsymb=">"
             if htt==2:
                 ineq="is less than"
                 ineq2="less than"
-                ineqsymb="lneq"
+                ineqsymb="<"
 
             mu0=choice([0,  0, mu0t])
 
