@@ -39,7 +39,6 @@ class Generator(BaseGenerator):
         for i in range(n_1-1):
             data_1[i]=abs(round(mu_1+T.get_random_element()))
         data_1[n_1-1]=abs(mu_1+4*sigma_1*(-1)^randint(0,1))
-
         data_1.sort()
         
         for i in range(n_1):
