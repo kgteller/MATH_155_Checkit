@@ -5,10 +5,9 @@ class Generator(BaseGenerator):
             pvalue=0
     
             n=randint(30,65)
-            df=n-1
 
             htt=randint(0,2)
-            T = RealDistribution('t', df)
+            
 
             scenario=randint(0,4)
 
@@ -105,7 +104,8 @@ class Generator(BaseGenerator):
             s2=round(uniform(smin, smax),3)
             SE=numerical_approx(sqrt(s1^2/n+s2^2/n))
             xbar1=round(uniform(xmin,xmax),3)
-
+            df=round(floor((s1^2+s2^2)^2/(s1^4/(n-1)+s2^4/(n-1))))
+            T = RealDistribution('t', df)
 
             tempP=uniform(0.01, 0.09)
             if htt==0:
@@ -120,7 +120,7 @@ class Generator(BaseGenerator):
             if htt==2:
                 diff=round(mu0-tempT*SE,3)    
 
-            xbar2=round(xbar1-diff,3)
+            xbar2=round(xbar1-diff,3 )
 
 
 
