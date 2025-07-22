@@ -34,7 +34,7 @@
         <outtro><p>The cost of {{cost_4}} roughly increased {{answer_4}}<m>\%</m> from 1995 to 2017</p></outtro></knowl>
     <knowl>
             <content><p>What type of graph is figure 2?</p></content>
-            <outtro><p>A line graph or a time series graph</p></outtro>
+            <outtro><p>A histogram</p></outtro>
     </knowl>
     <knowl>
             <content><p>Describe the shape of the distribution of taxi trips of 25 miles or less (figure 2). Explain your answer.</p></content>
