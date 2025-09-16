@@ -16,7 +16,7 @@
 
     <knowl>
     <intro>
-        <p> We want to construct a {{CL}} \% Confidence interval about the mean bone density for {{ind_1}}. {{zort}} </p>
+        <p> We want to construct a {{CL}} % Confidence interval about the mean bone density for {{ind_1}}. {{zort}} </p>
     </intro>
     <knowl>
         <content><p> What is the critical value for the first confidence interval?  </p></content>
@@ -34,7 +34,7 @@
     </knowl>
 
      <knowl>
-        <content><p> If we want to construct a {{CL3}} \% confidence interval for the mean bone density of {{ind_1}} with a margin of error of {{ME}}, what is the minimum sample size needed?</p></content>
+        <content><p> If we want to construct a {{CL3}} % confidence interval for the mean bone density of {{ind_1}} with a margin of error of {{ME}}, what is the minimum sample size needed?</p></content>
         
         <outtro><p><m>{{ans_4}}</m> {{ind_2}} </p></outtro>
     </knowl>
