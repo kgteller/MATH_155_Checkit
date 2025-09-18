@@ -11,7 +11,7 @@ class Generator(BaseGenerator):
             result_2=randint(12, 19)
 
         out1=randint(0,1)
-        study_rand=[["An agricultural scientist wants to determine the effect of fertilizer type on the yield of carrot. There are five types of fertilizer under consideration. She plants tomatoes on five plots of land. Each plot is treated identically except for receiving a different type of fertilizer."],["A scientist wants to determine whether people who live in places with high levels of air pollution have more coughs than people in areas with little air pollution. During the winter months, she tracks the sales of cough medication in randomly selected neighborhoods with high or low levels of pollution."]]
+        study_rand=[["An agricultural scientist wants to determine the effect of fertilizer type on the yield of carrot. There are five types of fertilizer under consideration. She plants carrots on five plots of land. Each plot is treated identically except for receiving a different type of fertilizer."],["A scientist wants to determine whether people who live in places with high levels of air pollution have more coughs than people in areas with little air pollution. During the winter months, she tracks the sales of cough medication in randomly selected neighborhoods with high or low levels of pollution."]]
         study_type_rand=[["Randomized Experiment"],["Observational Study"]]
         study=study_rand[out1][0]
         study_type=study_type_rand[out1][0]
