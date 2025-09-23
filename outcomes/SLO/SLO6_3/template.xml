@@ -17,7 +17,7 @@
     </knowl>
     <knowl>
         <content><p>Find and interpret what the {{quar_2}} quartile means in terms of the scores of the students.</p></content>
-        <outtro><p>Of the {{number_2}} students that took the statewide math test, {{percent_2}} scored {{test_2}} or less.</p></outtro>
+        <outtro><p>Of the {{number_2}} students that took the statewide math test, {{percent_2}} <m>\%</m>  scored {{change_2}} or less.</p></outtro>
     </knowl>
     <knowl>
         <content><p>Find and interpret the Z-score for a 9th grade exam score of {{za}} (round to 2 decimal places) </p></content>

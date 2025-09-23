@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
-        <p>Poverty, disease, hunger, climate change, war, existential risks, and inequality: The world faces many great and terrifying problems. It is these large problems that our work at Our World in Data focuses on. Our World in Data is a non-profit that has as its mission to make the knowledge on the big problems accessible and understandable. The information below are the child mortality rates for countries around the world in the year 2020 for which data is available
+        <p>Poverty, disease, hunger, climate change, war, existential risks, and inequality: The world faces many great and terrifying problems. It is these large problems that our work at Our World in Data focuses on. Our World in Data is a non-profit that has as its mission to make the knowledge on the big problems accessible and understandable. The information below are the child mortality rates for {{n_1}} countries around the world in the year 2020 for which data is available
         
     <me>
             {{#data}}
@@ -16,7 +16,7 @@
     </knowl>
     <knowl>
         <content><p>Find and explain the {{quar_2}} quartile means in terms of the countries in the dataset and their child mortality rates.</p></content>
-        <outtro><p>In 2020, {{percent_2}} of the countries in the dataset had a child mortality of {{change_2}} or less.</p></outtro>
+        <outtro><p>In 2020, {{percent_2}} <m>\%</m>  of the countries in the dataset had a child mortality of {{change_2}} or less.</p></outtro>
     </knowl>
     <knowl>
         <content><p>Find and interpret the Z-score for a child mortality rate of {{za}} (round to 2 decimal places) </p></content>

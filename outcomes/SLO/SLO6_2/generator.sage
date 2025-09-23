@@ -1,4 +1,5 @@
 import numpy
+import random
 class Generator(BaseGenerator):
     def data(self):
         n_1=randint(13,20)
@@ -26,7 +27,7 @@ class Generator(BaseGenerator):
         
         mn=data_1[0]
         q1_1=numpy.percentile(data_1,25,method='weibull')
-        med_1=median(data_1)
+        med_1=round(median(data_1),2)
         q3_1=numpy.percentile(data_1,75,method='weibull')
         mx=data_1[n_1-1]
 
@@ -44,7 +45,7 @@ class Generator(BaseGenerator):
         change_2=annual[OC_2][1]
         number_2=answer2[OC_2][0]
         percent_2=answer2[OC_2][1]
-        z_vala=round(random()*(mx-mn)+mn,1)
+        z_vala=round(random.random()*(mx-mn)+mn,2)
         ans_4a=round((z_vala-mean(data_1))/std(data_1),2)
         
         IQR=q3_1-q1_1

@@ -1,4 +1,5 @@
 import numpy
+import random
 class Generator(BaseGenerator):
     def data(self):
         n_1=randint(13,20)
@@ -49,7 +50,7 @@ class Generator(BaseGenerator):
         change_2=annual[OC_2][1]
         number_2=answer2[OC_2][0]
         percent_2=answer2[OC_2][1]
-        z_vala=round(random()*(mx-mn)+mn,1)
+        z_vala=round(random.random()*(mx-mn)+mn,2)
         ans_4a=round((z_vala-mean(data_1))/std(data_1),2)
         
         IQR=q3_1-q1_1
