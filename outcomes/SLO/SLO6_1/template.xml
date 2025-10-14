@@ -14,7 +14,7 @@
         <outtro><p>{{answer_1}}</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Find and explain what the {{quar_2}} means in terms of the countries in the dataset and their cancer death rates (per 100,000 people per year) in 2011.</p></content>
+        <content><p>Find and explain what the {{quar_2}} quartile means in terms of the countries in the dataset and their cancer death rates (per 100,000 people per year) in 2011.</p></content>
         <outtro><p> {{percent_2}} <m>\%</m>  of the countries in the dataset had a cancer death rate of {{change_2}} (per 100,000 people per year) or less.</p></outtro>
     </knowl>
     <knowl>
