@@ -121,7 +121,7 @@ class Generator(BaseGenerator):
             if htt==2:
                 diff=round(mu0-tempT*SE,3)    
 
-            xbar2=xbar1-diff
+            xbar2=round((xbar1-diff),3)
 
 
 
