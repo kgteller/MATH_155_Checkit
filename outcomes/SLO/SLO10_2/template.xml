@@ -23,7 +23,7 @@
         <outtro><p><m>{{answer_3}}</m> </p></outtro>
     </knowl>
     <knowl>
-        <content><p> if you sample 100 students, What proportion of sample means have a score between <m>{{dep_3}}</m> and <m>{{dep_4}}</m> on the {{ind_4}} test?
+        <content><p> if you sample <m>{{n}}</m> students, What proportion of sample means have a score between <m>{{dep_3}}</m> and <m>{{dep_4}}</m> on the {{ind_4}} test?
 </p></content>
         <outtro><p><m>{{answer_4}}</m></p></outtro>
     </knowl>

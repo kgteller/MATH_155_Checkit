@@ -5,7 +5,7 @@ class Generator(BaseGenerator):
         zscore_2=round(uniform(-1.88, 2.03),2)
         zscore_3=round(uniform(-1.75, -.05),2)
         zscore_4=round(uniform(.03, 1.79),2)
-        
+        n=choice([81,64,49,36])
         mean_1=500.9
         SD_1=10.6
         mean_2=150
@@ -60,9 +60,9 @@ class Generator(BaseGenerator):
             if ind_2=="LSAT":
                 answer_3=round((answer_3z*SD_1 + mean_1),2)
         
-        statements1=[["If a sample of 100 student who took the {} test is taken what is the probability that the sample has a mean score of {} or less".format(ind_2,dep_2)],["If you randomly choose a student who took the {} test, what is the probability that they have a score of {} or less?".format(ind_2,dep_2)]]
+        statements1=[["If a sample of {} student who took the {} test is taken what is the probability that the sample has a mean score of {} or less".format(n,ind_2,dep_2)],["If you randomly choose a student who took the {} test, what is the probability that they have a score of {} or less?".format(ind_2,dep_2)]]
         stmt1=statements1[ch_1][0]
-        statements2=[["If you randomly choose a student who took the {} test, what is the {} score they can have and still be {} than {}% of all {} scores.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of 100 students who took the {} test, what is the {} sample mean score that is {} than {}% of sample mean scores.".format(ind_3,min_max,dir_1,percent_1)]]
+        statements2=[["If you randomly choose a student who took the {} test, what is the {} score they can have and still be {} than {}% of all {} scores.".format(ind_3,min_max,dir_1,percent_1,ind_3)],["If you have a sample of {} students who took the {} test, what is the {} sample mean score that is {} than {}% of sample mean scores.".format(n,ind_3,min_max,dir_1,percent_1)]]
 
         stmt2=statements2[ch_1][0]
         #if ind_2=="LSAT":
@@ -75,14 +75,14 @@ class Generator(BaseGenerator):
         
         
         ind_4="LSAT"
-        dep_3=round((zscore_3*(SD_2/10)+mean_2),0)
-        dep_4=round((zscore_4*(SD_2/10)+mean_2),0)
-        answer_4=round(ND.cum_distribution_function((dep_4 - mean_2)/(SD_2/10)),4) - round(ND.cum_distribution_function((dep_3 - mean_2)/(SD_2/10)),4)
+        dep_3=round((zscore_3*(SD_2/sqrt(n))+mean_2),1)
+        dep_4=round((zscore_4*(SD_2/sqrt(n))+mean_2),1)
+        answer_4=round(ND.cum_distribution_function((dep_4 - mean_2)/(SD_2/sqrt(n))),4) - round(ND.cum_distribution_function((dep_3 - mean_2)/(SD_2/sqrt(n))),4)
         if ind_1=="LSAT":
             ind_4="MCAT"
-            dep_3=round((zscore_3*(SD_1/10)+mean_1),0)
-            dep_4=round((zscore_4*(SD_1/10)+mean_1),0)
-            answer_4=round(ND.cum_distribution_function((dep_4 - mean_1)/(SD_1/10)),4) - round(ND.cum_distribution_function((dep_3 - mean_1)/(SD_1/10)),4)
+            dep_3=round((zscore_3*(SD_1/sqrt(n))+mean_1),1)
+            dep_4=round((zscore_4*(SD_1/sqrt(n))+mean_1),1)
+            answer_4=round(ND.cum_distribution_function((dep_4 - mean_1)/(SD_1/sqrt(n))),4) - round(ND.cum_distribution_function((dep_3 - mean_1)/(SD_1/sqrt(n))),4)
         
         
         percent_2=randint(5, 10)
@@ -92,6 +92,7 @@ class Generator(BaseGenerator):
         
         return {
             "ind_1":ind_1,
+            "n":n,
             "dep_1":dep_1,
             "answer_1":"{:.2f}".format(answer_1),
             "ind_2":ind_2,
